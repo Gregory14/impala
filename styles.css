@@ -48,27 +48,35 @@ table {
 }
 
 /* Styles CSS */
-html { height: 100% }
-body { height: 100%; margin: 0; padding: 0 }
 header, section, footer {
 	width: 100%;
 } 
+
+.clear {clear: both;}
 
 #header, #content, #footer {
 	width: 60%;
 	margin: auto;
 }
 
-header {
+header, footer{
 	background-color: #CCC;
+	padding: 1%;
 }
 
-footer {
-	background-color: #ccc;
+h2, #panel ,#map-canvas {
+	margin-top: 2%;
+	margin-bottom: 3%;
+}
+.google {
+	width: 100%;
 }
 
-
-#map-canvas { height: 100% }
+#map-canvas { 
+	height: 100%;
+	min-height: 500px;
+	max-height: 800px;
+}
 
 
 

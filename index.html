@@ -2,11 +2,12 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <title>Test google Map</title>
   <link rel="stylesheet" href="styles.css">
   <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nsCtH13vdteojzc7W1Gtv8VYNJTdW0k">
-    </script>
+  </script>
   <script src="js/script.js"></script>
 </head>
 <body>
@@ -19,11 +20,27 @@
   	<div id="content">
   		<h2>Quel lieu voulez vous decouvrir ?</h2>
   		<!-- START API Google Map -->
-  		<div id="map-canvas" />
+  		<div class="google">
+  			<div id="panel">
+				<strong>Start: </strong>
+					<select id="start" onchange="calcRoute();">
+					  <option value="paris">Paris</option>
+					  <option value="tourEiffel">Tour Eiffel</option>
+					  <option value="trocadero">Trocadero</option>
+					</select>
+				<strong>End: </strong>
+					<select id="end" onchange="calcRoute();">
+					  <option value="paris">Paris</option>
+					  <option value="tourEiffel">Tour Eiffel</option>
+					  <option value="trocadero">Trocadero</option>
+					</select>
+			</div>
+  			<div id="map-canvas" />
+  		</div>
   		<!-- END API Google Map -->
 	</div>
-
   </section>
+  <div class="clear"></div>
   <footer>
   	<div id="footer">
   		&copy; copyright IMPLALA
