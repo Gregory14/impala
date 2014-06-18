@@ -98,3 +98,9 @@ a {
   text-decoration: none;
   color: black;
 }
+
+/* line 43, ../sass/screen.scss */
+#map {
+  height: 200px;
+  width: 100%;
+}
