@@ -16,5 +16,6 @@
         <p><?php if(isset($message)){echo '<p>'.$message.'</p>';} ?></p>
         <p><?php if(isset($success)){echo '<p>'.$success.'</p>';} ?></p>
     </div>
+    <a href="index.php">Retour à l'accueil</a>
 </div>
 
