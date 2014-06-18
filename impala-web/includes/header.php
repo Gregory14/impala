@@ -33,13 +33,15 @@
                         <a href="#">Concept</a>
                     </li><li>
                         <a href="#">Contact</a>
-                    </li>
+                    </li>                
+                    <li>
                         <form action="#">
                             <input type="search" name="search" />
                         </form>
                     </li>
                 </ul>
             </nav>
+            <a href="inscription.php">Inscription</a>
         </header>
         <section>
     <div id="content">
