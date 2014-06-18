@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Titre</title>
+        <title>Atmosphère</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="stylesheets/screen.css">
@@ -18,21 +18,21 @@
 
         <header id="header" role="banner">
             <div class="wrapper">
-                <a id="logo" href="#" rel="home">Atmosphère</a>
+                <a id="logo" href="index.php" rel="home">Atmosphère</a>
             </div>
 
             <nav id="nav" role="navigation">
                 <ul class="wrapper">
                     <li>
-                        <a href="#" rel="home" class="is-active">Home</a>
+                        <a href="index.php" rel="home" class="is-active">Home</a>
                     </li><li>
-                        <a href="#">Évènements</a>
+                        <a href="evenements.php">Évènements</a>
                     </li><li>
-                        <a href="#">Lieux</a>
+                        <a href="lieux.php">Lieux</a>
                     </li><li>
-                        <a href="#">Concept</a>
+                        <a href="atmosphere.php">Concept</a>
                     </li><li>
-                        <a href="#">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                         <form action="#">
                             <input type="search" name="search" />

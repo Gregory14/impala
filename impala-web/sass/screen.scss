@@ -23,16 +23,14 @@ header {
 			width: 12.5%;
 		}
 	}
-	ul.sub-nav{
-		li{
-			float:none;
-			border: 1px solid #ccc;
-		}
-	}
+}
+
+.place img {
+	max-width: 300px;
 }
 
 p {
-	color:$rouge;
+	color:$noir;
 }
 
 a{
@@ -41,7 +39,6 @@ a{
 }
 
 #map {
-	height: 200px;
+	height: 400px;
 	width: 100%;
-	border: 1px solid red;
 }
