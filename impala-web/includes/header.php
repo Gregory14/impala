@@ -34,12 +34,14 @@
                     </li><li>
                         <a href="contact.php">Contact</a>
                     </li>
+                    <li>
                         <form action="#">
                             <input type="search" name="search" />
                         </form>
                     </li>
                 </ul>
             </nav>
+            <a href="inscription.php">Inscription</a>
         </header>
         <section>
     <div id="content">
