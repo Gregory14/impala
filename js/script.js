@@ -17,7 +17,7 @@ function initialize() {
 var marker = new google.maps.Marker({
     position: paris,
     map: map,
-    title:"Hello World!"
+    title:"Paris"
 });
 }
 

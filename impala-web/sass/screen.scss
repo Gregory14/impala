@@ -1,0 +1,40 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$rouge: red;
+$noir: #000;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+header {
+	ul.wrapper{
+	width:100%;
+		li{
+			float:left;
+			width: 12.5%;
+		}
+	}
+	ul.sub-nav{
+		li{
+			float:none;
+		}
+	}
+}
+
+p {
+	color:$rouge;
+}
+
+a{
+	text-decoration:none;
+	color:$noir;
+}

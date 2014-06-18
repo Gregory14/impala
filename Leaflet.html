@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+  <title>Test google Map</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nsCtH13vdteojzc7W1Gtv8VYNJTdW0k">
+  </script> -->
+  
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+</head>
+<body>
+  <header>
+  	<div id="header">
+  		<h1>Google Maps</h1>
+  	</div>
+  </header>
+  <section>
+  	<div id="content">
+  		<h2>Quel lieu voulez vous decouvrir ?</h2>
+  		<!-- START API Leaflet.js Map -->
+  		<div class="google">
+       <div id="map"></div>
+	</div>
+  </section>
+  <div class="clear"></div>
+  <footer>
+  	<div id="footer">
+  		&copy; copyright IMPLALA
+  	</div>
+  </footer>
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script>
+  var map = L.map('map').setView([51.505, -0.09], 13);
+  L.tileLayer('http://{s}.tiles.mapbox.com/v3/mbouras.ig14pp8e/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18}).addTo(map);
+
+  var circle = L.circle([51.508, -0.11], 500, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+}).addTo(map);
+  </script>
+</body>
+</html>
