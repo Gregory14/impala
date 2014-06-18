@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 is-ie-7" lang="fr"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 is-ie8" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Titre</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="stylesheets/screen.css">
+        <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+        <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/modernizr.custom.22603.js"></script>
+    </head>
+    <body role="document">
+
+        <header id="header" role="banner">
+            <div class="wrapper">
+                <a id="logo" href="#" rel="home">Atmosphère</a>
+            </div>
+
+            <nav id="nav" role="navigation">
+                <ul class="wrapper">
+                    <li>
+                        <a href="#" rel="home" class="is-active">Home</a>
+                    </li><li>
+                        <a href="#">Évènements</a>
+                    </li><li>
+                        <a href="#">Lieux</a>
+                    </li><li>
+                        <a href="#">Concept</a>
+                    </li><li>
+                        <a href="#">Contact</a>
+                    </li>
+                        <form action="#">
+                            <input type="search" name="search" />
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+    <div id="content">
