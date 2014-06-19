@@ -6,11 +6,11 @@
         </section>
 
         <section>
-            <!--<img src="img/carte.png" alt="Arrondissements de Paris.">-->
-            <ul>
+            <img src="img/carte.png" alt="Arrondissements de Paris.">
+            <!--<ul>
                 <li><a href="#">Inscription</a></li>
                 <li><a href="connexion.php">Connexion</a></li>
-            </ul>
+            </ul>-->
         </section>
-    
+
 <?php include("includes/footer.php"); ?>
