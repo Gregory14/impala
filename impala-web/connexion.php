@@ -15,8 +15,8 @@ if(isset($_POST['login'])){
     {
         $username=htmlspecialchars($_POST['username']);
         $password=htmlspecialchars($_POST['password']);
-        $password=sha1($password);
-        echo $password;
+        //$password=sha1($password);
+        $password = hash("sha256",$password);
 
         $reponse=$mysql->prepare('SELECT * FROM users WHERE username = :username AND password = :password');
         $reponse->execute(array(":username"=>$username,":password"=>$password));      

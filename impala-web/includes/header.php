@@ -1,6 +1,7 @@
 <?php
-
 session_start();
+
+include('traitement/deconnexion.php');
 
 ?>
 
@@ -54,7 +55,10 @@ session_start();
             ?>
                 <ul>
                     <li><a href="#">Mon espace</a></li>
-                    <li><a href="deconnexion.php">Me déconnecter</a></li>
+                    <!--<li><a href="deconnexion.php">Me déconnecter</a></li>-->
+                    <form name="formDeconnect" action="index.php" method="post">
+                        <input type="submit" name="deconnect" value="Déconnexion">
+                     </form>
                 </ul>
             <?php
             }else{
