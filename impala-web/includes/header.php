@@ -11,8 +11,6 @@
         <link rel="stylesheet" href="stylesheets/screen.css">
         <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
         <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
-        <script src="js/jquery-1.10.2.min.js"></script>
-        <script src="js/modernizr.custom.22603.js"></script>
     </head>
     <body role="document">
 
