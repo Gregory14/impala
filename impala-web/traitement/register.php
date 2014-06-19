@@ -55,8 +55,10 @@ if(isset($_POST['register'])){
                 $message='Email déjà existant';
             }
             else{
-                //on crypte le mot de passe avant qu'il soit inséré en BDD
-                $password=sha1($password);
+                //$password=sha1($password);
+
+                $password = hash("sha256",$password); 
+
 
                 $req=$mysql->prepare('INSERT INTO users (username, email, password) VALUES(:username, :email, :password)');
                 $add=$req->execute(array(

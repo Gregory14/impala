@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+include('traitement/deconnexion.php');
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 is-ie-7" lang="fr"> <![endif]-->
@@ -39,7 +46,29 @@
                     </li>
                 </ul>
             </nav>
-            <a href="inscription.php">Inscription</a>
+            
+            <div id="login">
+            <?php 
+                if(isset($_SESSION['connect'])){
+            ?>
+                <ul>
+                    <li><a href="#">Mon espace</a></li>
+                    <!--<li><a href="deconnexion.php">Me déconnecter</a></li>-->
+                    <form name="formDeconnect" action="index.php" method="post">
+                        <input type="submit" name="deconnect" value="Déconnexion">
+                     </form>
+                </ul>
+            <?php
+            }else{
+            ?>
+                <ul>
+                    <li><a href="inscription.php">Inscription</a></li>
+                    <li><a href="connexion.php">Connexion</a></li>
+                </ul>
+            <?php
+            }
+            ?>
+            </div>
         </header>
         <section>
-    <div id="content">
+            <div id="content">
