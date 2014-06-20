@@ -1,7 +1,7 @@
 <?php    
-  header('Status: 301 Moved Permanently', false, 301);      
-  header('Location: waiting.php');      
-  exit();      
+  // header('Status: 301 Moved Permanently', false, 301);      
+  // header('Location: waiting.php');      
+  // exit();      
 ?>
 <?php
 session_start();
