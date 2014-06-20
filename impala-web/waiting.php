@@ -1,4 +1,7 @@
-<?php session_start() ?>
+<?php session_start(); 
+include_once("traitement/analyticstracking.php");
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 is-ie-7" lang="fr"> <![endif]-->
@@ -14,42 +17,39 @@
         <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
     </head>
     <body role="document">
-
-        <header id="header" role="banner">
-          
-        </header>
-        <section>
-    <div id="content">
-		<div id="waiting">
-    	
+    <div id="content">    
+    	<section id="waiting">
     	<header>
-            <h1><img src="img/impala-logo-200-136.png" alt="Atmosphère"/></h1>
-        </header>
-        <section id="content">
-        	<p class="size25" >Soyez les premiers à assister au lancement d'Atmosphère !</p>
-        	<form method="post" action="traitement/newsletter.php">
-        		<ul>
-        			<li><input type="nom" name="nom" placeholder="Votre nom" value="<?php if (isset($_POST['nom'])) {echo htmlspecialchars($_POST['nom']);} ?>"/></li>
-        			<li><input type="prenom" name="prenom" placeholder="Votre prénom" value="<?php if (isset($_POST['prenom'])) {echo htmlspecialchars($_POST['prenom']);} ?>"/></li>	
-        			<li><input type="email" name="email" placeholder="Votre adresse mail" value="<?php if (isset($_POST['email'])) {echo htmlspecialchars($_POST['email']);} ?>"/></li>
-        			<li><input type="submit" name="inscription" value="Inscription" /></li>
-        		</ul>
-        		<?php
-			    if(isset($_GET['reponse']))
-			    {
-			        echo '<p class="red">'.$_GET['reponse'].'</p>';
-			    }
-			    ?>
-        	</form>
-        	<p class="size20">Vous souhaitez en savoir davantage ?</p>
-        	<p class="size16">Retrouvez-nous sur les réseaux sociaux</p>
-       
-        	<ul id="reseaux">
-        		<li class="facebook"><a href="https://www.facebook.com/pages/Made-In-Home/594813007248279" title="facebook" target="_blank">Facebook</a></li>
-        		<li class="twitter"><a href="https://twitter.com/MadeInHome_3D" title="twitter" target="_blank">Twitter</a></li>
-        		<li class="youtube"><a href="http://www.youtube.com/channel/UC1yUBkSL_ZSok7ieIF43IZg" title="Youtube" target="_blank">Youtube</a></li>
-        	</ul>
-        	<div class="clear"></div>
+          <h1><img src="img/logo-atmosphere-loading-page.png" alt="Atmosphère Parigot"/></h1>
+        </header> 	
+	        <div>
+	        	<h2>Loupe pas le coche</h2>
+	        	<p>En 30 secondes tu gagnes une invitation pour le premier événement de ton nouveau site référent pour organiser tes sorties dans Paris et c’est gratuit !</p>
+	        	<form method="post" action="traitement/newsletter.php">
+	        		<ul>
+	        			<li><label>Nom :</label><input type="nom" name="nom" placeholder="Votre nom" value="<?php if (isset($_POST['nom'])) {echo htmlspecialchars($_POST['nom']);} ?>"/></li>
+	        			<li><label>Prénom :</label><input type="prenom" name="prenom" placeholder="Votre prénom" value="<?php if (isset($_POST['prenom'])) {echo htmlspecialchars($_POST['prenom']);} ?>"/></li>	
+	        			<li><label>Email :</label><input type="email" name="email" placeholder="Votre adresse mail" value="<?php if (isset($_POST['email'])) {echo htmlspecialchars($_POST['email']);} ?>"/></li>
+	        			<li><input type="submit" name="inscription" value="Inscription" /></li>
+	        		</ul>
+	        		<?php
+				    if(isset($_GET['reponse']))
+				    {
+				        echo '<p class="red">'.$_GET['reponse'].'</p>';
+				    }
+				    ?>
+				    <p>En créant un compte, j’accepte les <a href="#">Conditions d’utilisation</a>.</p>
+	        	</form>
+
+	        	<ul id="reseaux">
+	        		<li><a class="facebook" href="https://www.facebook.com/pages/Atmosph%C3%A8re-Parigot/582962811819213" title="facebook" target="_blank">Facebook</a></li>
+	        		<li><a class="twitter" href="https://twitter.com/MadeInHome_3D" title="twitter" target="_blank">Twitter</a></li>
+	        		<li><a class="youtube" href="https://www.youtube.com/channel/UCA8WegVpd_zDld5kJna-HNA" title="Youtube" target="_blank">Youtube</a></li>
+	        		<li><a class="pinterest" href="http://fr.pinterest.com/atmospherep/" title="Pinterest" target="_blank">Pinterest</a></li>
+	        		<li><a class="google" href="https://www.facebook.com/pages/Made-In-Home/594813007248279" title="Google +" target="_blank">Google+</a></li>
+	        	</ul>
+	        	<div class="clear"></div>
+	        </div>
 <!-- START Footer -->
 <?php include("includes/footer.php"); ?>
 <!-- END footer -->

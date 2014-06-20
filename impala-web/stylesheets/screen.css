@@ -67,40 +67,196 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
+.clear {
+  clear: both;
+}
+
+/* line 19, ../sass/screen.scss */
 body {
   font: 100% Helvetica, sans-serif;
   color: #333333;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 header ul.wrapper {
   width: 100%;
 }
-/* line 21, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 header ul.wrapper li {
   float: left;
   width: 12.5%;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 .place img {
   max-width: 300px;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 p {
   color: black;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: black;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 #map {
   height: 400px;
   width: 100%;
+}
+
+/*** Page Waiting ***/
+/* line 54, ../sass/screen.scss */
+#content {
+  background-image: url(../img/fond-loading-atmosphere.jpg);
+}
+
+/* line 58, ../sass/screen.scss */
+#waiting {
+  width: 480px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 64, ../sass/screen.scss */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* line 69, ../sass/screen.scss */
+#waiting div {
+  margin: 0 20px 0;
+}
+
+/* line 73, ../sass/screen.scss */
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px 0 15px;
+}
+
+/* line 79, ../sass/screen.scss */
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* line 84, ../sass/screen.scss */
+form p {
+  font-size: 12px;
+}
+
+/* line 88, ../sass/screen.scss */
+form a {
+  color: #dd6b70;
+}
+
+/* line 92, ../sass/screen.scss */
+form ul li input, form ul li label {
+  display: block;
+}
+
+/* line 96, ../sass/screen.scss */
+form ul li {
+  margin-bottom: 15px;
+}
+
+/* line 100, ../sass/screen.scss */
+form ul li:last-child {
+  margin-top: 30px;
+}
+
+/* line 104, ../sass/screen.scss */
+form ul li label {
+  font-size: 1.6em;
+}
+
+/* line 107, ../sass/screen.scss */
+#waiting input {
+  width: 100%;
+  border: 1px #000 solid;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 1.4em;
+}
+
+/* line 115, ../sass/screen.scss */
+#waiting input[type="submit"] {
+  background-color: #dd6b70;
+  border: 1px solid #dd6b70;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.6em;
+  cursor: pointer;
+}
+
+/* line 125, ../sass/screen.scss */
+#waiting input[type="submit"]:hover {
+  background-color: #ec6570;
+  border: 1px solid #ec6570;
+}
+
+/* line 130, ../sass/screen.scss */
+#reseaux li {
+  float: left;
+  /*$reseauxwidht : 100%/5;
+  width: $reseauxwidht;*/
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'reseaux';
+  src: url("../font/reseaux.eot");
+  src: url("../font/reseaux.eot#iefix") format("embbed-opentype"), url("../font/reseaux.woff") format("woff"), url("../font/reseaux.ttf") format("truetype"), url("../font/reseaux.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 148, ../sass/screen.scss */
+#reseaux ul li a {
+  display: block;
+  width: 30%;
+  height: 30px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+/* line 156, ../sass/screen.scss */
+#reseaux a:before {
+  font-family: 'reseaux';
+  font-size: 2em;
+  /*display: block;*/
+  margin: 5px;
+}
+
+/* line 163, ../sass/screen.scss */
+a.facebook:before {
+  content: "\e800";
+}
+
+/* line 167, ../sass/screen.scss */
+a.twitter:before {
+  content: "\e804";
+}
+
+/* line 171, ../sass/screen.scss */
+a.pinterest:before {
+  content: "\e801";
+}
+
+/* line 175, ../sass/screen.scss */
+a.youtube:before {
+  content: "\e802";
+}
+
+/* line 179, ../sass/screen.scss */
+a.google:before {
+  content: "\e803";
 }

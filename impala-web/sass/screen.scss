@@ -5,10 +5,16 @@
 
 @import "compass/reset";
 
+
+
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $rouge: red;
 $noir: #000;
+
+.clear {
+	clear:both;
+}
 
 body {
   font: 100% $font-stack;
@@ -42,3 +48,143 @@ a{
 	height: 400px;
 	width: 100%;
 }
+
+/*** Page Waiting ***/
+
+#content {
+	background-image: url(../img/fond-loading-atmosphere.jpg);
+}
+
+#waiting {
+	width: 480px;
+	margin: auto;
+	background-color: rgba(255,255,255,0.6);
+}
+
+header {
+	text-align: center;
+	padding: 20px;
+}
+
+#waiting div {
+	margin: 0 20px 0;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 10px 0 15px;
+}
+
+p {
+	font-size: 1em;
+	margin-bottom: 15px; 
+}
+
+form p{
+	font-size: 12px;
+}
+
+form a{
+	color: #dd6b70;
+}
+
+form ul li input, form ul li label {
+	display: block;
+}
+
+form ul li {
+	margin-bottom: 15px;
+}
+
+form ul li:last-child{
+	margin-top: 30px;
+}
+
+form ul li label {
+	font-size: 1.6em;
+}
+#waiting input{
+	width: 100%;
+	border: 1px #000 solid; 
+	border-radius: 3px;
+	padding: 5px;
+	font-size: 1.4em;
+}
+
+#waiting input[type="submit"] {
+	background-color: #dd6b70;
+	border: 1px solid #dd6b70;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.6em;
+	cursor: pointer;
+}
+
+#waiting input[type="submit"]:hover {
+	background-color: #ec6570;
+	border: 1px solid #ec6570;
+}
+
+#reseaux li{
+	float: left;
+	/*$reseauxwidht : 100%/5;
+	width: $reseauxwidht;*/
+	text-align: center;
+}
+
+@font-face {
+	font-family: 'reseaux';
+	src: url('../font/reseaux.eot');
+	src: url('../font/reseaux.eot#iefix') format('embbed-opentype'),
+		url('../font/reseaux.woff') format('woff'),
+		url('../font/reseaux.ttf') format('truetype'),
+		url('../font/reseaux.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#reseaux ul li a{
+	display: block;
+	width: 30%;
+	height: 30px;
+	overflow: hidden;
+	font-size: 0;
+}
+
+#reseaux a:before {
+	font-family: 'reseaux';
+	font-size: 2em;
+	/*display: block;*/
+	margin: 5px;
+}
+
+a.facebook:before {
+	content: "\e800";
+}
+
+a.twitter:before {
+	content: "\e804";
+}
+
+a.pinterest:before {
+	content: "\e801";
+}
+
+a.youtube:before {
+	content: "\e802";
+}
+
+a.google:before {
+	content: "\e803";
+}
+
+
+
+
+
+
+
+
+
