@@ -11,9 +11,21 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $rouge: red;
 $noir: #000;
+$pinklogo: #ec6570;
 
 .clear {
 	clear:both;
+}
+
+@font-face {
+	font-family: 'reseaux';
+	src: url('../font/reseaux/reseaux.eot');
+	src: url('../font/reseaux/reseaux.eot#iefix') format('embbed-opentype'),
+		url('../font/reseaux/reseaux.woff') format('woff'),
+		url('../font/reseaux/reseaux.ttf') format('truetype'),
+		url('../font/reseaux/reseaux.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -34,85 +46,64 @@ header {
 .place img {
 	max-width: 300px;
 }
-
-p {
-	color:$noir;
-}
-
-a{
-	text-decoration:none;
-	color:$noir;
-}
-
 #map {
 	height: 400px;
 	width: 100%;
 }
 
 /*** Page Waiting ***/
-
-#content {
-	background-image: url(../img/fond-loading-atmosphere.jpg);
-}
-
 #waiting {
+	background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
+}
+#waiting > section{
 	width: 480px;
-	margin: auto;
+	margin: 0 auto;
+	padding: 5% 1% 1%;
 	background-color: rgba(255,255,255,0.6);
 }
-
-header {
+#waiting header{
+	margin-bottom: 35px;
 	text-align: center;
-	padding: 20px;
 }
-
-#waiting div {
-	margin: 0 20px 0;
+footer{
+	margin: 10% 0 0;
+	text-align: center;
+	font-size: 0.9em;	
 }
-
-h2 {
+#waiting h1{
+	font-size: 0;
+}
+#waiting h2{
 	font-size: 2em;
 	font-weight: bold;
 	margin: 10px 0 15px;
 }
-
-p {
+#waiting p{
 	font-size: 1em;
 	margin-bottom: 15px; 
 }
-
-form p{
-	font-size: 12px;
-}
-
-form a{
+#waiting p a{
 	color: #dd6b70;
 }
-
-form ul li input, form ul li label {
+#waiting p a:hover{
+	color: #dd6b70;
+	transition: all 0.2s ease-in-out;
+}
+#waiting label{
 	display: block;
-}
-
-form ul li {
-	margin-bottom: 15px;
-}
-
-form ul li:last-child{
-	margin-top: 30px;
-}
-
-form ul li label {
-	font-size: 1.6em;
+	margin: 5% 0 1%;
+	font-size: 1.1em;
 }
 #waiting input{
+	display: block;
 	width: 100%;
+	padding: 2%;
 	border: 1px #000 solid; 
 	border-radius: 3px;
-	padding: 5px;
-	font-size: 1.4em;
+	font-size: 1em;
 }
-
-#waiting input[type="submit"] {
+#waiting input[type="submit"]{
+	margin: 8% 0 4%;
 	background-color: #dd6b70;
 	border: 1px solid #dd6b70;
 	text-align: center;
@@ -121,64 +112,37 @@ form ul li label {
 	font-size: 1.6em;
 	cursor: pointer;
 }
-
-#waiting input[type="submit"]:hover {
-	background-color: #ec6570;
-	border: 1px solid #ec6570;
+#waiting input[type="submit"]:hover{
+	background-color: #dd6b70;
+	border: 1px solid #dd6b70;
+	transition: all 0.2s ease-in-out;
 }
-
+#reseaux{
+	width: 46%;
+	margin: 25px auto;
+}	
 #reseaux li{
-	float: left;
-	/*$reseauxwidht : 100%/5;
-	width: $reseauxwidht;*/
-	text-align: center;
+	display: inline-block;
+	margin: 0 5%;
 }
-
-@font-face {
-	font-family: 'reseaux';
-	src: url('../font/reseaux.eot');
-	src: url('../font/reseaux.eot#iefix') format('embbed-opentype'),
-		url('../font/reseaux.woff') format('woff'),
-		url('../font/reseaux.ttf') format('truetype'),
-		url('../font/reseaux.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-#reseaux ul li a{
-	display: block;
-	width: 30%;
-	height: 30px;
-	overflow: hidden;
+#reseaux a{
+	display: block;	
 	font-size: 0;
+	color: #dd6b70;
+	text-decoration: none;
 }
-
+#reseaux a:hover{
+	color: $pinklogo;
+}
 #reseaux a:before {
 	font-family: 'reseaux';
-	font-size: 2em;
-	/*display: block;*/
-	margin: 5px;
+	font-size: 30px;
 }
+.facebook:before { content: "\e800"; }
+.google:before { content: "\e801"; }
+.pinterest:before {	content: "\e802"; }
+.twitter:before { content: "\e803"; }
 
-a.facebook:before {
-	content: "\e800";
-}
-
-a.twitter:before {
-	content: "\e804";
-}
-
-a.pinterest:before {
-	content: "\e801";
-}
-
-a.youtube:before {
-	content: "\e802";
-}
-
-a.google:before {
-	content: "\e803";
-}
 
 
 
