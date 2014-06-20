@@ -1,8 +1,12 @@
+<?php    
+  header('Status: 301 Moved Permanently', false, 301);      
+  header('Location: waiting.php');      
+  exit();      
+?>
 <?php
 session_start();
-
+include_once("traitement/analyticstracking.php");
 include('traitement/deconnexion.php');
-
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +20,7 @@ include('traitement/deconnexion.php');
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="stylesheets/screen.css">
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
         <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
     </head>
@@ -69,5 +74,5 @@ include('traitement/deconnexion.php');
             ?>
             </div>
         </header>
-        <section>
-            <div id="content">
+        <div id="content">
+            <section>

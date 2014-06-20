@@ -1,4 +1,3 @@
-<!-- START header -->
 <?php include("includes/header.php"); ?>
 <!-- END header -->
 
