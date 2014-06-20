@@ -23,11 +23,12 @@
 			$insert=$req->execute(array(':nom'=>$nom, ':prenom'=>$prenom, ':email'=>$email));
 			if($insert)
 			{
-				$Name = $nom; //senders name 
-				$emetteur = $email; //senders e-mail adress 
-				$recipient = "gregory.joly.14@gmail.com"; //recipient 
-				$mail_body = "Merci de votre inscription à l\'event"; //mail body 
-				$subject = "Inscription lancement Atmosphere Parigot"; //subject 
+				//$signature = "<p><img src='img/signature-mail.png' alt='Atmosphère Parigot'/></p>";
+				$Name = $prenom; //senders name 
+				$emetteur = "gregory.joly.14@gmail.com"; //senders e-mail adress 
+				$recipient = $email; //recipient 
+				$mail_body = "Bonjour ". $Name .",\r\n \r\nMerci de votre inscription au site Atmosphere Parigot.\r\nVous recevrez prochainement les informations sur nos évènements.\r\n\r\nCordialement.\r\nL'équipe Atmosphère Parigot"; //mail body 
+				$subject = "Inscription au lancement Atmosphere Parigot"; //subject 
 				$header = "From: ". $Name . " <" . $emetteur . ">\r\n"; //optional headerfields 
 				
 				mail($recipient, $subject, $mail_body, $header); //mail command :) 
