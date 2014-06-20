@@ -56,8 +56,7 @@ include('traitement/deconnexion.php');
                 if(isset($_SESSION['connect'])){
             ?>
                 <ul>
-                    <li><a href="#">Mon espace</a></li>
-                    <!--<li><a href="deconnexion.php">Me déconnecter</a></li>-->
+                    <li><a href="espace-user.php">Mon espace</a></li>
                     <form name="formDeconnect" action="index.php" method="post">
                         <input type="submit" name="deconnect" value="Déconnexion">
                      </form>
