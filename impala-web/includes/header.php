@@ -1,9 +1,8 @@
 <?php    
-  header('Status: 301 Moved Permanently', false, 301);      
-  header('Location: waiting.php');      
-  exit();      
-?>
-<?php
+  // header('Status: 301 Moved Permanently', false, 301);      
+  // header('Location: waiting.php');      
+  // exit();
+  
 session_start();
 include_once("traitement/analyticstracking.php");
 include('traitement/deconnexion.php');
