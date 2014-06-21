@@ -7,7 +7,7 @@
 
 
 
-$font-stack:    Helvetica, sans-serif;
+$font-stack:    dinpro ,Helvetica, sans-serif;
 $primary-color: #333;
 $rouge: red;
 $noir: #000;
@@ -24,6 +24,17 @@ $pinklogo: #ec6570;
 		url('../font/reseaux/reseaux.woff') format('woff'),
 		url('../font/reseaux/reseaux.ttf') format('truetype'),
 		url('../font/reseaux/reseaux.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'dinpro';
+	src: url('../font/dinpro/dinpro-medium-webfont.eot');
+	src: url('../font/dinpro/dinpro-medium-webfont.eot#iefix') format('embbed-opentype'),
+		url('../font/dinpro/dinpro-medium-webfont.woff') format('woff'),
+		url('../font/dinpro/dinpro-medium-webfont.ttf') format('truetype'),
+		url('../font/dinpro/dinpro-medium-webfont.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -56,7 +67,7 @@ header {
 	background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
 }
 #waiting > section{
-	width: 480px;
+	max-width: 480px;
 	margin: 0 auto;
 	padding: 5% 1% 1%;
 	background-color: rgba(255,255,255,0.6);
@@ -77,7 +88,16 @@ footer{
 	font-size: 2em;
 	font-weight: bold;
 	margin: 10px 0 15px;
+	text-align: center;
+	font-family: 'dinpro';
 }
+
+#waiting h3{
+	font-size: 1em;
+	text-align: center;
+	font-family: 'dinpro';
+}
+
 #waiting p{
 	font-size: 1em;
 	margin-bottom: 15px; 
@@ -92,7 +112,7 @@ footer{
 #waiting label{
 	display: block;
 	margin: 5% 0 1%;
-	font-size: 1.1em;
+	font-size: 1em;
 }
 #waiting input{
 	display: block;
@@ -102,12 +122,15 @@ footer{
 	border-radius: 3px;
 	font-size: 1em;
 }
+#waiting input:focus{
+	outline: none;
+	border: 1px #dd6b70 solid;
+}
 #waiting input[type="submit"]{
 	margin: 8% 0 4%;
 	background-color: #dd6b70;
 	border: 1px solid #dd6b70;
 	text-align: center;
-	font-weight: bold;
 	color: #fff;
 	font-size: 1.6em;
 	cursor: pointer;

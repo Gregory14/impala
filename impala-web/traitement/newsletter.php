@@ -5,11 +5,9 @@
 	if(isset($_POST['inscription'])){
 		// Protection de la variable
 		$email=htmlspecialchars($_POST['email']);
-		$nom=htmlspecialchars($_POST['nom']);
-		$prenom=htmlspecialchars($_POST['prenom']);
 		
 		// Verification des champs
-		if (strlen($email)<8 || strlen($nom)<2 || strlen($prenom)<2)
+		if (strlen($email)<8)
 	{
 		// 3 - message d'erreur
 		// $message="Veuillez remplir l'email correctement.";
@@ -19,23 +17,39 @@
 		{
 			// 4 - inclure config.php pour connexion bdd
 			include('config.php');
-			$req=$mysql->prepare('INSERT INTO waiting (nom, prenom, email) VALUES (:nom, :prenom, :email)');
-			$insert=$req->execute(array(':nom'=>$nom, ':prenom'=>$prenom, ':email'=>$email));
+			$req=$mysql->prepare('INSERT INTO waiting (email) VALUES (:email)');
+			$insert=$req->execute(array(':email'=>$email));
 			if($insert)
 			{
-				//$signature = "<p><img src='img/signature-mail.png' alt='Atmosphère Parigot'/></p>";
-				$Name = $prenom; //senders name 
-				$emetteur = "gregory.joly.14@gmail.com"; //senders e-mail adress 
+				$emetteur = "atmosphere.parigot@gmail.com"; //senders e-mail adress 
 				$recipient = $email; //recipient 
-				$mail_body = "Bonjour ". $Name .",\r\n \r\nMerci de votre inscription au site Atmosphere Parigot.\r\nVous recevrez prochainement les informations sur nos évènements.\r\n\r\nCordialement.\r\nL'équipe Atmosphère Parigot"; //mail body 
+				$mail_body = "<table width='500' height='300' border='0' align='left' cellpadding='0' cellspacing='0' bgcolor='#ffffff'>
+					<tr>
+						<td>Bonjour,</td>
+					</tr>
+					<tr>
+						<td>Merci de votre inscription au site Atmosphere Parigot.</td>
+					</tr>
+					<tr>
+						<td>Vous recevrez prochainement les informations sur nos évènements.</td>
+					</tr>
+					<tr>
+						<td>Merci bien.</td>
+					</tr>
+					<tr>
+						<td><img width='300' height='100' src='http://www.atmosphere-parigot.fr/img/signature-mail.png' alt='Atmosphère Parigot'/></td>
+					</tr>
+				</table>"; //mail body 
 				$subject = "Inscription au lancement Atmosphere Parigot"; //subject 
-				$header = "From: ". $Name . " <" . $emetteur . ">\r\n"; //optional headerfields 
+				$header = "From: Asmosphere Parigot <" . $emetteur . ">\n"; //optional headerfields
+				$header .= 'MIME-Version: 1.0' . "\r\n";
+				$header .= "Content-Type : text/html; charset=\'iso-8859-1\'"; 
 				
 				mail($recipient, $subject, $mail_body, $header); //mail command :) 
 
 				// si insert ok : $message = 'bienvenue'
 				//$message = "Votre inscription a été effectuée.";
-				header('location:../waiting.php?reponse=Votre inscription a été effectuée.');
+				header("location:../waiting.php?reponse=Bien mon loulou tu es inscris !");
 			}
 			else
 			{
