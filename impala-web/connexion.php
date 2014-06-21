@@ -8,8 +8,11 @@ if(isset($_POST['login'])){
         exit();
     }
 
-    if(strlen($_POST['username']) < 4 or strlen($_POST['password']) < 4){
-        $message = "Username et/ou mot de passe invalide";
+    if(!isset($_POST['username']) || strlen($_POST['username']) < 4 ){
+        $message = "Username invalide";
+    }
+    else if(!isset($_POST['password']) || strlen($_POST['password']) < 4){
+        $message="Mot de passe invalide";
     }
     else
     {
@@ -20,28 +23,28 @@ if(isset($_POST['login'])){
 
         $reponse=$mysql->prepare('SELECT * FROM users WHERE username = :username AND password = :password');
         $reponse->execute(array(":username"=>$username,":password"=>$password));      
-    }
 
-    if($reponse->rowCount()==1){
-        session_start();
-        $donnees=$reponse->fetch();     
+        if($reponse->rowCount()==1){
+            session_start();
+            $donnees=$reponse->fetch();     
 
-        /*$_SESSION['id']=$donnees['id'];
-        $_SESSION['username']=$donnees['username'];
-        $_SESSION['email']=$donnees['email'];
-        $_SESSION['password']=$donnees['password'];*/
-        
-        foreach($donnees as $key => $value){
-            $_SESSION[$key] = $value;   
+            /*$_SESSION['id']=$donnees['id'];
+            $_SESSION['username']=$donnees['username'];
+            $_SESSION['email']=$donnees['email'];
+            $_SESSION['password']=$donnees['password'];*/
+            
+            foreach($donnees as $key => $value){
+                $_SESSION[$key] = $value;   
+            }
+
+            $_SESSION['connect']= true;
+            
+            //print_r($_SESSION);
+            header('location:index.php');
         }
-
-        $_SESSION['connect']= true;
-        
-        //print_r($_SESSION);
-        header('location:index.php');
-    }
-    else{
-        $message = "Username et/ou mot de passe incorrect";
+        else{
+            $message = "Username et/ou mot de passe incorrect";
+        }
     }
 }
 ?>
