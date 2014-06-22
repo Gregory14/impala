@@ -70,50 +70,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* -----------------------
 == VARIABLES
 ----------------------- */
-/*
-/* ----------------------------------------
-== Small Reset
-------------------------------------------- 
-html {
-    height: 100%;
-    font-size: 62.5%;
-}
-body {
-    margin: 0;
-    min-height: 100%;
-    font: 1.4em "Gudea",Helvetica,Arial,sans-serif;
-    color: #666;
-    background: url('../images/background.png') repeat-y top center #fafafa;
-}
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-video,
-img,
-object {
-    height: auto;
-    max-width: 100%;
-}
-object,
-embed {
-    height: 100%;
-}
-p{
-    line-height: 1.5em;
-}*/
 /* ----------------------------------------
 == Author
 ------------------------------------------- */
-/* line 59, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 body {
-  background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
-  background-size: cover;
-  font: 100% dinpro, Helvetica, sans-serif;
-  color: #333333;
+  /*background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
+  background-size: cover;*/
+  font: 100% "dinpro", Helvetica, sans-serif;
+  color: #3f3f3f;
+}
+
+/* line 27, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #3f3f3f;
 }
 
 /* ----------------------
@@ -136,77 +107,306 @@ body {
 }
 
 /* ----------------------
-== COMMON CLASSES
+== COMMON CLASSES + TITLES
 ---------------------- */
-/* line 95, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .clear {
   clear: both;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* line 69, ../sass/screen.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 72, ../sass/screen.scss */
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+/* line 76, ../sass/screen.scss */
+.button {
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+  padding: 1.5%;
+  border-radius: 3px;
+  background-color: #eb837b;
+  font-size: 1em;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+/* line 86, ../sass/screen.scss */
+.button:hover {
+  background-color: #e99385;
+  text-decoration: none;
+}
+/* line 90, ../sass/screen.scss */
+.button:visited {
+  color: #fff;
+}
+
+/* line 94, ../sass/screen.scss */
+#main {
+  padding: 0 1%;
+}
+
+/* line 97, ../sass/screen.scss */
+.facebook:before {
+  content: "\e800";
+}
+
+/* line 98, ../sass/screen.scss */
+.googleplus:before {
+  content: "\e802";
+}
+
+/* line 99, ../sass/screen.scss */
+.pinterest:before {
+  content: "\e804";
+}
+
+/* line 100, ../sass/screen.scss */
+.twitter:before {
+  content: "\e802";
+}
+
+/* line 101, ../sass/screen.scss */
+.youtube:before {
+  content: "\e803";
+}
+
 /* ----------------------
 == HEADER
 ---------------------- */
-/* line 108, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
+header {
+  height: 65px;
+  padding: 1%;
+}
+/* line 110, ../sass/screen.scss */
 header ul.container {
   width: 100%;
 }
-/* line 110, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 header ul.container li {
   float: left;
   width: 12.5%;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
+#logo {
+  width: 20%;
+}
+
+/* line 121, ../sass/screen.scss */
+#main-menu {
+  width: 40%;
+}
+/* line 124, ../sass/screen.scss */
+#main-menu a:hover {
+  color: #eb837b;
+  text-decoration: underline;
+}
+
+/* line 130, ../sass/screen.scss */
+#login {
+  width: 20%;
+}
+
+/* line 133, ../sass/screen.scss */
+#mytickets {
+  width: 10%;
+}
+
+/* line 136, ../sass/screen.scss */
+#search {
+  width: 8%;
+}
+
+/* ----------------------
+== FOOTER
+---------------------- */
+/* line 145, ../sass/screen.scss */
+footer {
+  padding: 1%;
+}
+/* line 147, ../sass/screen.scss */
+footer small {
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+/* line 152, ../sass/screen.scss */
+#follow-us {
+  width: 25%;
+}
+/* line 154, ../sass/screen.scss */
+#follow-us a {
+  font-size: 0;
+}
+/* line 156, ../sass/screen.scss */
+#follow-us a:before {
+  font-family: 'reseaux';
+  font-size: 24px;
+}
+
+/* line 163, ../sass/screen.scss */
+#contact-us {
+  width: 33%;
+}
+
+/* line 166, ../sass/screen.scss */
+small {
+  width: 20%;
+}
+
+/* ----------------------
+== PAGE HOME
+---------------------- */
+/* line 175, ../sass/screen.scss */
+#steps {
+  margin: 45px 0;
+}
+/* line 177, ../sass/screen.scss */
+#steps li {
+  width: 20%;
+  margin-right: 4%;
+}
+/* line 181, ../sass/screen.scss */
+#steps img {
+  display: block;
+  width: 100%;
+}
+/* line 185, ../sass/screen.scss */
+#steps p {
+  text-align: center;
+}
+/* line 187, ../sass/screen.scss */
+#steps p span {
+  display: block;
+}
+/* line 191, ../sass/screen.scss */
+#steps a.button {
+  margin-top: 35px;
+}
+
+/* line 195, ../sass/screen.scss */
+.advantage {
+  width: 35%;
+  margin-bottom: 40px;
+}
+/* line 198, ../sass/screen.scss */
+.advantage h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+/* line 203, ../sass/screen.scss */
+.advantage:nth-child(2) {
+  margin-left: 65%;
+}
+
+/* line 209, ../sass/screen.scss */
 .place img {
   max-width: 300px;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #map {
   height: 400px;
   width: 100%;
 }
 
-/* line 125, ../sass/screen.scss */
-body {
-  background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
-  background-size: cover;
+/* ----------------------------------------
+== Helper
+------------------------------------------- */
+/* line 224, ../sass/screen.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
 }
 
-/*** Page Waiting ***/
-/* line 131, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 231, ../sass/screen.scss */
+.lt-ie8 .clearfix {
+  zoom: 1;
+}
+
+/* line 234, ../sass/screen.scss */
+.list-inline {
+  padding-left: 0;
+  /*font-size: 1px;*/
+  letter-spacing: -1px;
+  list-style: none;
+}
+
+/* line 240, ../sass/screen.scss */
+.list-inline > li {
+  display: inline-block;
+  /*font-size: 14em;*/
+  letter-spacing: normal;
+  vertical-align: middle;
+}
+
+/* line 246, ../sass/screen.scss */
+.lt-ie8 .list-inline > li {
+  display: inline;
+  zoom: 1;
+}
+
+/* line 250, ../sass/screen.scss */
+.list-inline > li {
+  margin-right: 5px;
+}
+
+/* line 253, ../sass/screen.scss */
+.list-inline > li:last-child {
+  margin-right: 0;
+}
+
+/* ----------------------------------------
+== Waiting page
+------------------------------------------- */
+/* line 261, ../sass/screen.scss */
 #waiting > section {
   max-width: 480px;
   margin: 0 auto;
   padding: 5% 1% 1%;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 #waiting header {
   margin-bottom: 35px;
   text-align: center;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 footer {
   margin: 10% 0 0;
   text-align: center;
   font-size: 0.9em;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 #waiting h1 {
   font-size: 0;
 }
 
-/* line 149, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 #waiting h2 {
   font-size: 2em;
   font-weight: bold;
@@ -215,38 +415,38 @@ footer {
   font-family: 'dinpro';
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 #waiting h3 {
   font-size: 1em;
   text-align: center;
   font-family: 'dinpro';
 }
 
-/* line 163, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 #waiting p {
   font-size: 1em;
   margin-bottom: 15px;
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #waiting p a {
   color: #dd6b70;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 300, ../sass/screen.scss */
 #waiting p a:hover {
   color: #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 174, ../sass/screen.scss */
+/* line 304, ../sass/screen.scss */
 #waiting label {
   display: block;
   margin: 5% 0 1%;
   font-size: 1em;
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 #waiting input {
   display: block;
   width: 100%;
@@ -256,13 +456,13 @@ footer {
   font-size: 1em;
 }
 
-/* line 187, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #waiting input:focus {
   outline: none;
   border: 1px #dd6b70 solid;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 #waiting input[type="submit"] {
   margin: 8% 0 4%;
   background-color: #dd6b70;
@@ -273,26 +473,26 @@ footer {
   cursor: pointer;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #waiting input[type="submit"]:hover {
   background-color: #dd6b70;
   border: 1px solid #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 205, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #reseaux {
   width: 46%;
   margin: 25px auto;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 #reseaux li {
   display: inline-block;
   margin: 0 5%;
 }
 
-/* line 213, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #reseaux a {
   display: block;
   font-size: 0;
@@ -300,33 +500,13 @@ footer {
   text-decoration: none;
 }
 
-/* line 219, ../sass/screen.scss */
+/* line 349, ../sass/screen.scss */
 #reseaux a:hover {
   color: #ec6570;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 #reseaux a:before {
   font-family: 'reseaux';
   font-size: 30px;
-}
-
-/* line 226, ../sass/screen.scss */
-.facebook:before {
-  content: "\e800";
-}
-
-/* line 227, ../sass/screen.scss */
-.google:before {
-  content: "\e801";
-}
-
-/* line 228, ../sass/screen.scss */
-.pinterest:before {
-  content: "\e802";
-}
-
-/* line 229, ../sass/screen.scss */
-.twitter:before {
-  content: "\e803";
 }

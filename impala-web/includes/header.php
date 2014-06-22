@@ -49,12 +49,12 @@ include("traitement/deconnexion.php");
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body role="document">
-        <header role="banner container">
-            <div id="logo">
+        <header role="banner" class="container">
+            <div id="logo" class="inline-block">
                 <h1><a href="index.php" rel="home">Atmosphère-Parigot</a></h1>
             </div>
-            <nav id="main-menu" role="navigation">
-                <ul>
+            <nav id="main-menu" role="navigation" class="inline-block">
+                <ul class="list-inline">
                     <li><a href="index.php" rel="home" class="is-active">Home</a>
                     </li><li><a href="evenements.php" title="Tous nos événements">Évènements</a>
                     </li><li><a href="patelins.php" title="Tous nos patelins">Patelins</a>
@@ -63,11 +63,11 @@ include("traitement/deconnexion.php");
                     </li>
                 </ul>
             </nav>
-            <div id="login">
+            <div id="login" class="inline-block">
             <?php 
                 if(isset($_SESSION['connect'])){
             ?>
-                <ul id="user-connect">
+                <ul id="user-connect" class="list-inline">
                     <li>
                         <a href="user-profil.php">Mon profil</a>
                     </li>
@@ -80,7 +80,7 @@ include("traitement/deconnexion.php");
             <?php
             }else{
             ?>
-                <ul>
+                <ul class="list-inline">
                     <li>
                         <a href="inscription.php">Je m'inscris</a>
                     </li>
@@ -92,11 +92,11 @@ include("traitement/deconnexion.php");
             }
             ?>
             </div>
-            <div id="mytickets">
+            <div id="mytickets" class="inline-block">
                 <p><a href="espace-tickets.php">Mes tickets</a></p>
             </div>
-            <div id="search">
+            <div id="search" class="inline-block">
                 <p><a href="#">Recherche</a></p>
             </div>
         </header>
-        <section id="main">
+        <section id="main" class="container">
