@@ -20,16 +20,33 @@ include("traitement/deconnexion.php");
         <meta property="og:title" content="Atmosphère Parigot" />
         <meta property="og:description" content="Atmosphère Parigot est une plateforme permettant de repérer des lieux exclusifs dans son arrondissement et selon ses envies de loisirs. Vous pourrez assister à des événements propres à vos intérêts culturels et échanger autour de vos passions tout en prenant un verre." />
         <meta property="og:image" content="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10413374_583242371791257_1288029036615216986_n.png?oh=50bce70f63fe97be415299e5c05303c1&oe=54195EC1&__gda__=1411915120_6b6417cebfba2d70fb455f5e25b6babe" />
-        <!-- END Meta Facebook-->
+        <meta property="og:type" content="website" />
+        <meta property="og:updated_time" content="1403439485" />
+        <meta property="og:url" content="http://www.atmosphere-parigot.fr/waiting.php" />
+        <meta property="fb:profile_id" content="715431161853715" />
+        <meta property="fb:admins" content="715431161853715" />
+        <!--END Meta Facebook-->
+        <!--START Meta Twitter-->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@atmosthere_p">
+        <meta name="twitter:title" content="Atmosphere Parigot !">
+        <meta name="twitter:description" content="Le site référent pour sortir avec tes potes. Loupe pas le coche !">
+        <meta name="twitter:creator" content="atmosphere_p">
+        <meta name="twitter:image:src" content="http://atmosphere-parigot.fr/img/logo-atmosphere-twitter.png">
+        <meta name="twitter:domain" content="atmosphere-parigot.fr">
+        <!--END Meta Twitter-->
+        <meta name="p:domain_verify" content="03ba9916ed1916299d8707ed7b2f964a"/>
         <!--CSS files-->
-        <link rel="stylesheet" href="stylesheets/screen.css">
-        <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
+        <link rel="stylesheet" href="stylesheets/screen.css" />
+        <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css" />
+        <link rel="stylesheet" href="//vjs.zencdn.net/4.6/video-js.css" />        
         <!--JS files-->
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
+        <script src="//vjs.zencdn.net/4.6/video.js"></script>
         <!--Favicon-->
-        <link rel="icon" type="image/png" href="img/favicon/favicon.png"> 
-        <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
+        <link rel="icon" type="image/png" href="img/favicon.png"> 
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body role="document">
         <header role="banner container">

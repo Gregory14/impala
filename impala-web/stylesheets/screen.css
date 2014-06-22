@@ -110,6 +110,8 @@ p{
 ------------------------------------------- */
 /* line 59, ../sass/screen.scss */
 body {
+  background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
+  background-size: cover;
   font: 100% dinpro, Helvetica, sans-serif;
   color: #333333;
 }
@@ -171,39 +173,40 @@ header ul.container li {
   width: 100%;
 }
 
-/*** Page Waiting ***/
-/* line 126, ../sass/screen.scss */
-#waiting {
+/* line 125, ../sass/screen.scss */
+body {
   background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
+  background-size: cover;
 }
 
-/* line 129, ../sass/screen.scss */
+/*** Page Waiting ***/
+/* line 131, ../sass/screen.scss */
 #waiting > section {
   max-width: 480px;
   margin: 0 auto;
   padding: 5% 1% 1%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0);
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 #waiting header {
   margin-bottom: 35px;
   text-align: center;
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 footer {
   margin: 10% 0 0;
   text-align: center;
   font-size: 0.9em;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 #waiting h1 {
   font-size: 0;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 149, ../sass/screen.scss */
 #waiting h2 {
   font-size: 2em;
   font-weight: bold;
@@ -212,38 +215,38 @@ footer {
   font-family: 'dinpro';
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #waiting h3 {
   font-size: 1em;
   text-align: center;
   font-family: 'dinpro';
 }
 
-/* line 161, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #waiting p {
   font-size: 1em;
   margin-bottom: 15px;
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 #waiting p a {
   color: #dd6b70;
 }
 
-/* line 168, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #waiting p a:hover {
   color: #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 #waiting label {
   display: block;
   margin: 5% 0 1%;
   font-size: 1em;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 #waiting input {
   display: block;
   width: 100%;
@@ -253,13 +256,13 @@ footer {
   font-size: 1em;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 #waiting input:focus {
   outline: none;
   border: 1px #dd6b70 solid;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 #waiting input[type="submit"] {
   margin: 8% 0 4%;
   background-color: #dd6b70;
@@ -270,26 +273,26 @@ footer {
   cursor: pointer;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 #waiting input[type="submit"]:hover {
   background-color: #dd6b70;
   border: 1px solid #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 #reseaux {
   width: 46%;
   margin: 25px auto;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #reseaux li {
   display: inline-block;
   margin: 0 5%;
 }
 
-/* line 211, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 #reseaux a {
   display: block;
   font-size: 0;
@@ -297,33 +300,33 @@ footer {
   text-decoration: none;
 }
 
-/* line 217, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 #reseaux a:hover {
   color: #ec6570;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 #reseaux a:before {
   font-family: 'reseaux';
   font-size: 30px;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .facebook:before {
   content: "\e800";
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .google:before {
   content: "\e801";
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .pinterest:before {
   content: "\e802";
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .twitter:before {
   content: "\e803";
 }

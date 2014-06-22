@@ -122,10 +122,12 @@ header {
 	width: 100%;
 }
 
-/*** Page Waiting ***/
-#waiting {
+body {
 	background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
+	background-size: cover;
 }
+
+/*** Page Waiting ***/
 #waiting > section{
 	max-width: 480px;
 	margin: 0 auto;
