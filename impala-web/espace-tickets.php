@@ -1,4 +1,9 @@
-<?php include("includes/header.php"); ?>
+<?php 
+$title="Atmosphère - Mes tickets";
+$description="Une petite description du lieu";
+
+include("includes/header.php");
+?>
     <h2>Mon panier</h2>
     <br>
     <br>

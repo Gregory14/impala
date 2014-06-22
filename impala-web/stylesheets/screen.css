@@ -67,11 +67,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, ../sass/screen.scss */
-.clear {
-  clear: both;
+/* -----------------------
+== VARIABLES
+----------------------- */
+/*
+/* ----------------------------------------
+== Small Reset
+------------------------------------------- 
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+body {
+    margin: 0;
+    min-height: 100%;
+    font: 1.4em "Gudea",Helvetica,Arial,sans-serif;
+    color: #666;
+    background: url('../images/background.png') repeat-y top center #fafafa;
+}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+video,
+img,
+object {
+    height: auto;
+    max-width: 100%;
+}
+object,
+embed {
+    height: 100%;
+}
+p{
+    line-height: 1.5em;
+}*/
+/* ----------------------------------------
+== Author
+------------------------------------------- */
+/* line 59, ../sass/screen.scss */
+body {
+  font: 100% dinpro, Helvetica, sans-serif;
+  color: #333333;
 }
 
+/* ----------------------
+== FONTS
+---------------------- */
 @font-face {
   font-family: 'reseaux';
   src: url("../font/reseaux/reseaux.eot");
@@ -88,40 +133,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 42, ../sass/screen.scss */
-body {
-  font: 100% dinpro, Helvetica, sans-serif;
-  color: #333333;
+/* ----------------------
+== COMMON CLASSES
+---------------------- */
+/* line 95, ../sass/screen.scss */
+.clear {
+  clear: both;
 }
 
-/* line 48, ../sass/screen.scss */
-header ul.wrapper {
+/* line 98, ../sass/screen.scss */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----------------------
+== HEADER
+---------------------- */
+/* line 108, ../sass/screen.scss */
+header ul.container {
   width: 100%;
 }
-/* line 50, ../sass/screen.scss */
-header ul.wrapper li {
+/* line 110, ../sass/screen.scss */
+header ul.container li {
   float: left;
   width: 12.5%;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .place img {
   max-width: 300px;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 #map {
   height: 400px;
   width: 100%;
 }
 
 /*** Page Waiting ***/
-/* line 66, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #waiting {
   background: url("../img/fond-loading-atmosphere.jpg") no-repeat top center;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 #waiting > section {
   max-width: 480px;
   margin: 0 auto;
@@ -129,25 +185,25 @@ header ul.wrapper li {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #waiting header {
   margin-bottom: 35px;
   text-align: center;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 footer {
   margin: 10% 0 0;
   text-align: center;
   font-size: 0.9em;
 }
 
-/* line 84, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 #waiting h1 {
   font-size: 0;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #waiting h2 {
   font-size: 2em;
   font-weight: bold;
@@ -156,38 +212,38 @@ footer {
   font-family: 'dinpro';
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 #waiting h3 {
   font-size: 1em;
   text-align: center;
   font-family: 'dinpro';
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #waiting p {
   font-size: 1em;
   margin-bottom: 15px;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 #waiting p a {
   color: #dd6b70;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #waiting p a:hover {
   color: #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 #waiting label {
   display: block;
   margin: 5% 0 1%;
   font-size: 1em;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #waiting input {
   display: block;
   width: 100%;
@@ -197,13 +253,13 @@ footer {
   font-size: 1em;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 185, ../sass/screen.scss */
 #waiting input:focus {
   outline: none;
   border: 1px #dd6b70 solid;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #waiting input[type="submit"] {
   margin: 8% 0 4%;
   background-color: #dd6b70;
@@ -214,26 +270,26 @@ footer {
   cursor: pointer;
 }
 
-/* line 138, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #waiting input[type="submit"]:hover {
   background-color: #dd6b70;
   border: 1px solid #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #reseaux {
   width: 46%;
   margin: 25px auto;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 #reseaux li {
   display: inline-block;
   margin: 0 5%;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 #reseaux a {
   display: block;
   font-size: 0;
@@ -241,33 +297,33 @@ footer {
   text-decoration: none;
 }
 
-/* line 157, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #reseaux a:hover {
   color: #ec6570;
 }
 
-/* line 160, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 #reseaux a:before {
   font-family: 'reseaux';
   font-size: 30px;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .facebook:before {
   content: "\e800";
 }
 
-/* line 165, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .google:before {
   content: "\e801";
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .pinterest:before {
   content: "\e802";
 }
 
-/* line 167, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 .twitter:before {
   content: "\e803";
 }

@@ -5,47 +5,107 @@
 
 @import "compass/reset";
 
-
-
-$font-stack:    dinpro ,Helvetica, sans-serif;
+/* -----------------------
+== VARIABLES
+----------------------- */
+$font-stack: dinpro, Helvetica, sans-serif;
 $primary-color: #333;
 $rouge: red;
 $noir: #000;
 $pinklogo: #ec6570;
 
-.clear {
-	clear:both;
-}
 
-@font-face {
-	font-family: 'reseaux';
-	src: url('../font/reseaux/reseaux.eot');
-	src: url('../font/reseaux/reseaux.eot#iefix') format('embbed-opentype'),
-		url('../font/reseaux/reseaux.woff') format('woff'),
-		url('../font/reseaux/reseaux.ttf') format('truetype'),
-		url('../font/reseaux/reseaux.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+/*
+/* ----------------------------------------
+== Small Reset
+------------------------------------------- 
+html {
+    height: 100%;
+    font-size: 62.5%;
 }
-
-@font-face{
-	font-family: 'dinpro';
-	src: url('../font/dinpro/dinpro-medium-webfont.eot');
-	src: url('../font/dinpro/dinpro-medium-webfont.eot#iefix') format('embbed-opentype'),
-		url('../font/dinpro/dinpro-medium-webfont.woff') format('woff'),
-		url('../font/dinpro/dinpro-medium-webfont.ttf') format('truetype'),
-		url('../font/dinpro/dinpro-medium-webfont.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+body {
+    margin: 0;
+    min-height: 100%;
+    font: 1.4em "Gudea",Helvetica,Arial,sans-serif;
+    color: #666;
+    background: url('../images/background.png') repeat-y top center #fafafa;
 }
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+video,
+img,
+object {
+    height: auto;
+    max-width: 100%;
+}
+object,
+embed {
+    height: 100%;
+}
+p{
+    line-height: 1.5em;
+}*/
 
+
+
+/* ----------------------------------------
+== Author
+------------------------------------------- */
 body {
   font: 100% $font-stack;
   color: $primary-color;
 }
 
+
+
+/* ----------------------
+== FONTS
+---------------------- */
+@font-face{
+	font-family: 'reseaux';
+	src: url('../font/reseaux/reseaux.eot');
+	src: url('../font/reseaux/reseaux.eot#iefix') format('embbed-opentype'),
+		 url('../font/reseaux/reseaux.woff') format('woff'),
+		 url('../font/reseaux/reseaux.ttf') format('truetype'),
+		 url('../font/reseaux/reseaux.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'dinpro';
+	src: url('../font/dinpro/dinpro-medium-webfont.eot');
+	src: url('../font/dinpro/dinpro-medium-webfont.eot#iefix') format('embbed-opentype'),
+		 url('../font/dinpro/dinpro-medium-webfont.woff') format('woff'),
+		 url('../font/dinpro/dinpro-medium-webfont.ttf') format('truetype'),
+		 url('../font/dinpro/dinpro-medium-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+/* ----------------------
+== COMMON CLASSES
+---------------------- */
+.clear{
+	clear:both;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* ----------------------
+== HEADER
+---------------------- */
 header {
-	ul.wrapper{
+	ul.container{
 	width:100%;
 		li{
 			float:left;

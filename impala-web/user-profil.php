@@ -1,4 +1,7 @@
-<?php 
+<?php
+$title="Atmosphère - Mon profil";
+$description="Une petite description du lieu";
+
 include("includes/header.php"); 
 include("traitement/user.php");
 ?>

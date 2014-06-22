@@ -1,7 +1,9 @@
-<?php include("includes/header.php"); ?>
-<!-- END header -->
+<?php 
+$title="Atmosphère - Fiche événement";
+$description="Une petite description du lieu";
 
-<?php    
+include("includes/header.php");
+
     if(isset($_GET['id'])){
         $id=htmlspecialchars($_GET['id']);
 
@@ -15,17 +17,33 @@
         //var_dump($_SESSION['panier']);
     }
 ?>
-
-
-<p><a href="evenements.php">Retour à tous les events</a></p>
-<br>
-<br>
-<div class="evenement" id="<?php $id ?>">
-    <p><?php echo $donnees['title']; ?></p>
-    <p><a href="traitement/panier.php?id=<?php echo $donnees['id']; ?>">Acheter une place</a></p>    
-</div>
-
-
-<!-- START Footer -->
+        <section class="fiche-content">
+            <p><a href="evenements.php">Retour à tous les événéments</a></p>
+            <div class="fiche-title">
+                <h2><?php echo $donnees['title']; ?></h2>
+                <p class="tag"><?php echo $donnees['tag'] ;?></p>
+            </div>
+            <div class="informations">
+                <ul>
+                    <li><?php echo $donnees['address'] ;?></li>
+                    <li><?php echo $donnees['transport'] ;?></li>
+                    <li><?php echo $donnees['price'] ;?></li>
+                    <li>Horaires</li>
+                    <li><?php echo $donnees['telephone'] ;?></li>
+                    <li><?php echo $donnees['website'] ;?></li>
+                </ul>
+            </div>
+            <a href="#" class="button">Partager sur Facebook</a>
+            <div class="fiche-description">
+                <h3>P'tite description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur mattis tincidunt. Morbi congue nisl in mollis cursus. Nunc rutrum euismod aliquam. Nulla lobortis mauris odio, non iaculis orci porttitor ut. Donec a hendrerit nisl. Nulla quis est id libero vestibulum rutrum.</p>
+            </div>
+            <div class="pictures">
+                <p>Ici le slider</p>
+            </div>
+            <ul>
+                <li><a href="traitement/panier.php?id=<?php echo $donnees['id']; ?>" class="button">Ajouter à mes tickets</a></li>
+                <li><a href="#" class="button">Achat rapide</a></li>
+            </ul>
+        </section>
 <?php include("includes/footer.php"); ?>
-<!-- END footer -->

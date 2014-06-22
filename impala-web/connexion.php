@@ -1,5 +1,8 @@
-<?php
-include("traitement/config.php");
+<?php 
+$title="Atmosphère - Connectez-vous";
+$description="Une petite description du lieu";
+
+include("includes/header.php");
 
 if(isset($_POST['login'])){
     
@@ -47,21 +50,26 @@ if(isset($_POST['login'])){
     }
 }
 ?>
-
-<div>
-    <form name="formLogin" action ="./connexion.php" method="post">
-        <label>Username</label>
-            <input type="text" name="username" value="">
-        <label>Mot de passe</label>
-            <input type="text" name="password" value="">
-        <input type="submit" name="login" value="Se connecter">
-    </form>
-</div>
-<div>
-    <?php if(isset($message)){ echo '<p>'.$message.'</p>';} ?>
-</div>
-<a href="index.php">Retour à l'accueil</a>
-
+        <h2>Connectez-vous</h2>
+        <section id="connect-content">
+            <div id="connect-user">
+                <p class="alerts"><?php if(isset($message)){ echo '<p>'.$message.'</p>';} ?></p>
+                <form name="formLogin" action ="./connexion.php" method="post">
+                    <label for="username">Username</label>
+                        <input id="username" type="text" name="username" required tabindex="1" value="">
+                    <label for="password">Mot de passe</label>
+                        <input id="password" type="text" name="password" required tabindex="2" value="">
+                    <input type="submit" name="login" value="Se connecter">
+                </form>
+            </div>
+            <div id="forgotten-password">
+                <form name="formLogin" action ="./connexion.php" method="post">
+                    <label for="email">Courriel</label>
+                        <input id="email" type="email" name="email" tabindex="3" value="">
+                    <input type="submit" name="recoverPass" value="Récupérer son mot de passe">
+                </form>
+            </div>
+        </section>
 <?php include("includes/footer.php"); ?> 
 
 
