@@ -26,19 +26,23 @@
 				<source src="video.webm" type="video/webm" />
 				<source src="video.ogv" type="video/ogg" />
 			</video>
+
+			<div class="partage">
+				<p>partage cette putain de video</p>
+			</div>
 	</div>
 
 	<div>
 	<ul>
-		<li id="nature" title="nature">
+		<li title="nature">
 				<p>Nature</p>
 				<img src="img/favicon.png" alt="">
 		</li>
-		<li id="partage">
+		<li title="partage">
 				<p>Partage</p>
 				<img src="img/favicon.png" alt="">
 		</li>
-		<li id="culture">
+		<li title="culture">
 				<p>Culture</p>
 				<img src="img/favicon.png" alt="">
 		</li>
