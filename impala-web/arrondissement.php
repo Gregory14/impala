@@ -36,6 +36,9 @@ include("includes/header.php");
 						<source src="video.webm" type="video/webm" />
 						<source src="video.ogv" type="video/ogg" />
 					</video>
+					<div class="partage">
+		                <p>partage cette putain de video</p>
+		            </div>
 				</div>
 				<div>
 					<ul>
@@ -52,4 +55,4 @@ include("includes/header.php");
 				</div>
 			</div><!--#theme-choice-->
 		</section>
--<?php include("includes/footer.php"); ?>
+<?php include("includes/footer.php"); ?>
