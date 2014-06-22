@@ -1,9 +1,7 @@
 <?php include("includes/header.php"); ?>
 <!-- END header -->
 
-<?php
-    //$id = 1;
-    
+<?php    
     if(isset($_GET['id'])){
         $id=htmlspecialchars($_GET['id']);
 
@@ -14,7 +12,7 @@
     }
     if(isset($_SESSION['panier'])){
         echo "votre place a bien été ajoutée au panier";
-        var_dump($_SESSION['panier']);
+        //var_dump($_SESSION['panier']);
     }
 ?>
 
