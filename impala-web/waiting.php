@@ -16,12 +16,29 @@ include_once("traitement/analyticstracking.php");
         <meta property="og:title" content="Atmosphère Parigot" />
         <meta property="og:description" content="Atmosphère Parigot est une plateforme permettant de repérer des lieux exclusifs dans son arrondissement et selon ses envies de loisirs. Vous pourrez assister à des événements propres à vos intérêts culturels et échanger autour de vos passions tout en prenant un verre." />
         <meta property="og:image" content="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/10413374_583242371791257_1288029036615216986_n.png?oh=50bce70f63fe97be415299e5c05303c1&oe=54195EC1&__gda__=1411915120_6b6417cebfba2d70fb455f5e25b6babe" />
+        <meta property="og:type" content="website" />
+        <meta property="og:updated_time" content="1403439485" />
+        <meta property="og:url" content="http://www.atmosphere-parigot.fr/waiting.php" />
+        <meta property="fb:profile_id" content="715431161853715" />
+        <meta property="fb:admins" content="715431161853715" />
         <!-- END META FACEBOOK -->
+        <!-- START META TWITTER -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@atmosthere_p">
+        <meta name="twitter:title" content="Atmosphere Parigot !">
+        <meta name="twitter:description" content="Le site référent pour sortir avec tes potes. Loupe pas le coche !">
+        <meta name="twitter:creator" content="atmosphere_p">
+        <meta name="twitter:image:src" content="http://atmosphere-parigot.fr/img/logo-atmosphere-twitter.png">
+        <meta name="twitter:domain" content="atmosphere-parigot.fr">
+        <!-- END META TWITTER -->
+        <meta name="p:domain_verify" content="03ba9916ed1916299d8707ed7b2f964a"/>
         <link rel="stylesheet" href="stylesheets/screen.css">
         <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
         <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
         <link rel="icon" type="image/png" href="img/favicon.png"> 
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link href="//vjs.zencdn.net/4.6/video-js.css" rel="stylesheet">
+        <script src="//vjs.zencdn.net/4.6/video.js"></script>
     </head>
     <body role="document">
         <div id="waiting">    
@@ -57,7 +74,7 @@ include_once("traitement/analyticstracking.php");
                             <a class="pinterest" href="http://fr.pinterest.com/atmospherep/" title="Pinterest" target="_blank">Pinterest</a>
                         </li>
                         <li>
-                            <a class="google" href="https://plus.google.com/u/0/108575041726592154267" title="Google +" target="_blank">Google+</a>
+                            <a class="google" href="https://plus.google.com/108575041726592154267" rel="publisher" title="Google +" target="_blank">Google+</a>
                         </li>
                     </ul>
                 </section>
