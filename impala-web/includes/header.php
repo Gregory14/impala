@@ -5,8 +5,10 @@
 ?>
 <?php
 session_start();
+$_SESSION['panier']=array();
+include("traitement/config.php");
 include_once("traitement/analyticstracking.php");
-include('traitement/deconnexion.php');
+include("traitement/deconnexion.php");
 ?>
 
 <!DOCTYPE html>
@@ -51,7 +53,6 @@ include('traitement/deconnexion.php');
                     </li>
                 </ul>
             </nav>
-            
             <div id="login">
             <?php 
                 if(isset($_SESSION['connect'])){
@@ -72,6 +73,9 @@ include('traitement/deconnexion.php');
             <?php
             }
             ?>
+            </div>
+            <div id="panier">
+                <p><a href="espace-tickets.php">Mon panier</a></p>
             </div>
         </header>
         <div id="content">
