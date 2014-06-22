@@ -1,7 +1,5 @@
 <?php
 
-include('config.php');
-
 //var_dump($_POST);
 
 if(isset($_POST['register'])){
