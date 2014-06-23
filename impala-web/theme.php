@@ -21,11 +21,10 @@ include("includes/header.php");
                     <a href="fiche-event.php?id=1" class="button">Voir l'événement</a>
                 </div>
                 <div class="description-place">
-                    <div class="col-left">
+                    <div class="inline-block">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur mattis tincidunt. Morbi congue nisl in mollis cursus. Nunc rutrum euismod aliquam. Nulla lobortis mauris odio, non iaculis orci porttitor ut. Donec a hendrerit nisl. Nulla quis est id libero vestibulum rutrum.</p>
                         <a href="#" class="button">Partager sur Facebook</a>
-                    </div>
-                    <div class="col-right informations">
+                    </div><div class="inline-block informations">
                         <ul>
                             <li>Adresse</li>
                             <li>Horaires</li>

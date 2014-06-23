@@ -53,6 +53,7 @@ include("includes/header.php");
 						</li>
 					</ul>
 				</div>
+				<a href="theme.php">Page Thème</a>
 			</div><!--#theme-choice-->
 		</section>
 <?php include("includes/footer.php"); ?>

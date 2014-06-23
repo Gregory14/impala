@@ -24,9 +24,47 @@ body {
 	font: 100% $font-stack;
 	color: $textColor;
 }
+h2{
+	margin-bottom: 35px;
+	text-align: center;
+	font-size: 2em;
+}
+h3{
+	font-size: 1.5em;
+}
+p{
+	margin: 1% 0;
+}
 a{
 	text-decoration: none;
 	color: $textColor;
+}
+input{
+	display: block;
+	width: 100%;
+	margin: 1% 0;
+	padding: 1%;
+	border: 1px solid $textColor;
+	border-radius: 3px;
+}
+input:focus,
+textarea:focus{
+	outline: none;
+	border: 1px solid $colorSite; /*mettre variable colorSite*/
+}
+label{
+	margin-bottom: 2%;
+}
+input[type='submit']{
+	border: 0;
+}
+textarea{
+	resize: vertical;
+	height: 125px;
+	margin: 1% 0;
+	padding: 1%;
+	border: 1px solid $textColor;
+	border-radius: 3px;
 }
 
 
@@ -69,10 +107,7 @@ a{
 .inline-block{
 	display: inline-block;
 }
-h2{
-	text-align: center;
-	font-size: 2em;
-}
+
 .button{
 	display: block;
 	width: 20%;
@@ -80,6 +115,7 @@ h2{
 	padding: 1.5%;
 	border-radius: 3px;
 	background-color: $colorSite;
+	text-align: center;
 	font-size: 1em;
 	color: #fff;
 	transition: all 0.2s ease-in-out;
@@ -121,7 +157,7 @@ header{
 #main-menu{
 	width: 40%;
 	a{
-		&:hover{
+		&:hover, .active{
 			color: $colorSite;
 			text-decoration: underline;
 		}
@@ -213,6 +249,121 @@ small{
 	height: 400px;
 	width: 100%;
 }
+
+
+
+/* ----------------------
+== PAGE THEME
+---------------------- */
+#theme-content{
+	h3{
+		margin: 25px 0;
+		text-align: center;
+	}
+}
+.place-thumbnail{
+	position: relative;
+	img{
+		display: block;
+		width: 100%;
+		height: 220px;
+	}
+	.title-place{
+		position: absolute;
+		top: 15px;
+		left: 0;
+	}
+	.event-place{
+		position: absolute;
+		top: 25px;
+		right: 5%;
+	}
+	.inline-block{
+		width: 65%;
+		vertical-align: top;
+	}
+	&.informations{
+		width: 28%;
+		margin: 10px 0 0 2.8%;
+	}
+}
+.description-place{
+	margin-top: 10px;
+	.button{
+		width: 25%;
+		margin-right: 0;
+	}
+}
+
+
+/* ----------------------
+== PAGE FICHE-LIEU
+---------------------- */
+.fiche-content{
+	width: 70%;
+	margin: 0 auto;
+	h2, .tag{
+		display: inline-block;
+	}
+	.button.share{
+		margin-right: 0;
+	}
+}
+.fiche-title{
+	h2{
+		width: 70%;
+		text-align: left;
+	}
+	p{
+		width: 29%;
+		text-align: right;
+	}
+}
+.informations{
+	padding: 1.5% 2%;
+	border: 1px solid $textColor;
+}
+.fiche-description{
+	margin-top: 40px;
+}
+
+
+/* ----------------------
+== PAGE CONTACT
+---------------------- */
+#contact-content{
+	form{
+		margin-top: 40px;
+	}
+	label[for="message"], label[for="subject"]{
+		display: block;
+		width: 100%;
+	}
+	label[for="name"]{
+		margin-right: 5%;
+	}
+	textarea{
+		display: block;
+		width: 100%;
+	}
+	.inline-block{
+		width: 47%;
+		input{
+			padding: 2%;
+		}
+	}
+}
+.form-content{
+	width: 60%;
+	margin: 0 auto;
+	.button{
+		width: 35%;
+		margin: 15px auto;
+		padding: 2%;
+		cursor: pointer;
+	}
+}
+
 
 
 
