@@ -327,6 +327,30 @@ small{
 	margin-top: 40px;
 }
 
+/* ----------------------
+== PAGE LA CLIQUE
+---------------------- */
+#team-content{
+	h3{
+		text-align: center;
+	}
+}
+.team-category{
+	margin-bottom: 50px;
+	.inline-block{
+		width: 20%;
+		margin: 2%;
+		img{
+			width: 100%;
+			margin-bottom: 15px;
+		}
+		h4{
+			text-align: center;
+			font-size: 1.25em;
+		}
+	}
+}
+
 
 /* ----------------------
 == PAGE CONTACT
