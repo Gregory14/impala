@@ -1,7 +1,8 @@
     	</section>
     	<footer>
+            <div class="container">
             <div id="follow-us" class="inline-block">
-                <p class="inline-block">Suivez-nous sur :</p>
+                <p class="inline-block">Suivez-nous sur</p>
                 <ul class="list-inline inline-block">
                     <li><a class="facebook" href="#" title="Facebook" rel="external">Facebook</a></li>
                     <li><a class="twitter" href="#" title="Twitter" rel="external">Twitter</a></li>
@@ -17,6 +18,7 @@
                 </ul>
             </div>
     		<small>&copy; Impala, 2014</small>
+            </div>
     	</footer>
 
         <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->

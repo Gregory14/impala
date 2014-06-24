@@ -51,11 +51,11 @@ include("traitement/deconnexion.php");
     <body role="document">
         <header role="banner" class="container">
             <div id="logo" class="inline-block">
-                <h1><a href="index.php" rel="home">Atmosphère-Parigot</a></h1>
+                <a href="index.php" rel="home"><h1>Atmosphère-Parigot</h1></a>
             </div>
             <nav id="main-menu" role="navigation" class="inline-block">
                 <ul class="list-inline">
-                    <li><a href="index.php" rel="home" class="is-active">Home</a>
+                    <li><a href="index.php" rel="home" class="is-active">Accueil</a>
                     </li><li><a href="evenements.php" title="Tous nos événements">Évènements</a>
                     </li><li><a href="patelins.php" title="Tous nos patelins">Patelins</a>
                     </li><li><a href="atmosphere.php" title="Notre équipe">La clique</a>
@@ -83,8 +83,7 @@ include("traitement/deconnexion.php");
                 <ul class="list-inline">
                     <li>
                         <a href="inscription.php">Je m'inscris</a>
-                    </li>
-                    <li>
+                    </li><li>
                         <a href="connexion.php">J'me connecte</a>
                     </li>
                 </ul>
@@ -93,7 +92,7 @@ include("traitement/deconnexion.php");
             ?>
             </div>
             <div id="mytickets" class="inline-block">
-                <p><a href="espace-tickets.php">Mes tickets</a></p>
+                <p><a href="espace-tickets.php" title="Voir mes tickets réservés">Mes tickets</a></p>
             </div>
             <div id="search" class="inline-block">
                 <p><a href="#">Recherche</a></p>
