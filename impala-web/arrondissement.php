@@ -42,13 +42,13 @@ include("includes/header.php");
 				</div>
 				<div>
 					<ul>
-						<li id="nature" title="nature">
+						<li title="nature">
 							<h3>Nature</h3>
 						</li>
-						<li id="partage">
+						<li title="partage">
 							<h3>Partage</h3>
 						</li>
-						<li id="culture">
+						<li title="culture">
 							<h3>Culture</h3>
 						</li>
 					</ul>

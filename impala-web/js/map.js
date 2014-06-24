@@ -12,7 +12,7 @@ $.ajax({
 		var element = features[i];
 		console.log(element);
 		var myIcon = L.icon({
-			iconUrl: 'my-icon.png',
+			iconUrl: 'img/logo-atmosphere-twitter.png',
 			iconRetinaUrl: 'my-icon@2x.png',
 			iconSize: [38, 95],
 			iconAnchor: [22, 94],
@@ -23,7 +23,7 @@ $.ajax({
 			shadowAnchor: [22, 94]
 		});
 
-		L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
+		L.marker([coordinates[48.8870954, 2.38773]], {icon: myIcon}).addTo(map);
 	}
 });
 

@@ -18,8 +18,8 @@ $( document ).ready( function(){
 			$(".video").hide(
 				function(){
 					var hidePlayer = videojs("#culture");
-					var hidePlayerOne = videojs("#partage")
-					var hidePlayerTwo = videojs("#nature")
+					var hidePlayerOne = videojs("#partage");
+					var hidePlayerTwo = videojs("#nature");
 
 					hidePlayer.pause();
 					hidePlayerOne.pause();
@@ -29,8 +29,8 @@ $( document ).ready( function(){
 				function(){
 					videojs(video).ready(
 						function(){
-							var myPlayer = this;
 							// get
+							var myPlayer = this;
 							var isVolumeMuted = myPlayer.muted();
 							// var whereYouAt = myPlayer.currentTime();
 							// set
@@ -39,23 +39,21 @@ $( document ).ready( function(){
 							// EXAMPLE: Start playing the video.
 							myPlayer.play();
 
-
-							// // adding a button to the player
-							// var button = myPlayer.addClass('bibiche');
-							// button.el("bibiche"); // -> button element
-
-							// // button.on('click', function(){
-							// //   alert('Tu cliques tu niques !');
-							// // });
-
-							// button.trigger('cest cool');
+							// TEST DUREE VIDEO FIN - COURRENT
+							// var end = myPlayer.duration();
+							// var time = myPlayer.currentTime();
+							
+							// if (end - time < 10) {
+							// 	alert("YES");
+							// };
+							
 													  
 						});
-				});
-
-			$("#"+theme+" .partage").createEl('bibiche');
-
-			
+				});			
 
 		});
+
+
+
+
 });
