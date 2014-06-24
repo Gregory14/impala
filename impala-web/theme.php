@@ -1,5 +1,5 @@
 <?php
-$title="Atmosphère - Mon profil";
+$title="Atmosphère - Theme";
 $description="Une petite description du lieu";
 
 include("includes/header.php");
@@ -26,9 +26,11 @@ include("includes/header.php");
                         <a href="#" class="button">Partager sur Facebook</a>
                     </div><div class="inline-block informations">
                         <ul>
-                            <li>Adresse</li>
-                            <li>Horaires</li>
+                            <li class="address">Adresse</li>
+                            <li class="address">Horaires</li>
                             <li>Site web</li>
+                        </ul>
+                        <ul>
                             <li>Téléphone</li>
                             <li>Email</li>
                         </ul>

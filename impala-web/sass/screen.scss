@@ -19,7 +19,7 @@ $colorHover: #e99385;
 == Author
 ------------------------------------------- */
 body {
-	background: url("../img/background-atmosphere.png") no-repeat bottom center #fff;
+	/*background: url("../img/background-atmosphere.png") no-repeat bottom center #fff;*/
 	font: 100% $font-stack;
 	color: $textColor;
 }
@@ -215,6 +215,7 @@ header.container{
 == FOOTER
 ---------------------- */
 footer{
+	margin-top: 50px;
 	background-color: #fff;
 	border-top: 1px solid $textColor;
 	.container{
@@ -312,23 +313,45 @@ footer{
 	img{
 		display: block;
 		width: 100%;
-		height: 220px;
+		height: 340px;
 	}
 	.title-place{
 		position: absolute;
 		top: 15px;
 		left: 0;
+		background-color: #fff;
+		h4{
+			font-size: 2em;
+			span{
+				background-color: #ccc;
+				margin-right: 5%;
+				padding: 0 6%;
+			}
+		}
 	}
 	.event-place{
 		position: absolute;
-		top: 25px;
+		top: 20%;
 		right: 5%;
+		width: 25%;
+		padding: 1%;
+		background: #fff;
+		border: 1px solid $textColor;
+		text-align: center;
+		time, h4{
+			font-size: 1.4em;
+		}
+		.button{
+			width: 80%;
+			margin-top: 10px;
+			padding: 5% 1%;
+		}
 	}
 	.inline-block{
 		width: 65%;
 		vertical-align: top;
 	}
-	&.informations{
+	.inline-block.informations{
 		width: 28%;
 		margin: 10px 0 0 2.8%;
 	}
@@ -342,6 +365,52 @@ footer{
 }
 
 
+/* ----------------------
+== PAGE EVENEMENTS + PATELINS
+---------------------- */
+.filters{
+	li{
+		cursor: pointer;
+	}
+}
+.all-thumbnails{
+	margin-top: 35px;
+	li{
+		display: inline-block;
+		position: relative;
+		width: 30%;
+		height: inherit;
+		overflow: hidden;
+		margin-left: 2%;
+		&:hover{
+			p.description{
+				bottom: 0;
+				transition: all 0.2s ease-in-out;
+			}
+		}
+		h3{
+			display: inline-block;
+			width: 69%;
+			margin-bottom: 10px;
+		}
+		img{
+			width: 100%;
+		}
+		p.description{
+			position: absolute;
+			bottom: -105px;
+			left: 0;
+			background-color: #fff;
+		}
+	}
+
+}
+.tag{
+	display: inline-block;
+	width: 29%;
+	text-align: right;
+}
+
 
 /* ----------------------
 == PAGE FICHE-LIEU
@@ -349,8 +418,9 @@ footer{
 .fiche-content{
 	width: 70%;
 	margin: 0 auto;
-	h2, .tag{
+	h2{
 		display: inline-block;
+		border: 0;
 	}
 	.button.share{
 		margin-right: 0;
@@ -361,14 +431,15 @@ footer{
 		width: 70%;
 		text-align: left;
 	}
-	p{
-		width: 29%;
-		text-align: right;
-	}
 }
 .informations{
 	padding: 1.5% 2%;
 	border: 1px solid $textColor;
+	ul{
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+	}
 }
 .fiche-description{
 	margin-top: 40px;
