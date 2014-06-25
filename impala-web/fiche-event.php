@@ -24,12 +24,12 @@ include("includes/header.php");
                 <p class="tag"><?php echo $donnees['tag'] ;?></p>
             </div>
             <div class="informations">
-                <ul class="inline-block">
+                <ul>
                     <li><?php echo $donnees['address'] ;?></li>
                     <li><?php echo $donnees['transport'] ;?></li>
                     <li><?php echo $donnees['price'] ;?></li>
                 </ul>
-                <ul class="inline-block">
+                <ul>
                     <li>Horaires</li>
                     <li><?php echo $donnees['telephone'] ;?></li>
                     <li><?php echo $donnees['website'] ;?></li>

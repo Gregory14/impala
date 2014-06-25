@@ -10,12 +10,12 @@ include("includes/header.php");
                 <h2>Le titre du lieu</h2><p class="tag">Bar</p>
             </div>
             <div class="informations">
-                <ul class="inline-block">
+                <ul>
                     <li>Adresse</li>
                     <li>Transport</li>
                     <li>Prix</li>
                 </ul>
-                <ul class="inline-block">
+                <ul>
                     <li>Horaires</li>
                     <li>Téléphone</li>
                     <li>Site web</li>
