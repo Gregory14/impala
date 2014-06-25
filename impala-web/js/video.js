@@ -9,23 +9,21 @@
 // });
 
 $( document ).ready( function(){
-	$("#video-nature, #video-partage, #video-culture").hide();
+	$("#video-nature, #video-partage").hide();
 	$( "li" ).click( 
 		function(){
 			var theme = $(this).attr("title");
 			var video = $("#video-"+theme).children().attr("id");
 			// var resetVideo = !video;
-			$(".video").hide(
+			$(".video").fadeOut(
 				function(){
-					var hidePlayer = videojs("#culture");
-					var hidePlayerOne = videojs("#partage");
-					var hidePlayerTwo = videojs("#nature");
+					var hidePlayer = videojs("#partage");
+					var hidePlayerOne = videojs("#nature");
 
 					hidePlayer.pause();
 					hidePlayerOne.pause();
-					hidePlayerTwo.pause();
 				});
-			$("#video-"+theme).show(
+			$("#video-"+theme).fadeIn(
 				function(){
 					videojs(video).ready(
 						function(){
