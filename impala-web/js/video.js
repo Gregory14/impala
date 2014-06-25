@@ -9,28 +9,26 @@
 // });
 
 $( document ).ready( function(){
-	$("#video-nature, #video-partage, #video-culture").hide();
+	$("#video-nature, #video-partage").hide();
 	$( "li" ).click( 
 		function(){
 			var theme = $(this).attr("title");
 			var video = $("#video-"+theme).children().attr("id");
 			// var resetVideo = !video;
-			$(".video").hide(
+			$(".video").fadeOut(
 				function(){
-					var hidePlayer = videojs("#culture");
-					var hidePlayerOne = videojs("#partage")
-					var hidePlayerTwo = videojs("#nature")
+					var hidePlayer = videojs("#partage");
+					var hidePlayerOne = videojs("#nature");
 
 					hidePlayer.pause();
 					hidePlayerOne.pause();
-					hidePlayerTwo.pause();
 				});
-			$("#video-"+theme).show(
+			$("#video-"+theme).fadeIn(
 				function(){
 					videojs(video).ready(
 						function(){
-							var myPlayer = this;
 							// get
+							var myPlayer = this;
 							var isVolumeMuted = myPlayer.muted();
 							// var whereYouAt = myPlayer.currentTime();
 							// set
@@ -39,23 +37,21 @@ $( document ).ready( function(){
 							// EXAMPLE: Start playing the video.
 							myPlayer.play();
 
-
-							// // adding a button to the player
-							// var button = myPlayer.addClass('bibiche');
-							// button.el("bibiche"); // -> button element
-
-							// // button.on('click', function(){
-							// //   alert('Tu cliques tu niques !');
-							// // });
-
-							// button.trigger('cest cool');
+							// TEST DUREE VIDEO FIN - COURRENT
+							// var end = myPlayer.duration();
+							// var time = myPlayer.currentTime();
+							
+							// if (end - time < 10) {
+							// 	alert("YES");
+							// };
+							
 													  
 						});
-				});
-
-			$("#"+theme+" .partage").createEl('bibiche');
-
-			
+				});			
 
 		});
+
+
+
+
 });
