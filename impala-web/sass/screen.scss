@@ -579,6 +579,52 @@ div.video{
 	width: 100%;
 }
 
+/* ----------------------
+== PAGE ESPACE TICKET
+---------------------- */
+#tickets-content{
+	width: 80%;
+	margin: auto;
+	img {
+		width:20%;
+		display:block;
+		float: left;
+	}
+	h4{
+		font-size: 1.25em;
+	}
+	.infoTicket {
+		width: 60%;
+		margin: 2% 10%;
+		float: left;
+		.infoLeft {
+			width: 70%;
+			margin-bottom: 4%;
+		}
+		.ticketPrice{
+			width: 20%;
+			margin-left: 6%;
+		}
+		form {
+			margin-top: 4%;
+		}
+		form input.inline-block{
+			width: 45%;
+		}
+		form input[type="text"]:nth-last-child(even){
+			margin-left: 9%;
+		}
+		form input[type="submit"]{
+			margin-right: 0;
+			width: 35%;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			padding: 2%;
+			cursor: pointer;
+		}
+	}
+}
+
 
 
 
