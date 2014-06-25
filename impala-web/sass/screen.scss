@@ -51,6 +51,7 @@ input{
 	padding: 1%;
 	border: 1px solid $textColor;
 	border-radius: 3px;
+	font-size: 1em;
 }
 input:focus,
 textarea:focus{
@@ -508,6 +509,32 @@ footer{
 		cursor: pointer;
 	}
 }
+
+
+
+/* ----------------------
+== PAGE USER PROFIL
+---------------------- */
+#user-content{
+	.inline-block{
+		width: 29%;
+		margin: 2% 1.6%;
+		vertical-align: top;
+		h4{
+			margin-bottom: 15px;
+			font-size: 1.25em;
+		}
+		input{
+			padding: 2%;
+		}
+		.button{
+			width: 65%;
+			margin: 3% auto;
+		}
+	}
+}
+
+
 
 
 
