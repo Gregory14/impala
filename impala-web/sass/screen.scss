@@ -639,17 +639,12 @@ div.video{
 #tickets-content{
 	width: 80%;
 	margin: auto;
-	img {
-		width:20%;
-		display:block;
-		float: left;
-	}
 	h4{
 		font-size: 1.25em;
 	}
 	.infoTicket {
-		width: 60%;
-		margin: 2% 10%;
+		width: 80%;
+		margin: 2% 0 10%;
 		float: left;
 		.infoLeft {
 			width: 70%;
@@ -660,6 +655,7 @@ div.video{
 			margin-left: 6%;
 		}
 		form {
+			width: 70%;
 			margin-top: 4%;
 		}
 		form input.inline-block{
@@ -669,8 +665,8 @@ div.video{
 			margin-left: 9%;
 		}
 		form input[type="submit"]{
-			margin-right: 0;
-			width: 35%;
+			margin-left: 0;
+			width: 40%;
 			margin-top: 15px;
 			margin-bottom: 15px;
 			padding: 2%;
