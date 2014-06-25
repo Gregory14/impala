@@ -3,7 +3,7 @@
             <div class="container">
             <div id="follow-us" class="inline-block">
                 <p class="inline-block">Suivez-nous sur</p>
-                <ul class="list-inline inline-block">
+                <ul class="social-networks list-inline inline-block">
                     <li><a class="facebook" href="#" title="Facebook" rel="external">Facebook</a></li>
                     <li><a class="twitter" href="#" title="Twitter" rel="external">Twitter</a></li>
                     <li><a class="googleplus" href="#" title="Google +" rel="external">Google+</a></li>
