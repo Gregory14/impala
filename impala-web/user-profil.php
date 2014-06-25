@@ -5,67 +5,55 @@ $description="Une petite description du lieu";
 include("includes/header.php"); 
 include("traitement/user.php");
 ?>
-<!-- END header -->
-<br>
-<br>
-<br>
-<div>
-    <h2>Mes infos</h2>
-    <ul>
-        <li>Username : <?php echo $_SESSION['username'] ;?></li>
-        <li>Email : <?php echo $_SESSION['email']; ?></li>
-    </ul>
-<br>
-<br>
-<br>
-    <h3>Modifier mes informations</h3>
-    <br>
-    <p>Modifier EMAIL</p>
-    <p>Adresse email actuelle : <?php echo $_SESSION['email']; ?></p>
-    <form name="ChangeMail" action="espace-user.php" method="post">
-        <label>Nouvelle adresse email :</label>
-        <input type="text" name="newMail" value="">
-        <label>Confirmer la nouvelle adresse email :</label>
-        <input type="text" name="confirmMail" value="">        
-        <label>Mot de passe :</label>
-        <input type="text" name="password" value="">
-        <input type="hidden" name="id" value="<?php $_SESSION['id']; ?>">
-        <input type="submit" name="saveMail" value="Enregistrer le mail">
-    </form>
-    <p style="color:red"><?php if(isset($messageMail)){echo $messageMail;} ?></p>
-    <br>
-    <br>
-    <p>Modifier MOT DE PASSE</p>
-    <form name="ChangePassword" action="espace-user.php" method="post">
-        <label>Ancien mot de passe :</label>
-        <input type="text" name="password" value="">
-        <label>Nouveau mot de passe :</label>
-        <input type="text" name="newPassword" value="">
-        <input type="hidden" name="id" value="<?php $_SESSION['id']; ?>">
-        <input type="submit" name="savePassword" value="Enregistrer MDP">    
-    </form>
-    <p style="color:red"><?php if(isset($messagePass)){echo $messagePass;} ?></p>
-<br>
-<br>
-<br>
-    <h3>Supprimer mon compte</h3>
-    <form name="formDeleteUser" action="espace-user.php" method="post">
-        <p>Pour supprimer votre compte, veuillez renseigner votre mot de passe. Votre compte sera définitivement supprimé.</p>
-        <label>Mot de passe :</label>
-        <input type="text" name="password" value="">
-        <label>Confirmation du mot de passe :</label>
-        <input type="text" name="confirmPassword" value="">
-        <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>">
-        <input type="submit" name="deleteUser" value="Supprimer mon compte">    
-    </form>
-
-    <p style="color:red"><?php if(isset($message)){echo $message;} ?></p>
-    <p style="color:blue"><?php if(isset($success)){echo $success;} ?></p>
-
-</div>
-
-<p><a href="index.php">Retour à l'accueil</a></p>
-
-<!-- START Footer -->
+        <h2>C’est ici qu’tu peux voir tes informations</h2>
+        <section id="user-content">
+            <div id="user-infos">
+                <h3>1- Mes informations personnelles</h3>
+                <div class="inline-block">
+                    <h4>Modifier mon email</h4>
+                    <p>Adresse email actuelle : <?php echo $_SESSION['email']; ?></p>
+                    <form name="ChangeMail" action="espace-user.php" method="post">
+                        <label for="newMail">Nouvelle adresse email :
+                            <input id="newMail" type="text" name="newMail" tabindex="1" value="">
+                        </label>
+                        <label for="confirmMail">Confirmer la nouvelle adresse email :</label>
+                            <input id="confirmMail" type="text" name="confirmMail" tabindex="2" value="">
+                        <label for="password">Mot de passe :</label>
+                            <input id="password" type="text" name="password" tabindex="3" value="">
+                        <input type="hidden" name="id" value="<?php $_SESSION['id']; ?>">
+                        <input type="submit" name="saveMail" class="button" value="Enregistrer le mail">
+                    </form>
+                    <p><?php if(isset($messageMail)){echo $messageMail;} ?></p>
+                </div>
+                <div class="inline-block">
+                    <h4>Modifier mon mot de passe</h4>
+                    <form name="ChangePassword" action="espace-user.php" method="post">
+                        <label for="oldPass">Ancien mot de passe :</label>
+                            <input id="oldPass" type="text" name="password" tabindex="4" value="">
+                        <label for="newPass">Nouveau mot de passe :</label>
+                            <input id="newPass" type="text" name="newPassword" tabindex="5" value="">
+                        <input type="hidden" name="id" value="<?php $_SESSION['id']; ?>">
+                        <input type="submit" name="savePassword" class="button" value="Enregistrer MDP">    
+                    </form>
+                    <p style="color:red"><?php if(isset($messagePass)){echo $messagePass;} ?></p>
+                </div>
+                <div class="inline-block">
+                    <h4>Supprimer mon compte</h4>
+                    <p>Pour supprimer votre compte, veuillez renseigner votre mot de passe. Votre compte sera définitivement supprimé.</p>
+                    <form name="formDeleteUser" action="espace-user.php" method="post">
+                        <label for="pass">Mot de passe :</label>
+                            <input id="pass" type="text" name="password" required tabindex="6" value="">
+                        <label for="confirm">Confirmation du mot de passe :</label>
+                        <input id="confirm" type="text" required name="confirmPassword" tabindex="7" value="">
+                        <input type="hidden" name="id" value="<?php echo $_SESSION['id']; ?>">
+                        <input type="submit" name="deleteUser" class="button" value="Supprimer mon compte">    
+                    </form>
+                </div>
+                
+            </div>
+            <div id="user-orders">
+                <h3>2- Toutes mes commandes</h3>
+                <p>T’as pas encore passé de commande gamin, grouille toi !</p>
+            </div>
+        </section>
 <?php include("includes/footer.php"); ?>
-<!-- END footer -->
