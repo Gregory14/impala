@@ -7,7 +7,6 @@ include("includes/header.php");
     <h2>Qu’est-ce qu’il y a dedans ?</h2>
     <section id="tickets-content" >
       <h3>Mes tickets</h3>
-        <img class="ticketThumbnail" src="#" alt="">
       <div class="infoTicket">  
         <div class="infoLeft inline-block"> 
           <h4>Conférence Architecture Juin 2014</h4>
