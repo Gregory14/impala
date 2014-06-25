@@ -35,6 +35,7 @@ include("includes/header.php")
                         <input id="email" name="email" type="email" required tabindex="7" value="">
                     </label>
                 <h3>3- Choix du paiement</h3>
+                    <input type="radio"/>
                 </form>
             </div>
             <div id="order-summary" class="inline-block">
