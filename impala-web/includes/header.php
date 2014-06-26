@@ -5,8 +5,6 @@ include("includes/config.php");
 include_once("traitement/analyticstracking.php");
 include("traitement/deconnexion.php");
 
-// $_SESSION['panier'][]= "coucou";
-
 ?>
 
 <!DOCTYPE html>
@@ -95,6 +93,9 @@ include("traitement/deconnexion.php");
             ?>
             </div>
             <div id="mytickets" class="inline-block">
+                <?php if (isset($_SESSION['panier'])) {
+                    echo "1";
+                }?>
                 <p><a href="espace-tickets.php" title="Voir mes tickets réservés">Mes tickets</a></p>
             </div>
             <div id="search" class="inline-block">
