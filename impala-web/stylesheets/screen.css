@@ -859,27 +859,110 @@ div.video {
   cursor: pointer;
 }
 
+/* ----------------------
+== PAGE BILLING
+---------------------- */
+/* line 682, ../sass/screen.scss */
+#billing-content {
+  width: 80%;
+  margin: 0 auto;
+}
+/* line 685, ../sass/screen.scss */
+#billing-content h3, #billing-content h4 {
+  margin: 30px 0;
+  text-align: center;
+}
+/* line 689, ../sass/screen.scss */
+#billing-content #payment {
+  width: 60%;
+  margin-right: 10%;
+}
+/* line 693, ../sass/screen.scss */
+#billing-content form label {
+  width: 49%;
+  margin-bottom: 15px;
+}
+/* line 697, ../sass/screen.scss */
+#billing-content form label[for="address"] {
+  width: 100%;
+}
+/* line 700, ../sass/screen.scss */
+#billing-content form label #country {
+  width: 49%;
+}
+/* line 703, ../sass/screen.scss */
+#billing-content form label input {
+  padding: 8px;
+}
+/* line 706, ../sass/screen.scss */
+#billing-content #order-summary {
+  width: 25%;
+  margin-left: 3%;
+  vertical-align: top;
+  padding: 5px;
+}
+/* line 713, ../sass/screen.scss */
+#billing-content #order-summary p {
+  font-weight: lighter;
+}
+/* line 716, ../sass/screen.scss */
+#billing-content #order-summary p:last-child {
+  margin: 5% 0;
+  border-top: 2px solid #3f3f3f;
+  padding-top: 3%;
+}
+/* line 722, ../sass/screen.scss */
+#billing-content input[type="radio"] {
+  background-color: #fff;
+  cursor: pointer;
+  height: 50px;
+  margin-right: 50px;
+  width: 50px;
+  -webkit-appearance: none;
+}
+/* line 730, ../sass/screen.scss */
+#billing-content input[type="radio"]:after {
+  background-color: #eb837b;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+/* line 737, ../sass/screen.scss */
+#billing-content .button {
+  width: 65%;
+  margin: 3% 0;
+}
+/* line 741, ../sass/screen.scss */
+#billing-content #sum {
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+/* line 745, ../sass/screen.scss */
+#billing-content #nbrtotal, #billing-content #commanderecap {
+  font-weight: bold;
+}
+
 /* ----------------------------------------
 == Helper
 ------------------------------------------- */
-/* line 686, ../sass/screen.scss */
+/* line 757, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 690, ../sass/screen.scss */
+/* line 761, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 693, ../sass/screen.scss */
+/* line 764, ../sass/screen.scss */
 .lt-ie8 .clearfix {
   zoom: 1;
 }
 
-/* line 696, ../sass/screen.scss */
+/* line 767, ../sass/screen.scss */
 .list-inline {
   padding-left: 0;
   /*font-size: 1px;*/
@@ -887,7 +970,7 @@ div.video {
   list-style: none;
 }
 
-/* line 702, ../sass/screen.scss */
+/* line 773, ../sass/screen.scss */
 .list-inline > li {
   display: inline-block;
   /*font-size: 14em;*/
@@ -895,18 +978,18 @@ div.video {
   vertical-align: middle;
 }
 
-/* line 708, ../sass/screen.scss */
+/* line 779, ../sass/screen.scss */
 .lt-ie8 .list-inline > li {
   display: inline;
   zoom: 1;
 }
 
-/* line 712, ../sass/screen.scss */
+/* line 783, ../sass/screen.scss */
 .list-inline > li {
   margin-right: 5px;
 }
 
-/* line 715, ../sass/screen.scss */
+/* line 786, ../sass/screen.scss */
 .list-inline > li:last-child {
   margin-right: 0;
 }
@@ -914,15 +997,15 @@ div.video {
 /* ----------------------------------------
 == Waiting page
 ------------------------------------------- */
-/* line 727, ../sass/screen.scss */
+/* line 798, ../sass/screen.scss */
 #waiting > section {
   max-width: 480px;
   margin: 0 auto;
   padding: 5% 1% 1%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0);
 }
 
-/* line 733, ../sass/screen.scss */
+/* line 804, ../sass/screen.scss */
 #waiting header {
   margin-bottom: 35px;
   text-align: center;
@@ -933,12 +1016,12 @@ div.video {
 	text-align: center;
 	font-size: 0.9em;	
 }*/
-/* line 742, ../sass/screen.scss */
+/* line 813, ../sass/screen.scss */
 #waiting h1 {
   font-size: 0;
 }
 
-/* line 745, ../sass/screen.scss */
+/* line 816, ../sass/screen.scss */
 #waiting h2 {
   font-size: 2em;
   font-weight: bold;
@@ -947,38 +1030,38 @@ div.video {
   font-family: 'dinpro';
 }
 
-/* line 753, ../sass/screen.scss */
+/* line 824, ../sass/screen.scss */
 #waiting h3 {
   font-size: 1em;
   text-align: center;
   font-family: 'dinpro';
 }
 
-/* line 759, ../sass/screen.scss */
+/* line 830, ../sass/screen.scss */
 #waiting p {
   font-size: 1em;
   margin-bottom: 15px;
 }
 
-/* line 763, ../sass/screen.scss */
+/* line 834, ../sass/screen.scss */
 #waiting p a {
   color: #dd6b70;
 }
 
-/* line 766, ../sass/screen.scss */
+/* line 837, ../sass/screen.scss */
 #waiting p a:hover {
   color: #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 770, ../sass/screen.scss */
+/* line 841, ../sass/screen.scss */
 #waiting label {
   display: block;
   margin: 5% 0 1%;
   font-size: 1em;
 }
 
-/* line 775, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 #waiting input {
   display: block;
   width: 100%;
@@ -988,13 +1071,13 @@ div.video {
   font-size: 1em;
 }
 
-/* line 783, ../sass/screen.scss */
+/* line 854, ../sass/screen.scss */
 #waiting input:focus {
   outline: none;
   border: 1px #dd6b70 solid;
 }
 
-/* line 787, ../sass/screen.scss */
+/* line 858, ../sass/screen.scss */
 #waiting input[type="submit"] {
   margin: 8% 0 4%;
   background-color: #dd6b70;
@@ -1005,26 +1088,26 @@ div.video {
   cursor: pointer;
 }
 
-/* line 796, ../sass/screen.scss */
+/* line 867, ../sass/screen.scss */
 #waiting input[type="submit"]:hover {
   background-color: #dd6b70;
   border: 1px solid #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 801, ../sass/screen.scss */
+/* line 872, ../sass/screen.scss */
 #reseaux {
   width: 46%;
   margin: 25px auto;
 }
 
-/* line 805, ../sass/screen.scss */
+/* line 876, ../sass/screen.scss */
 #reseaux li {
   display: inline-block;
   margin: 0 5%;
 }
 
-/* line 809, ../sass/screen.scss */
+/* line 880, ../sass/screen.scss */
 #reseaux a {
   display: block;
   font-size: 0;
@@ -1032,12 +1115,12 @@ div.video {
   text-decoration: none;
 }
 
-/* line 815, ../sass/screen.scss */
+/* line 886, ../sass/screen.scss */
 #reseaux a:hover {
   color: #ec6570;
 }
 
-/* line 818, ../sass/screen.scss */
+/* line 889, ../sass/screen.scss */
 #reseaux a:before {
   font-family: 'reseaux';
   font-size: 30px;
