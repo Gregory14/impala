@@ -13,9 +13,9 @@ include("includes/header.php");
         $donnees=$req->fetch();
     }
     if(isset($_SESSION['panier'])){
-        echo "votre place a bien été ajoutée au panier";
-        //var_dump($_SESSION['panier']);
+        echo '<strong style="color:red;">VOTRE TICKET A BIEN ETE AJOUTE A VOTRE PANIER</strong>';
     }
+
 ?>
         <p><a href="evenements.php">Retour à tous les événéments</a></p>
         <section class="fiche-content">
