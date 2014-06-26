@@ -50,56 +50,55 @@ include("traitement/deconnexion.php");
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body role="document">
-        <header role="banner" class="container">
-            <div id="logo" class="inline-block">
-                <a href="index.php" rel="home"><h1>Atmosphère-Parigot</h1></a>
-            </div>
-            <nav id="main-menu" role="navigation" class="inline-block">
-                <ul class="list-inline">
-                    <li><a href="index.php" rel="home" class="is-active">Accueil</a>
-                    </li><li><a href="evenements.php" title="Tous nos événements">Évènements</a>
-                    </li><li><a href="patelins.php" title="Tous nos patelins">Patelins</a>
-                    </li><li><a href="atmosphere.php" title="Notre équipe">La clique</a>
-                    </li><li><a href="contact.php" title="Nous contacter">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div id="login" class="inline-block">
-            <?php 
-                if(isset($_SESSION['connect'])){
-            ?>
-                <ul id="user-connect" class="list-inline">
-                    <li>
-                        <a href="user-profil.php">Mon profil</a>
-                    </li>
-                    <li>
-                        <form name="formDeconnect" action="index.php" method="post">
-                            <input type="submit" name="deconnect" value="Déconnexion">
-                         </form>
-                    </li>    
-                </ul>
-            <?php
-            }else{
-            ?>
-                <ul class="list-inline">
-                    <li>
-                        <a href="inscription.php">Je m'inscris</a>
-                    </li><li>
-                        <a href="connexion.php">J'me connecte</a>
-                    </li>
-                </ul>
-            <?php
-            }
-            ?>
-            </div>
-            <div id="mytickets" class="inline-block">
-                <?php if (isset($_SESSION['panier'])) {
-                    echo "1";
-                }?>
-                <p><a href="espace-tickets.php" title="Voir mes tickets réservés">Mes tickets</a></p>
-            </div>
-            <div id="search" class="inline-block">
-                <p><a href="#">Recherche</a></p>
-            </div>
-        </header>
+        <div id="head">
+            <header role="banner" class="container">
+                <div id="logo" class="inline-block">
+                    <a href="index.php" rel="home"><h1>Atmosphère-Parigot</h1></a>
+                </div>
+                <nav id="main-menu" role="navigation" class="inline-block">
+                    <ul class="list-inline">
+                        <li><a href="index.php" rel="home" class="is-active">Accueil</a>
+                        </li><li><a href="evenements.php" title="Tous nos événements">Évènements</a>
+                        </li><li><a href="patelins.php" title="Tous nos patelins">Patelins</a>
+                        </li><li><a href="atmosphere.php" title="Notre équipe">La clique</a>
+                        </li><li><a href="contact.php" title="Nous contacter">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="login" class="inline-block">
+                <?php 
+                    if(isset($_SESSION['connect'])){
+                ?>
+                    <ul id="user-connect" class="list-inline">
+                        <li>
+                            <a href="user-profil.php">Mon profil</a>
+                        </li>
+                        <li>
+                            <form name="formDeconnect" action="index.php" method="post">
+                                <input type="submit" name="deconnect" value="Déconnexion">
+                             </form>
+                        </li>    
+                    </ul>
+                <?php
+                }else{
+                ?>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="inscription.php">Je m'inscris</a>
+                        </li><li>
+                            <a href="connexion.php">J'me connecte</a>
+                        </li>
+                    </ul>
+                <?php
+                }
+                ?>
+                </div>
+                <div id="mytickets" class="inline-block">
+                    <?php if (isset($_SESSION['panier'])) {
+                        //echo "1";
+                    }?>
+                    <p><a href="espace-tickets.php" title="Voir mes tickets réservés">Mes tickets</a></p>
+                </div>
+            </header>
+        </div>
         <section id="main" class="container">

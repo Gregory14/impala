@@ -10,8 +10,8 @@
 ----------------------- */
 $font-stack: 'dinpro', Helvetica, sans-serif;
 $textColor: #3F3F3F;
-$colorSite: #eb837B;
-$colorHover: #e99385;
+$colorSite: #a769a8;
+$colorHover: #b77ebb;
 
 
 
@@ -28,8 +28,6 @@ h2{
 	padding: 1% 0;
 	text-align: center;
 	font-size: 2em;
-	border-top: 2px solid $textColor;
-	border-bottom: 2px solid $textColor;
 }
 h3{
 	font-size: 1.5em;
@@ -42,9 +40,11 @@ p{
 }
 a{
 	text-decoration: none;
-	color: $textColor;
-	&:hover, .active{
+	&:hover{
 		color: $colorSite;
+	}
+	&:visited{
+		color: $textColor;
 	}
 }
 input{
@@ -115,6 +115,7 @@ textarea{
 }
 .inline-block{
 	display: inline-block;
+	vertical-align: top;
 }
 
 .button{
@@ -150,22 +151,19 @@ textarea{
 /* ----------------------
 == HEADER
 ---------------------- */
+#head{
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
 header.container{
-	margin-bottom: 35px;
-	padding: 0.5% 1%;
 	.list-inline{
 		li{
 			margin: 0;
-			padding: 0 2.6%;
-			border-right: 1px solid $textColor;
-		}
-		li:last-child{
-			border: none;
+			padding: 0 3%;
 		}
 		a{
 			&:hover, .active{
-				color: $colorSite;
-				border-bottom: 3px solid $colorSite;
+				border-bottom: 5px solid $colorSite;
 			}
 		}
 	}
@@ -184,34 +182,36 @@ header.container{
 
 }
 #main-menu{
-	width: 40%;
+	width: 54%;
+	height: 60px;
+	a{
+		display: block;
+		height: 55px;
+		line-height: 55px;
+		&:hover, .active{
+			border-bottom: 5px solid $colorSite;
+		}
+	}
 }
 #login{
 	width: 20%;
+	a{
+		&:hover{
+			background-color: $colorSite;
+			border: none;
+		}
+	}
 }
 #mytickets{
-	width: 10%;
+	width: 5%;
 	vertical-align: bottom;
 	margin-bottom: 15px;
 	a{
 		display: block;
 		height: 40px;
-		background: url('../img/content/icons/tickets-icon.png') no-repeat top left;
+		background: url('../img/content/icons/tickets-icon.png') no-repeat center;
 		text-indent: -99999px;
 	}
-}
-#search{
-	width: 8%;
-	a{
-		display: block;
-		height: 40px;
-		background: url('../img/content/icons/search-icon.png') no-repeat top left;
-		text-indent: -99999px;
-	}
-}
-#main-menu, #login, #search{
-	vertical-align: bottom;
-	margin-bottom: 25px;
 }
 
 
@@ -219,9 +219,7 @@ header.container{
 == FOOTER
 ---------------------- */
 footer{
-	margin-top: 50px;
 	background-color: #fff;
-	border-top: 1px solid $textColor;
 	.container{
 		padding: 1%;
 	}
@@ -267,25 +265,57 @@ footer{
 /* ----------------------
 == PAGE HOME
 ---------------------- */
-#steps{
-	margin: 45px 0;
-	li{
-		width: 20%;
-		margin-right: 4%;
-	}
-	img{
-		display: block;
-		width: 100%;
-	}
-	p{
-		text-align: center;
+#our-concept{
+	height: 600px;
+	background: url('../img/content/home/home-picture.jpg') no-repeat top left;
+	color: #fff;
+	h2{
+		padding-top: 5%;
+		line-height: 100%;
+		text-align: left;
+		text-transform: uppercase;
+		font-size: 4.5em;
+		font-weight: lighter;
 		span{
 			display: block;
+			font-weight: bold;
 		}
 	}
-	a.button{
-		margin-top: 35px;
+	p{
+		width: 45%;
+		font-size: 2em;
+		text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.43);
 	}
+	.button{
+		width: 25%;
+		margin: 40px 0;
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+}
+#steps{
+	padding: 45px 0 60px;
+	text-align: center;
+	ul{
+		margin-top: 50px;
+		li{
+			width: 20%;
+			margin-right: 4%;
+			vertical-align: top;
+		}
+		p{
+			font-size: 1.5em;
+			span{
+				display: block;
+				font-weight: bold;
+				font-size: 2.5em;
+			}
+		}
+	}
+}
+#ours-advantages{
+	padding: 55px 0;
+	background-color: #dfc5e0;
 }
 .advantage{
 	width: 35%;
@@ -352,7 +382,6 @@ footer{
 	}
 	.inline-block{
 		width: 65%;
-		vertical-align: top;
 	}
 	.inline-block.informations{
 		width: 28%;
@@ -581,7 +610,6 @@ div.video{
 	.inline-block{
 		width: 29%;
 		margin: 2% 1.6%;
-		vertical-align: top;
 		h4{
 			margin-bottom: 15px;
 			font-size: 1.25em;
