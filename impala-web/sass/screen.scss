@@ -188,6 +188,7 @@ header.container{
 		display: block;
 		height: 55px;
 		line-height: 55px;
+		border-bottom: 5px solid #fff;
 		&:hover, .active{
 			border-bottom: 5px solid $colorSite;
 		}

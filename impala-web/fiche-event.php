@@ -27,7 +27,7 @@ include("includes/header.php");
                 <ul>
                     <li><?php echo $donnees['address'] ;?></li>
                     <li><?php echo $donnees['transport'] ;?></li>
-                    <li><?php echo $donnees['price'] ;?></li>
+                    <li><?php echo $donnees['price'];?>€</li>
                 </ul>
                 <ul>
                     <li>Horaires</li>

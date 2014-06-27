@@ -57,7 +57,7 @@ include("traitement/deconnexion.php");
                 </div>
                 <nav id="main-menu" role="navigation" class="inline-block">
                     <ul class="list-inline">
-                        <li><a href="index.php" rel="home" class="is-active">Accueil</a>
+                        <li><a href="index.php" rel="home" class="active">Accueil</a>
                         </li><li><a href="evenements.php" title="Tous nos événements">Évènements</a>
                         </li><li><a href="patelins.php" title="Tous nos patelins">Patelins</a>
                         </li><li><a href="atmosphere.php" title="Notre équipe">La clique</a>
