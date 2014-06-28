@@ -9,7 +9,7 @@
 == VARIABLES
 ----------------------- */
 $font-stack: 'dinpro', Helvetica, sans-serif;
-$textColor: #3F3F3F;
+$textColor: #63595d;
 $colorSite: #a769a8;
 $colorHover: #b77ebb;
 
@@ -27,9 +27,11 @@ h2{
 	margin-bottom: 35px;
 	padding: 1% 0;
 	text-align: center;
+	font-weight: bold;
 	font-size: 2em;
 }
 h3{
+	font-weight: bold;
 	font-size: 1.5em;
 }
 h4{
@@ -39,12 +41,10 @@ p{
 	margin: 1% 0;
 }
 a{
+	color: $textColor;
 	text-decoration: none;
-	&:hover{
+	&:hover, :visited{
 		color: $colorSite;
-	}
-	&:visited{
-		color: $textColor;
 	}
 }
 input{
@@ -92,15 +92,34 @@ textarea{
 }
 @font-face{
 	font-family: 'dinpro';
-	src: url('../font/dinpro/dinpro-medium-webfont.eot');
-	src: url('../font/dinpro/dinpro-medium-webfont.eot#iefix') format('embbed-opentype'),
-		 url('../font/dinpro/dinpro-medium-webfont.woff') format('woff'),
-		 url('../font/dinpro/dinpro-medium-webfont.ttf') format('truetype'),
-		 url('../font/dinpro/dinpro-medium-webfont.svg') format('svg');
+	src: url('../font/dinpro/dinpro-regular-webfont.eot');
+	src: url('../font/dinpro/dinpro-regular-webfont.eot#iefix') format('embbed-opentype'),
+		 url('../font/dinpro/dinpro-regular-webfont.woff') format('woff'),
+		 url('../font/dinpro/dinpro-regular-webfont.ttf') format('truetype'),
+		 url('../font/dinpro/dinpro-regular-webfont.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
-
+@font-face{
+	font-family: 'dinpro';
+	src: url('../font/dinpro/dinpro-bold-webfont.eot');
+	src: url('../font/dinpro/dinpro-bold-webfont.eot#iefix') format('embbed-opentype'),
+		 url('../font/dinpro/dinpro-bold-webfont.woff') format('woff'),
+		 url('../font/dinpro/dinpro-bold-webfont.ttf') format('truetype'),
+		 url('../font/dinpro/dinpro-bold-webfont.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'dinpro light';
+	src: url('../font/dinpro/dinpro-light-webfont.eot');
+	src: url('../font/dinpro/dinpro-light-webfont.eot#iefix') format('embbed-opentype'),
+		 url('../font/dinpro/dinpro-light-webfont.woff') format('woff'),
+		 url('../font/dinpro/dinpro-light-webfont.ttf') format('truetype'),
+		 url('../font/dinpro/dinpro-light-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
 /* ----------------------
@@ -139,7 +158,7 @@ textarea{
 	}
 }
 #main{
-	padding: 0 1%;
+	/*padding: 0 1%;*/
 }
 .facebook:before { content: "\e804"; }
 .googleplus:before { content: "\e800"; }
@@ -158,8 +177,7 @@ textarea{
 header.container{
 	.list-inline{
 		li{
-			margin: 0;
-			padding: 0 3%;
+			margin: 0 2%;
 		}
 		a{
 			&:hover, .active{
@@ -172,7 +190,8 @@ header.container{
 	width: 20%;
 	a{
 		display: block;
-		height: 60px;
+		height: 45px;
+		margin: 3% 0;
 		background: url('../img/logo-atmosphere.png') no-repeat top left;
 		text-indent: -9999px;
 		&:hover{
@@ -181,8 +200,7 @@ header.container{
 	}
 
 }
-#main-menu{
-	width: 45%;
+header nav, header ul{
 	height: 60px;
 	a{
 		display: block;
@@ -194,22 +212,27 @@ header.container{
 		}
 	}
 }
+#main-menu{
+	width: 45%;
+}
 #login{
 	width: 27%;
 	ul{
-		height: 60px;
-		line-height: 53px;
+		width: 100%;
 		li{
-			width: 42%;
-			padding: 0;
-			a{
-				padding: 8% 10%;
-				&:hover{
-					background-color: $colorSite;
-					color: #fff;
-					border: none;
-				}
-			}
+			width: 40%;
+			text-align: center;
+			margin-right: 5%;
+		}
+	}
+	a.active{
+		padding: 0 10%;
+		background-color: $colorSite;
+		color: #fff;
+		border: none;
+		&:hover{
+			background-color: $colorHover;
+			transition: all 0.2s ease-in-out;
 		}
 	}
 }
@@ -231,6 +254,7 @@ header.container{
 ---------------------- */
 footer{
 	background-color: #fff;
+	box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 	.container{
 		padding: 1%;
 	}
@@ -264,10 +288,8 @@ footer{
 }
 #contact-us{
 	width: 33%;
-	text-align: center;
 	li:first-child{
-		padding-right: 2.5%;
-		border-right: 1px solid $textColor;
+		padding-right: 8%;
 	}
 }
 
@@ -278,18 +300,18 @@ footer{
 ---------------------- */
 #our-concept{
 	height: 600px;
-	background: url('../img/content/home/home-picture.jpg') no-repeat top left;
+	background: url('../img/content/home/home-picture.jpg') no-repeat top center;
 	color: #fff;
 	h2{
+		margin-bottom: 20px;
 		padding-top: 5%;
-		line-height: 100%;
+		line-height: 65px;
 		text-align: left;
 		text-transform: uppercase;
 		font-size: 4.5em;
-		font-weight: lighter;
 		span{
 			display: block;
-			font-weight: bold;
+			font-family: 'dinpro light', Helvetica, sans-serif;
 		}
 	}
 	p{
@@ -305,6 +327,9 @@ footer{
 	}
 }
 #steps{
+	h3{
+		font-size: 2em;
+	}
 	padding: 45px 0 60px;
 	text-align: center;
 	ul{
@@ -312,8 +337,15 @@ footer{
 		li{
 			width: 20%;
 			margin-right: 4%;
+			padding-top: 10%;
 			vertical-align: top;
+			background-repeat: no-repeat;
+			background-position: top center;
 		}
+		#arrondissement{ background-image: url('../img/content/home/arrondissement.png'); }
+		#video{ background-image: url('../img/content/home/video.png'); }
+		#atmosphere{ background-image: url('../img/content/home/atmosphere.png'); }
+		#patelin{ background-image: url('../img/content/home/patelin.png'); }
 		p{
 			font-size: 1.5em;
 			span{
@@ -331,15 +363,24 @@ footer{
 .advantage{
 	width: 35%;
 	margin-bottom: 40px;
+	padding-left: 12%;
+	background-repeat: no-repeat;
+	background-position: center left;
 	h3{
 		margin-bottom: 15px;
 		font-weight: bold;
 		font-size: 1.5em;
 	}
 	&:nth-child(2){
-		margin-left: 65%;
+		margin-left: 53%;
+		padding-right: 12%;
+		padding-left: 0;
+		background-position: center right;
 	}
 }
+#partage{ background-image: url('../img/content/home/partage.png'); }
+#ambiance{ background-image: url('../img/content/home/evenements.png'); }
+#people{ background-image: url('../img/content/home/notre-plus.png'); }
 
 
 
@@ -441,9 +482,11 @@ footer{
 		}
 		p.description{
 			position: absolute;
-			bottom: -105px;
+			bottom: -180px;
 			left: 0;
-			background-color: #fff;
+			background-color: rgba(255,255,255,0.8);
+			margin: 0;
+			padding: 4% 5% 8%;
 		}
 	}
 
@@ -503,6 +546,7 @@ footer{
 	.inline-block{
 		width: 20%;
 		margin: 2%;
+		text-align: center;
 		img{
 			width: 100%;
 			margin-bottom: 15px;

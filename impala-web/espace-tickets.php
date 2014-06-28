@@ -13,7 +13,7 @@ if(isset($_GET['delete'])){
 }
 ?>
         <h2>Qu’est-ce qu’il y a dedans ?</h2>
-        <section id="tickets-content">
+        <section id="tickets-content" class="container">
             <h3>Mes tickets</h3>
             <form name="ticketNames" action="#" method="post">
             <?php
@@ -50,7 +50,7 @@ if(isset($_GET['delete'])){
                             <p><a href="espace-tickets.php?delete=<?php echo $tickets['id']; ?>">Supprimer</a></p>
                         </div>                          
                     </div>
-                    <?php $total += $price; } //fin foreach
+                    <?php $total += $price;} //fin foreach
                 } //fin isset?>
                 <div>
                     <p>Montant total : <?php echo $total; ?> €</p>

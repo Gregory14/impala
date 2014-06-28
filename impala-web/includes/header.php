@@ -60,7 +60,6 @@ include("traitement/deconnexion.php");
                         <li><a href="evenements.php" title="Tous nos événements">Évènements</a>
                         </li><li><a href="patelins.php" title="Tous nos patelins">Gourbi</a>
                         </li><li><a href="atmosphere.php" title="Notre équipe">La clique</a>
-                        </li><li><a href="contact.php" title="Nous contacter">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -83,7 +82,7 @@ include("traitement/deconnexion.php");
                 ?>
                     <ul class="list-inline">
                         <li>
-                            <a href="inscription.php">Je m'inscris</a>
+                            <a href="inscription.php" class="active">Je m'inscris</a>
                         </li><li>
                             <a href="connexion.php">J'me connecte</a>
                         </li>
@@ -100,4 +99,4 @@ include("traitement/deconnexion.php");
                 </div>
             </header>
         </div>
-        <section id="main" class="container">
+        <section id="main">

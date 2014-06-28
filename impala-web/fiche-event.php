@@ -17,8 +17,8 @@ include("includes/header.php");
     }
 
 ?>
-        <p><a href="evenements.php">Retour à tous les événéments</a></p>
-        <section class="fiche-content">
+        <section class="fiche-content container">
+            <p><a href="evenements.php">Retour à tous les événéments</a></p>
             <div class="fiche-title">
                 <h2><?php echo $donnees['title']; ?></h2>
                 <p class="tag"><?php echo $donnees['tag'] ;?></p>

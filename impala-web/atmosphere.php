@@ -5,7 +5,7 @@ $description="Une petite description du lieu";
 include("includes/header.php"); 
 ?>
         <h2>La clique d'Atmosphère</h2>
-        <section id="team-content">
+        <section id="team-content" class="container">
             <div class="team-category">
                 <div class="inline-block">
                     <img src="#" alt="Visuel membre" />

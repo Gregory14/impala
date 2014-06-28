@@ -5,7 +5,7 @@ $description="Tous les événements les plus improbables. Rencontrez de nouvelle
 include("includes/header.php") 
 ;?>
         <h2>Nos événements</h2>
-        <section id="events-content">
+        <section id="events-content" class="container">
             <div class="filters">
                 <ul class="list-inline">
                     <li class="filter" data-filter="all">All</li>
@@ -23,7 +23,9 @@ include("includes/header.php")
                         <li>
                             <h3><a href="fiche-event.php?id=<?php echo $donnees['id']; ?>"><?php echo $donnees['title']; ?></a></h3>
                             <p class="tag"><?php echo $donnees['tag']; ?></p>
-                            <a href="fiche-event.php?id=<?php echo $donnees['id']; ?>"><img src="#" alt="visuel de l'événement" /></a>
+                            <a href="fiche-event.php?id=<?php echo $donnees['id']; ?>">
+                                <img src="img/content/evenements/test.jpg" alt="visuel de l'événement" />
+                            </a>
                             <p class="description"><?php echo $donnees['description']; ?></p>
                         </li>
                     <?php } ?>

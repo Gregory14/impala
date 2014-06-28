@@ -5,7 +5,7 @@ $description="Atmosphère-parigot, le site référent pour sortir avec ses potes
 include("includes/header.php");
 ?>
         <h2 class="container">Mentions légales</h2>
-        <section id="mentions-content">
+        <section id="mentions-content" class="container">
             <p>Ici tout le blabla des mentions légales</p>
         </section>
 <?php include("includes/footer.php"); ?>

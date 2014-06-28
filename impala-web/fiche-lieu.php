@@ -4,8 +4,8 @@ $description="Une petite description du lieu";
 
 include("includes/header.php");
 ?>
-        <p><a href="patelins.php">Retour à tous les patelins</a></p>
-        <section class="fiche-content">
+        <section class="fiche-content container">
+            <p><a href="patelins.php">Retour à tous les patelins</a></p>
             <div class="fiche-title">
                 <h2>Le titre du lieu</h2><p class="tag">Bar</p>
             </div>
