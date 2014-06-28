@@ -5,7 +5,7 @@ $description="Une petite description du lieu";
 include("includes/header.php");
 ?>
         <h2>Là ou ça s'trouve</h2>
-        <section id="theme-content">
+        <section id="theme-content" class="container">
             <div id="map">
                 <p>Code GREG ici</p>
             </div>

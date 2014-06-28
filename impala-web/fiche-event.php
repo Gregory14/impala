@@ -13,12 +13,12 @@ include("includes/header.php");
         $donnees=$req->fetch();
     }
     if(isset($_SESSION['panier'])){
-        echo "votre place a bien été ajoutée au panier";
-        //var_dump($_SESSION['panier']);
+        echo '<strong style="color:red;">VOTRE TICKET A BIEN ETE AJOUTE A VOTRE PANIER</strong>';
     }
+
 ?>
-        <p><a href="evenements.php">Retour à tous les événéments</a></p>
-        <section class="fiche-content">
+        <section class="fiche-content container">
+            <p><a href="evenements.php">Retour à tous les événéments</a></p>
             <div class="fiche-title">
                 <h2><?php echo $donnees['title']; ?></h2>
                 <p class="tag"><?php echo $donnees['tag'] ;?></p>
@@ -27,7 +27,7 @@ include("includes/header.php");
                 <ul>
                     <li><?php echo $donnees['address'] ;?></li>
                     <li><?php echo $donnees['transport'] ;?></li>
-                    <li><?php echo $donnees['price'] ;?></li>
+                    <li><?php echo $donnees['price'];?>€</li>
                 </ul>
                 <ul>
                     <li>Horaires</li>

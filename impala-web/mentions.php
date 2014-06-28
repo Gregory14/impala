@@ -4,6 +4,7 @@ $description="Atmosphère-parigot, le site référent pour sortir avec ses potes
 
 include("includes/header.php");
 ?>
+
 <h2 class="container">Informations légales</h2>
         <section id="mentions-content">
            
@@ -63,5 +64,6 @@ Crédits : les mentions légales ont étés générées et offertes par Subdelir
 <h3>11. Lexique.</h3>
 <p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p>
 <p>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
+
         </section>
 <?php include("includes/footer.php"); ?>

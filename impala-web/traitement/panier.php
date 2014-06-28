@@ -1,19 +1,22 @@
 <?php
-if(isset($_GET['id'])) {
-    // var_dump($_GET['id']);
-    $_SESSION['panier'][] = $_GET['id'];
-    var_dump($_SESSION['panier']);
+session_start();
 
-    if(isset($_SESSION['panier'])){
-        echo 'ici la session est détectée';
+
+//Ajout d'un ticket (article) dans le panier
+if(isset($_GET['id'])) {
+    $id_article=$_GET['id'];
+
+    //Gestion de la quantité
+    if(array_key_exists($id_article, $_SESSION['panier'])) {
+        $_SESSION['panier'][$id_article] += 1;
+    } else {
+        $_SESSION['panier'][$id_article] = 1;
     }
-    //header('location: place.php');
+    //redirection
     header('location: ../fiche-event.php?id='.$_GET['id']);
-    //header('location: /confirmation.php?id=1');
-} else {
+} 
+else{
     header('location: /index.php');
 }
 
 ?>
-
-<a href="../evenements.php">Retour</a>

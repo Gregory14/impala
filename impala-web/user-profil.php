@@ -6,7 +6,7 @@ include("includes/header.php");
 include("traitement/user.php");
 ?>
         <h2>C’est ici qu’tu peux voir tes informations</h2>
-        <section id="user-content">
+        <section id="user-content" class="container">
             <div id="user-infos">
                 <h3>1- Mes informations personnelles</h3>
                 <div class="inline-block">
