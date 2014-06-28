@@ -4,6 +4,7 @@ var map = L.mapbox.map('map', 'mbouras.ige8aolg')
 $.ajax({
   url: "js/marker.geojson"
 }).done(function(data) {
+	//Recupération Données JSON
 	data = $.parseJSON(data);
 	var features = data.features;
 	var dataCount = features.length;
@@ -11,30 +12,37 @@ $.ajax({
 		
 		var element = features[i];
 		console.log(element);
+		// Design Marker  
 		var myIcon = L.icon({
-			iconUrl: 'img/logo-atmosphere-twitter.png',
+			iconUrl: 'img/content/map/parcours-partage.png',
 			iconRetinaUrl: 'my-icon@2x.png',
-			iconSize: [38, 95],
-			iconAnchor: [22, 94],
+			iconSize: [50, 50],
+			iconAnchor: [25, 50],
 			popupAnchor: [-3, -76],
-			shadowUrl: 'my-icon-shadow.png',
-			shadowRetinaUrl: 'my-icon-shadow@2x.png',
-			shadowSize: [68, 95],
-			shadowAnchor: [22, 94]
+			// shadowUrl: 'my-icon-shadow.png',
+			// shadowRetinaUrl: 'my-icon-shadow@2x.png',
+			// shadowSize: [68, 95],
+			// shadowAnchor: [22, 94]
 		});
+		// Coodronnées Géographiques (Latitude, Longitude) 
+		var latlng = L.latLng(element.geometry.coordinates[1],element.geometry.coordinates[0]);
+		var geometryType = element.geometry.type;
 
-		L.marker([coordinates[48.8870954, 2.38773]], {icon: myIcon}).addTo(map);
+		console.log(latlng);
+
+		// var polygon = L.multiPolygon(latlng);
+		// alert(polygon);
+		if (geometryType == 'Point'){
+		console.log(geometryType);
+		}
+		
+		// Placer les Markers de position
+		L.marker(latlng, {icon: myIcon}).addTo(map);
+
+		
 	}
+	L.control.zoom('topright', '+', '-').addTo(map);
 });
 
-// initialize the map on the "map" div with a given center and zoom
-// var map = L.map('map', {
-// 	center: [48.8870954, 2.38773],
-// 	zoom: 14,
-// });
-// var geojson = L.mapbox.featureLayer().loadURL('https://a.tiles.mapbox.com/v3/mbouras.ige8aolg/markers.geojson').addTo(map);
 
-// L.tileLayer('http://{s}.tile.mapbox.com/v3/mbouras.ige8aolg/{z}/{x}/{y}.png').addTo(map);
-//L.marker([setGeoJSON(geojson)]).addTo(map);
 
-//alert(geojson);

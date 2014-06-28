@@ -1,20 +1,12 @@
-// $( document ).ready( function(){
-// 	$("#video-nature, #video-partage, #video-culture" ).hide();
-// 	$( "li" ).click( 
-// 		function(){
-// 			var theme = $(this).attr("id");
-// 			$("div").removeClass("show");
-// 			$("#video-"+theme).addClass("show");
-// 		});
-// });
-
+var myPlayer;
 $( document ).ready( function(){
 	$("#video-nature, #video-partage").hide();
 	$( "li" ).click( 
 		function(){
+			// Declaration Variable
 			var theme = $(this).attr("title");
 			var video = $("#video-"+theme).children().attr("id");
-			// var resetVideo = !video;
+			// Reset Video
 			$(".video").fadeOut(
 				function(){
 					var hidePlayer = videojs("#partage");
@@ -23,35 +15,34 @@ $( document ).ready( function(){
 					hidePlayer.pause();
 					hidePlayerOne.pause();
 				});
+			// Show Video
 			$("#video-"+theme).fadeIn(
 				function(){
-					videojs(video).ready(
+					var player = videojs(video);
+
+					player
+					//.off('ended')	
+					.on('ended', function(){
+					// Ici declanchement a la fin de la video
+						$("#video-"+theme+" div.popup").removeClass('hidden');
+						$("#video-"+theme+" div.popup").addClass('show');
+					})
+					// 
+					.ready(
 						function(){
 							// get
-							var myPlayer = this;
-							var isVolumeMuted = myPlayer.muted();
-							// var whereYouAt = myPlayer.currentTime();
+							myPlayer = this;
+							console.log('ended current time = '+myPlayer.currentTime());
+                			console.log(' duration: '+myPlayer.duration());
 							// set
-							myPlayer.muted(false); // mute the volume
-							// myPlayer.currentTime(10) // Time to start video
-							// EXAMPLE: Start playing the video.
-							myPlayer.play();
-
-							// TEST DUREE VIDEO FIN - COURRENT
-							// var end = myPlayer.duration();
-							// var time = myPlayer.currentTime();
+							myPlayer.muted(false); // CONTROL MUTE VIDEO
+							myPlayer.currentTime(0);
+							myPlayer.play(); // AUTO PLAY VIDEO
 							
-							// if (end - time < 10) {
-							// 	alert("YES");
-							// };
-							
+								console.log('Times'+myPlayer.currentTime())
+									
 													  
 						});
 				});			
-
 		});
-
-
-
-
 });
