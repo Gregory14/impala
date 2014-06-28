@@ -182,7 +182,7 @@ header.container{
 
 }
 #main-menu{
-	width: 54%;
+	width: 45%;
 	height: 60px;
 	a{
 		display: block;
@@ -190,16 +190,26 @@ header.container{
 		line-height: 55px;
 		border-bottom: 5px solid #fff;
 		&:hover, .active{
-			border-bottom: 5px solid $colorSite;
+			border-color: $colorSite;
 		}
 	}
 }
 #login{
-	width: 20%;
-	a{
-		&:hover{
-			background-color: $colorSite;
-			border: none;
+	width: 27%;
+	ul{
+		height: 60px;
+		line-height: 53px;
+		li{
+			width: 42%;
+			padding: 0;
+			a{
+				padding: 8% 10%;
+				&:hover{
+					background-color: $colorSite;
+					color: #fff;
+					border: none;
+				}
+			}
 		}
 	}
 }
