@@ -23,7 +23,7 @@ $( document ).ready( function(){
 					player
 					//.off('ended')	
 					.on('ended', function(){
-					// Ici declanchement a la fin de la video
+					// Ici déclanchement à la fin de la video
 						$("#video-"+theme+" div.popup").removeClass('hidden');
 						$("#video-"+theme+" div.popup").addClass('show');
 					})
