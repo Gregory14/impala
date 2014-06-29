@@ -57,6 +57,9 @@ input{
 	border-radius: 3px;
 	font-size: 1em;
 }
+input.button{
+	cursor: pointer;
+}	
 input:focus,
 textarea:focus{
 	outline: none;
@@ -816,19 +819,23 @@ footer{
 
 
 /* ----------------------
-== PAGE BILLING
+== PAGE FACTURATION
 ---------------------- */
 #billing-content{
 	width: 80%;
 	margin: 0 auto;
 	h3, h4{
 		margin: 30px 0;
-		text-align: center;
 	}
-	#payment{
-		width: 60%;
-		margin-right: 10%;
+	.button{
+		width: 32%;
+		margin: 3% 0;
 	}
+	
+}
+#payment{
+	width: 60%;
+	margin-right: 10%;
 	form label {
 		width: 49%;
 		margin-bottom: 15px;
@@ -841,50 +848,32 @@ footer{
 	}
 	form label input{
 		padding: 8px;
-	} 
-	#order-summary {
-		width: 25%;
-		margin-left: 3%;
-		vertical-align: top;
-		padding: 5px;
 	}
-
-	#order-summary p {
-		font-weight: lighter;
+	input[type="radio"] {
+		width: 5%;
+	    cursor: pointer;
 	}
-	#order-summary p:last-child{
+	#payment-choice{
+		label{
+			width: 20%;
+		}
+	}
+}
+#order-summary {
+	width: 25%;
+	padding: 5px;
+	p:last-child{
 		margin : 5% 0;
 		border-top: 2px solid $textColor;
 		padding-top: 3%;
 	}
-
-	input[type="radio"] {
-	    background-color: #fff;
-	    cursor: pointer;
-	    height: 50px;
-	    margin-right: 50px;
-	    width: 50px;
-	    -webkit-appearance: none;
-	}
-	input[type="radio"]:after {
-	    background-color: $colorSite;
-	    display: block;
-	    height: 50px;
-	    width: 50px;
-	}
-
-	.button{
-		width: 65%;
-		margin: 3% 0;
+	span{
+		font-weight: bold;
 	}
 	#sum{
 		font-size: 1.3em;
 		margin: 10px 0;
 	}
-	#nbrtotal, #commanderecap{
-		font-weight: bold;
-	}
-
 }
 
 

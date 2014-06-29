@@ -9,7 +9,6 @@ if(isset($_GET['delete'])){
     $id_article=$_GET['delete'];
 
     unset($_SESSION['panier'][$id_article]);
-
 }
 ?>
         <h2>Qu’est-ce qu’il y a dedans ?</h2>
@@ -17,14 +16,14 @@ if(isset($_GET['delete'])){
             <h3>Mes tickets</h3>
             <form name="ticketNames" action="#" method="post">
             <?php
-
-                //Afficher tous les événements réservés (présents dans le panier)
+                //Vérifier que le panier existe et est rempli
                 if(isset($_SESSION['panier'])){
 
                     $ids = array_keys($_SESSION['panier']);
                     $req = $mysql->prepare('SELECT * FROM events WHERE id IN('.implode(',', $ids).')');
                     $req->execute();
 
+                    //Afficher tous les événements réservés (présents dans le panier)
                     foreach ($req as $tickets){
                     ?>
                     <div class="ticket">  
@@ -33,6 +32,7 @@ if(isset($_GET['delete'])){
                             <p>Quantité : <?php echo $nbeTickets = $_SESSION['panier'][$tickets['id']]; ?> place(s)</p>
                             <p>Veuillez remplir les nom(s) et prénom(s) des bénéficiaires des billets.</p>
                             <?php
+
                                 //Afficher autant d'inputs que de tickets réservés (invits amis)
                                 for($i=1; $i <= $nbeTickets; $i++){
                                     echo 
@@ -50,12 +50,36 @@ if(isset($_GET['delete'])){
                             <p><a href="espace-tickets.php?delete=<?php echo $tickets['id']; ?>">Supprimer</a></p>
                         </div>                          
                     </div>
-                    <?php $total += $price;} //fin foreach
-                } //fin isset?>
+                    <?php 
+                        //Calculer le montant total du panier
+                        $totalPrice += $price; 
+
+                        //Calculer le nombre total de places réervés (tous événements confondus)
+                        $totalTickets += $nbeTickets;
+
+                    }//fin foreach
+
+                    //Mettre en session les variables créées précédemment (montant total + nombre total tickets)
+                    $_SESSION['price'] = $totalPrice;
+                    $_SESSION['amount'] = $totalTickets;
+                
+                    //Disparition du bouton "Commander" si panier vide après suppression d'un article
+                    if(!empty($_SESSION['panier'])){
+                ?>
                 <div>
-                    <p>Montant total : <?php echo $total; ?> €</p>
+                    <p>Montant total : <?php echo $totalPrice; ?> €</p>
                 </div>
-                <input class="button" name="command" type="submit" value="Allez j'commande !" />
+                <!-- <input class="button" name="command" type="submit" value="Allez j'commande !" /> -->
+                <a href="facturation.php" class="button" title="Valider mon panier">Allez, j'commande !</a>
+                <?php }//fin empty
+
+                }//fin isset
+                else if(!isset($_SESSION['panier']) || empty($_SESSION['panier'])){
+                ?>
+                    <p>Aucun événement réservé pour le moment. Consulte donc tous nos <a href="evenements.php">événements</a> !</p>
+                <?php
+                }
+            ?>
             </form>
         </section>
 <?php include("includes/footer.php"); ?>

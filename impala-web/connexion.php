@@ -4,13 +4,16 @@ $description="Une petite description du lieu";
 
 include("includes/header.php");
 
+
+//---SE CONNECTER A SON ESPACE MEMBRE---//
+
+//Vérification des données envoyés via le formulaire de connexion
 if(isset($_POST['login'])){
     
     if($_SERVER['REQUEST_METHOD']!= 'POST'){
         header('location:./index.php');
         exit();
     }
-
     if(!isset($_POST['username']) || strlen($_POST['username']) < 4 ){
         $message = "Username invalide";
     }
@@ -19,6 +22,7 @@ if(isset($_POST['login'])){
     }
     else
     {
+        //Connexion à la base de données
         $username=htmlspecialchars($_POST['username']);
         $password=htmlspecialchars($_POST['password']);
         $password = hash("sha256",$password);
@@ -26,29 +30,35 @@ if(isset($_POST['login'])){
         $reponse=$mysql->prepare('SELECT * FROM users WHERE username = :username AND password = :password');
         $reponse->execute(array(":username"=>$username,":password"=>$password));      
 
+
+        //Création des variables de session propres à l'utilisateur (username, email)
         if($reponse->rowCount()==1){
             session_start();
-            $donnees=$reponse->fetch();     
-
-            /*$_SESSION['id']=$donnees['id'];
-            $_SESSION['username']=$donnees['username'];
-            $_SESSION['email']=$donnees['email'];
-            $_SESSION['password']=$donnees['password'];*/
+            $donnees=$reponse->fetch();
             
             foreach($donnees as $key => $value){
                 $_SESSION[$key] = $value;   
             }
 
+            //Création d'une variable qui prouve que l'utilisateur est connecté
             $_SESSION['connect']= true;
             
-            //print_r($_SESSION);
-            header('location:index.php');
+
+            //Redirection après connexion
+            //  Utilisateur est arrivé sur la page de connexion après validation du panier
+            if($_SESSION['currentPurchase']){
+                header('location: facturation.php');
+            }
+            else{
+                //Sinon, redirection vers l'accueil
+                header('location:index.php');
+            }
         }
         else{
             $message = "Username et/ou mot de passe incorrect";
         }
     }
-}
+}//fin isset
 ?>
         <h2>Connectez-vous</h2>
         <section id="connect-content" class="container container">

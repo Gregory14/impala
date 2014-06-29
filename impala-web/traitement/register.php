@@ -1,10 +1,9 @@
 <?php
 
-//var_dump($_POST);
-
+//Enregistrer un nouvel utilisateur
 if(isset($_POST['register'])){
     
-    //--01
+    //Vérifier champs username et email sont remplis correctement
     if(isset($_POST['username']) && strlen($_POST['username']) >2 ){
         $username=htmlspecialchars($_POST['username']);
     }
@@ -30,34 +29,28 @@ if(isset($_POST['register'])){
     else{
         $message='Champ <b>password</b> invalide';
     }
-    
-    
-    //--02
+
+    //Vérifier username et email non existants dans la base
     if(!isset($message)){
         $reponse=$mysql->prepare('SELECT username FROM users WHERE username=:username');
         $reponse->execute(array(':username'=>$username));
         
         if($reponse->rowCount() > 0){
             $message='Username déjà existant';
-            //die('bobby');
         }
         else{
             $email=htmlspecialchars($_POST['email']);
             
             $reponse=$mysql->prepare('SELECT email FROM users WHERE email=:email');
             $reponse->execute(array(':email'=>$email));
-
-            //die('hello');
             
             if($reponse->rowCount() > 0){
                 $message='Email déjà existant';
             }
             else{
-                //$password=sha1($password);
-
                 $password = hash("sha256",$password); 
 
-
+                //Insertion en base du nouvel utilisateur
                 $req=$mysql->prepare('INSERT INTO users (username, email, password) VALUES(:username, :email, :password)');
                 $add=$req->execute(array(
                     ':username'=>$username,
@@ -71,6 +64,8 @@ if(isset($_POST['register'])){
                     ':email'=>$email,
                     ':password'=>$password,
                     );
+                    
+                    $_SESSION['connect']= true;
                 }
                 else{
                     $message='Erreur, contactez l\'administrateur du site'; 

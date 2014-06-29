@@ -2,15 +2,25 @@
 $title="Atmosphère - Facturation";
 $description="Tous les événements les plus improbables. Rencontrez de nouvelles personnes, partagez vos connaissances et expériences et découvrez de nouveaux lieux.";
 
-include("includes/header.php") 
+include("includes/header.php");
+
+//Vérifier que l'utilisateur est bien connecté
+if(!isset($_SESSION['connect'])){
+
+    //Si utilisateur pas connecté, redirigé vers page connexion
+    //  (création variable pour permettre redirection vers facturation après connexion)
+    header('location: connexion.php');
+    $_SESSION['currentPurchase'] = true;
+}
+
 ;?>
         <h2>Pour avoir ton ticket brûle pas les étapes</h2>
-        <section id="billing-content">
+        <section id="billing-content" class="container">
             <!-- Ici les pictos étapes : Récupérer le code de Greg -->
             
             <div id="payment" class="inline-block">
-                <h3>1- Adresse de facturation</h3>
                 <form name="formBilling" action="" method="post">
+                    <h3>1- Adresse de facturation</h3>
                     <label for="firstname" class="inline-block">Blaze
                         <input id="firstname" name="firstname" type="text" required tabindex="1" value="" placeholder="Marc">
                     </label>
@@ -29,26 +39,27 @@ include("includes/header.php")
                     <label for="country" class="inline-block">Pays
                         <input id="country" name="country" type="text" tabindex="6" required value="" placeholder="France">
                     </label>
-
-                <h3>2- Email de livraison</h3>
+                    <h3>2- Email de livraison</h3>
                     <label for="email">Email
                         <input id="email" name="email" type="email" required tabindex="7" value="" placeholder="47, rue du Four">
                     </label>
-                <h3>3- Choix du paiement</h3>
-                    <input class="inline-block" type="radio" name="paiement" value="cb"/> Carte Bleu
-                    <input class="inline-block" type="radio" name="paiement" value="cheque"> Cheque
-                    <input class="inline-block" type="radio" name="paiement" value="espece"> Espece
-
-                    <input class="button" name="pay" type="submit" value="Valider ma commande" class="button" />
+                    <div id="payment-choice">
+                        <h3>3- Choix du paiement</h3>
+                            <input class="inline-block" type="radio" name="paiement" value="Carte bleue">
+                        <label class="inline-block">Carte bleue</label>
+                            <input class="inline-block" type="radio" name="paiement" value="Chèsque">
+                        <label class="inline-block">Chèque</label>
+                        <input class="button" name="pay" type="submit" value="Valider ma commande">
+                    </div>
                 </form>
             </div>
             <div id="order-summary" class="inline-block">
                 <h3>Récapitulatif</h3>
-                <p id="sum">Total : 15€</p>
-                <p id="commanderecap">Ma commande</p>
+                <p id="sum">Total : <?php if(isset($_SESSION['price'])){ echo $_SESSION['price']; } ?>€</p>
+                <h4>Ma commande</h4>
                 <p>Conférence architecture</p>
                 <p>29 juin 2014</p>
-                <p>Quantité : <span id="nbrtotal">3 places</span></p>
+                <p>Quantité : <span><?php if(isset($_SESSION['amount'])){ echo $_SESSION['amount']; } ?> place(s)</span></p>
             </div>
         </section>
 <?php include("includes/footer.php"); ?>
