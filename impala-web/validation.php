@@ -2,7 +2,8 @@
 $title="Atmosphère - Validation du paiement et de la commande";
 $description="Tous les événements les plus improbables. Rencontrez de nouvelles personnes, partagez vos connaissances et expériences et découvrez de nouveaux lieux.";
 
-include("includes/header.php") 
+include("includes/header.php"); 
+
 ;?>
         <h2>Validation du paiement</h2>
         <section id="validation-content">

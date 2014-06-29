@@ -49,7 +49,6 @@ include("traitement/user.php");
                         <input type="submit" name="deleteUser" class="button" value="Supprimer mon compte">    
                     </form>
                 </div>
-                
             </div>
             <div id="user-orders">
                 <h3>2- Toutes mes commandes</h3>

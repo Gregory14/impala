@@ -3,6 +3,7 @@ $title="Atmosphère - Facturation";
 $description="Tous les événements les plus improbables. Rencontrez de nouvelles personnes, partagez vos connaissances et expériences et découvrez de nouveaux lieux.";
 
 include("includes/header.php");
+include('traitement/billing.php');
 
 //Vérifier que l'utilisateur est bien connecté
 if(!isset($_SESSION['connect'])){
@@ -19,7 +20,7 @@ if(!isset($_SESSION['connect'])){
             <!-- Ici les pictos étapes : Récupérer le code de Greg -->
             
             <div id="payment" class="inline-block">
-                <form name="formBilling" action="" method="post">
+                <form name="formBilling" action="./facturation.php" method="post">
                     <h3>1- Adresse de facturation</h3>
                     <label for="firstname" class="inline-block">Blaze
                         <input id="firstname" name="firstname" type="text" required tabindex="1" value="" placeholder="Marc">
@@ -39,15 +40,16 @@ if(!isset($_SESSION['connect'])){
                     <label for="country" class="inline-block">Pays
                         <input id="country" name="country" type="text" tabindex="6" required value="" placeholder="France">
                     </label>
+                    <input name="id" type="hidden" value="<?php echo $_SESSION['id']; ?>">
                     <h3>2- Email de livraison</h3>
                     <label for="email">Email
                         <input id="email" name="email" type="email" required tabindex="7" value="" placeholder="47, rue du Four">
                     </label>
                     <div id="payment-choice">
-                        <h3>3- Choix du paiement</h3>
+                        <h3>3- Choix du mode de paiement</h3>
                             <input class="inline-block" type="radio" name="paiement" value="Carte bleue">
                         <label class="inline-block">Carte bleue</label>
-                            <input class="inline-block" type="radio" name="paiement" value="Chèsque">
+                            <input class="inline-block" type="radio" required name="paiement" value="Chèsque">
                         <label class="inline-block">Chèque</label>
                         <input class="button" name="pay" type="submit" value="Valider ma commande">
                     </div>

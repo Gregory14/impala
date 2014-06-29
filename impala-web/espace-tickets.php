@@ -69,7 +69,6 @@ if(isset($_GET['delete'])){
                 <div>
                     <p>Montant total : <?php echo $totalPrice; ?> €</p>
                 </div>
-                <!-- <input class="button" name="command" type="submit" value="Allez j'commande !" /> -->
                 <a href="facturation.php" class="button" title="Valider mon panier">Allez, j'commande !</a>
                 <?php }//fin empty
 
