@@ -505,13 +505,14 @@ footer{
 	}	
 }
 .all-thumbnails{
-	margin-top: 35px;
+	width: 75%;
+	margin: 35px auto;
 	li{
 		position: relative;
-		width: 30%;
+		width: 45%;
 		height: inherit;
 		overflow: hidden;
-		margin-left: 2%;
+		margin: 5% 2%;
 		&:hover{
 			p.description{
 				bottom: 0;
