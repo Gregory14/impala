@@ -6,9 +6,9 @@ include("includes/header.php")
 ;?>
         <h2>Nos événements</h2>
         <section id="events-content" class="container">
-            <div class="filters">
+            <div id="filters">
                 <ul class="list-inline">
-                    <li class="filter" data-filter="all">All</li>
+                    <li class="filter" data-filter="all">TOUS</li>
                     <li class="filter" data-filter="nineteenth">19ème</li>
                     <li class="filter" data-filter="twentieth">20ème</li>
                 </ul>

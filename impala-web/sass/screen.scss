@@ -487,10 +487,22 @@ footer{
 /* ----------------------
 == PAGE EVENEMENTS + PATELINS
 ---------------------- */
-.filters{
+#filters{
 	li{
+		width: 5%;
+		margin-right: 3%;
+		padding: 0.5% 1%;
+		text-align: center;
 		cursor: pointer;
+		&:hover{
+			background-color: $colorSite;
+			color: #fff;
+		}
 	}
+	.active{
+		background-color: $colorSite;
+		color: #fff;
+	}	
 }
 .all-thumbnails{
 	margin-top: 35px;
