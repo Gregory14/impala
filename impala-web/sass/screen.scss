@@ -13,6 +13,9 @@ $font-stack: 'dinpro', Helvetica, sans-serif;
 $textColor: #63595D;
 $colorSite: #a769a8;
 $colorHover: #b77eBB;
+$colorSucces: #66a03f;
+$textColorAlert: #ffffff;
+$colorError: #d0695b;
 
 
 
@@ -170,6 +173,20 @@ textarea{
 .pinterest:before {	content: "\e801"; }
 .twitter:before { content: "\e802"; }
 .youtube:before { content: "\e803"; }
+
+.alert-error {
+	color: $textColorAlert;
+	background-color: $colorError;
+	text-align: center;
+	padding: 2%;
+}
+
+.alert-success {
+	color: $textColorAlert;
+	background-color: $colorSucces;
+	text-align: center;
+	padding: 2%;
+}
 
 
 /* ----------------------

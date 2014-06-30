@@ -2,7 +2,7 @@
 session_start();
 
 include("includes/config.php");
-include_once("traitement/analyticstracking.php");
+// include_once("traitement/analyticstracking.php");
 include("traitement/deconnexion.php");
 
 ?>
@@ -50,6 +50,15 @@ include("traitement/deconnexion.php");
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body role="document">
+        <!-- API Facebook -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=427630174044778&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         <div id="head">
             <header role="banner" class="container">
                 <div id="logo" class="inline-block">

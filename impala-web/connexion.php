@@ -33,7 +33,7 @@ if(isset($_POST['login'])){
 
         //Création des variables de session propres à l'utilisateur (username, email)
         if($reponse->rowCount()==1){
-            session_start();
+            // session_start(); => DEJA DeÉCLARÉ DANS LE HEADER
             $donnees=$reponse->fetch();
             
             foreach($donnees as $key => $value){
@@ -46,12 +46,12 @@ if(isset($_POST['login'])){
 
             //Redirection après connexion
             //  Utilisateur est arrivé sur la page de connexion après validation du panier
-            if($_SESSION['currentPurchase']){
+            if(isset($_SESSION['currentPurchase'])){
                 header('location: facturation.php');
             }
             else{
                 //Sinon, redirection vers l'accueil
-                header('location:index.php');
+                header('location: index.php');
             }
         }
         else{
