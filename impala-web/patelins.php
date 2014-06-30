@@ -20,7 +20,7 @@ include("includes/header.php")
             <?php 
                 $req=$mysql->prepare('SELECT * FROM places');
                 $req->execute();
-
+                
                 while($donnees=$req->fetch()){?>
                     <li class="mix all <?php echo $donnees['arrondissement']; ?>">
                         <h3><a href="fiche-lieu.php?id=<?php echo $donnees['id']; ?>"><?php echo $donnees['title']; ?></a></h3>
@@ -48,7 +48,7 @@ include("includes/header.php")
         <script type="text/javascript">
         //Filtres et Tri
                 $(function(){
-                    $('#Container').mixitup();
+                    $('#Container').mixItUp();
                 });
         </script>
 <?php include("includes/footer.php"); ?>
