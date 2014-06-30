@@ -487,19 +487,32 @@ footer{
 /* ----------------------
 == PAGE EVENEMENTS + PATELINS
 ---------------------- */
-.filters{
+#filters{
 	li{
+		width: 5%;
+		margin-right: 3%;
+		padding: 0.5% 1%;
+		text-align: center;
 		cursor: pointer;
+		&:hover{
+			background-color: $colorSite;
+			color: #fff;
+		}
 	}
+	.active{
+		background-color: $colorSite;
+		color: #fff;
+	}	
 }
 .all-thumbnails{
-	margin-top: 35px;
+	width: 75%;
+	margin: 35px auto;
 	li{
 		position: relative;
-		width: 30%;
+		width: 45%;
 		height: inherit;
 		overflow: hidden;
-		margin-left: 2%;
+		margin: 5% 2%;
 		&:hover{
 			p.description{
 				bottom: 0;
@@ -539,6 +552,16 @@ footer{
 /* ----------------------
 == PAGE FICHE-LIEU
 ---------------------- */
+.back{
+	display: block;
+	width: 4%;
+	margin-top: 30px;
+	padding: 1% 0;
+	background-color: #63595d;
+	color: #fff;
+	font-size: 1.875em;
+	text-align: center;
+}
 .fiche-content{
 	width: 70%;
 	margin: 0 auto;
@@ -547,8 +570,13 @@ footer{
 		border: 0;
 	}
 	.button.share{
+		width: 25%;
 		margin-right: 0;
 	}
+	.button{
+		margin-bottom: 40px;
+	}
+
 }
 .fiche-title{
 	h2{
@@ -557,16 +585,39 @@ footer{
 	}
 }
 .informations{
-	padding: 1.5% 2%;
+	padding:0 2%;
 	border: 1px solid $textColor;
 	ul{
-		display: inline-block;
-		vertical-align: top;
-		width: 45%;
+		width: 100%;
+		li{
+			display: inline-block;
+			width: 29%;
+			margin: 2% 0;
+			padding: 2% 10%;
+			background-repeat: no-repeat;
+			background-position: top left;
+		}
+		.address{ background-image: url('../img/content/icons/adresse.png'); }
+		.transport{ background-image: url('../img/content/icons/transport.png'); }
+		.time{ background-image: url('../img/content/icons/horaire.png'); }
+		.telephone{ background-image: url('../img/content/icons/telephone.png'); }
+		.website{ background-image: url('../img/content/icons/website.png'); }
 	}
 }
 .fiche-description{
-	margin-top: 40px;
+	h3{
+		margin-bottom: 15px;
+	}
+	p{
+		line-height: 1.5em;
+	}
+}
+.pictures{
+	margin: 40px 0;
+	img{
+		display: block;
+		width: 100%;
+	}
 }
 
 
@@ -821,14 +872,11 @@ footer{
 		a:before{
 			font-size: 30px;
 		}
-
 	}
 }
-#mail-impala{
-	margin-top: 15px;
-	text-align: center;
-	font-size: 1.25em;
-	color: $colorSite;
+#message-validation{
+	width: 45%;
+	margin: 0 auto 70px;
 }
 
  
@@ -989,14 +1037,6 @@ footer{
 		font-size: 1.3em;
 		margin: 10px 0;
 	}
-}
-
-/* ----------------------
-== PAGE VALIDATION
----------------------- */
-#message-validation{
-	width: 45%;
-	margin: 0 auto 70px;
 }
 
 

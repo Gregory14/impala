@@ -5,7 +5,7 @@ $description="Tous les événements les plus improbables. Rencontrez de nouvelle
 include("includes/header.php"); 
 
 ?>
-        <h2>Validation du paiement</h2>
+        <h2>Ta commande est validée !</h2>
         <section id="validation-content">
             <div class="steps-purchase">
                 <ul class="list-inline">
@@ -16,9 +16,9 @@ include("includes/header.php");
                 </ul>
             </div>            
             <div id="message-validation">
-                <h3>Commande validée ! Projet étudiant</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis ante a arcu bibendum sagittis. Donec eget placerat leo. Donec sit amet ipsum et dolor faucibus malesuada nec lobortis diam. Cras vestibulum posuere nisl, ac cursus mi. Vivamus quis nisi quis tortor iaculis varius. Suspendisse tincidunt ut nibh et venenatis. Sed posuere mauris nulla, id elementum orci ultricies eget.</p>
-                <h4>Pour soutenir notre projet, n'hésitez pas à nous suivre :</h4>
+                <h3>Loustic ? Nous des loustics ?</h3>
+                <p>Bon, on s’met à table, on avoue tout. T’es en fait sur le site d’un projet étudiant. Oui oui oui on te l’assure ! Bien sûr, comme on est pas des crapules, on te le dis avant que tu sortes ton fric.</p>
+                <h4>On espère que ta visite t’auras plu dans tout les cas et n’hésite pas à nous suivre là, juste en dessous :</h4>
                 <ul class="social-networks list-inline">
                     <li><a class="facebook" href="#" title="Facebook" rel="external">Facebook</a></li>
                     <li><a class="twitter" href="#" title="Twitter" rel="external">Twitter</a></li>
@@ -26,8 +26,6 @@ include("includes/header.php");
                     <li><a class="pinterest" href="#" title="Pinterest" rel="external">Pinterest</a></li>
                     <li><a class="youtube" href="#" title="Youtube" rel="external">Youtube</a></li>
                 </ul>
-                <p>Ou si vous souhaitez avoir plus d'informations sur le projet, contactez-nous à l'adresse suivante :</p>
-                <p id="mail-impala">iesa.impala@gmail.com</p>
             </div>
         </section>
 <?php include("includes/footer.php"); ?>

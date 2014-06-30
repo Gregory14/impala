@@ -5,11 +5,11 @@ $description="Atmosphère vous propose de découvrir une liste de lieux exclusif
 include("includes/header.php")
 
 ;?>
-        <h2>Nos patelins</h2>
+        <h2>Nos Gourbis</h2>
         <section id="places-content" class="container">
-            <div class="filters">
+            <div id="filters">
                 <ul class="list-inline">
-                    <li class="filter" data-filter="all">All</li>
+                    <li class="filter" data-filter="all">TOUS</li>
                     <li class="filter" data-filter=".nineteenth">19ème</li>
                     <li class="filter" data-filter=".twentieth">20ème</li>
                 </ul>
