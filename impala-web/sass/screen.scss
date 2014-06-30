@@ -495,7 +495,6 @@ footer{
 .all-thumbnails{
 	margin-top: 35px;
 	li{
-		display: inline-block;
 		position: relative;
 		width: 30%;
 		height: inherit;
@@ -530,6 +529,10 @@ footer{
 	display: inline-block;
 	width: 29%;
 	text-align: right;
+}
+
+#Container .mix{
+	display: none;
 }
 
 

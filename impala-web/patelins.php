@@ -34,7 +34,7 @@ include("includes/header.php")
                                 $dernier_mot=strrpos($donnees['description']," ");
                                 $donnees['description']=substr($donnees['description'],0,$dernier_mot);
                                 // AJOUTER UN LIEN VERS LA PAGE ?
-                                // $donnees['description'].="<a href='#' > lire la suite...</a>";
+                                $donnees['description'].=" ...";
                                 echo $donnees['description'];
 
                             }
@@ -48,7 +48,7 @@ include("includes/header.php")
         <script type="text/javascript">
         //Filtres et Tri
                 $(function(){
-                    $('#Container').mixitup();
+                    $('#Container').mixItUp();
                 });
         </script>
 <?php include("includes/footer.php"); ?>

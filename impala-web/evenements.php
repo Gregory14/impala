@@ -13,14 +13,14 @@ include("includes/header.php")
                     <li class="filter" data-filter="twentieth">20ème</li>
                 </ul>
             </div>
-            <div class="all-thumbnails">
+            <div id="Container" class="all-thumbnails">
                 <ul>
                     <?php
                         $req=$mysql->prepare('SELECT * FROM events');
                         $req->execute();
 
                         while($donnees=$req->fetch()){?>
-                        <li>
+                        <li class="mix all <?php echo $donnees['arrondissement']; ?>">
                             <h3><a href="fiche-event.php?id=<?php echo $donnees['id']; ?>"><?php echo $donnees['title']; ?></a></h3>
                             <p class="tag"><?php echo $donnees['tag']; ?></p>
                             <a href="fiche-event.php?id=<?php echo $donnees['id']; ?>">
@@ -32,4 +32,10 @@ include("includes/header.php")
                 </ul>
             </div>
         </section>
+        <script type="text/javascript">
+        //Filtres et Tri
+                $(function(){
+                    $('#Container').mixItUp();
+                });
+        </script>
 <?php include("includes/footer.php"); ?>
