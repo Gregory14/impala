@@ -20,7 +20,7 @@ include("includes/header.php")
             <?php 
                 $req=$mysql->prepare('SELECT * FROM places');
                 $req->execute();
-                
+
                 while($donnees=$req->fetch()){?>
                     <li class="mix all <?php echo $donnees['arrondissement']; ?>">
                         <h3><a href="fiche-lieu.php?id=<?php echo $donnees['id']; ?>"><?php echo $donnees['title']; ?></a></h3>
@@ -34,7 +34,7 @@ include("includes/header.php")
                                 $dernier_mot=strrpos($donnees['description']," ");
                                 $donnees['description']=substr($donnees['description'],0,$dernier_mot);
                                 // AJOUTER UN LIEN VERS LA PAGE ?
-                                // $donnees['description'].="<a href='#' > lire la suite...</a>";
+                                $donnees['description'].=" ...";
                                 echo $donnees['description'];
 
                             }
