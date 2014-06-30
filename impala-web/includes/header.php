@@ -43,6 +43,7 @@ include("traitement/deconnexion.php");
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
         <script src="//vjs.zencdn.net/4.6/video.js"></script>
+        <script src="js/jquery.mixitup.js"></script>
         <!--Favicon-->
         <link rel="icon" type="image/png" href="img/favicon.png"> 
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">

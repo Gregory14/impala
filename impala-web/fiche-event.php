@@ -15,7 +15,6 @@ include("includes/header.php");
     if(isset($_SESSION['panier'])){
         echo '<strong style="color:red;">VOTRE TICKET A BIEN ETE AJOUTE A VOTRE PANIER</strong>';
     }
-
 ?>
         <section class="fiche-content container">
             <p><a href="evenements.php">Retour à tous les événéments</a></p>

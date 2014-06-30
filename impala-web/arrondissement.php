@@ -1,4 +1,4 @@
-<?php 
+<?php
 $title="Atmosphère - Choix de l'arrondissement et du thème";
 $description="Une petite description du lieu";
 
@@ -69,5 +69,4 @@ include("includes/header.php");
 				</div><!--#theme-choice-->
 			</section>
 		</div>
-
 <?php include("includes/footer.php"); ?>

@@ -24,6 +24,5 @@
         <!-- <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> -->
         <script src="js/map.js"></script>
         <script src="js/video.js"></script>
-        <script src="js/jquery.mixitup.js"></script>
     </body>
 </html>

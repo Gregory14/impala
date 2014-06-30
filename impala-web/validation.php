@@ -29,6 +29,5 @@ include("includes/header.php");
                 <p>Ou si vous souhaitez avoir plus d'informations sur le projet, contactez-nous à l'adresse suivante :</p>
                 <p id="mail-impala">iesa.impala@gmail.com</p>
             </div>
-
         </section>
 <?php include("includes/footer.php"); ?>

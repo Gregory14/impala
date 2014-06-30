@@ -10,11 +10,11 @@ include("includes/header.php")
             <div class="filters">
                 <ul class="list-inline">
                     <li class="filter" data-filter="all">All</li>
-                    <li class="filter" data-filter="nineteenth">19ème</li>
-                    <li class="filter" data-filter="twentieth">20ème</li>
+                    <li class="filter" data-filter=".nineteenth">19ème</li>
+                    <li class="filter" data-filter=".twentieth">20ème</li>
                 </ul>
             </div>
-            <div class="all-thumbnails">
+            <div id="Container" class="all-thumbnails">
                 <ul>
             <!-- Boucle de recupération des données lieu (places) -->
             <?php 
@@ -22,7 +22,7 @@ include("includes/header.php")
                 $req->execute();
 
                 while($donnees=$req->fetch()){?>
-                    <li>
+                    <li class="mix all <?php echo $donnees['arrondissement']; ?>">
                         <h3><a href="fiche-lieu.php?id=<?php echo $donnees['id']; ?>"><?php echo $donnees['title']; ?></a></h3>
                         <p class="tag"><?php echo $donnees['tag']; ?></p>
                         <a href="fiche-lieu.php?id=<?php echo $donnees['id']; ?>"><img src="<?php echo $donnees['smallimage']; ?>" /></a>
@@ -45,4 +45,10 @@ include("includes/header.php")
                 </ul>
             </div>
         </section>
+        <script type="text/javascript">
+        //Filtres et Tri
+                $(function(){
+                    $('#Container').mixitup();
+                });
+        </script>
 <?php include("includes/footer.php"); ?>
