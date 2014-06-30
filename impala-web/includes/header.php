@@ -2,7 +2,7 @@
 session_start();
 
 include("includes/config.php");
-include_once("traitement/analyticstracking.php");
+// include_once("traitement/analyticstracking.php");
 include("traitement/deconnexion.php");
 
 ?>

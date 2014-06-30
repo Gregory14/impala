@@ -47,11 +47,11 @@ if(isset($_POST['login'])){
             //Redirection après connexion
             //  Utilisateur est arrivé sur la page de connexion après validation du panier
             if(isset($_SESSION['currentPurchase'])){
-                header('location: ./facturation.php');
+                header('location: facturation.php');
             }
             else{
                 //Sinon, redirection vers l'accueil
-                header('location: ./index.php');
+                header('location: index.php');
             }
         }
         else{

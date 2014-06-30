@@ -934,7 +934,6 @@ footer{
 		margin: 30px 0 70px;
 		padding: 3%;
 	}
-	
 }
 #payment{
 	width: 60%;
@@ -989,8 +988,13 @@ footer{
 	}
 }
 
-
-
+/* ----------------------
+== PAGE VALIDATION
+---------------------- */
+#message-validation{
+	width: 45%;
+	margin: 0 auto 70px;
+}
 
 
 .place img {
