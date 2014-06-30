@@ -9,8 +9,16 @@ include("includes/header.php");
             <div class="form-content">
                 <p>Un détail vous tracasse ? Besoin d'une réponse dans votre tête de pioche tout de suite maintenant ? Alors remplissez le formulaire ci-dessous. On essayera de vous répondre au plus vite.</p>
                 <p>Tous les champs sont obligatoires.</p>
+                <?php 
+                    if (isset($_GET['subject']) || isset($_GET['name']) || isset($_GET['email']) || isset($_GET['message'])){
+                        echo "<p class='alert-error'> Y t'manques des cases mon Loulou. </p>";
+                    }
+                    elseif (isset($_GET['sended'])) {
+                        echo "<p class='alert-success'> Ton courriel est bien parti. </p>";
+                    }
+                ?>
 
-                <form name="formContactUs" action="" method="post">
+                <form name="formContactUs" action="traitement/newsletter.php" method="post">
                     <label for="subject">Sujet
                         <input id="subject" name="subject" type="text" required tabindex="1" value="">
                     </label>

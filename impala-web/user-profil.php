@@ -12,7 +12,7 @@ include("traitement/user.php");
                 <div class="inline-block">
                     <h4>Modifier mon email</h4>
                     <p>Adresse email actuelle : <?php echo $_SESSION['email']; ?></p>
-                    <form name="ChangeMail" action="espace-user.php" method="post">
+                    <form name="ChangeMail" action="traitement/user.php" method="post">
                         <label for="newMail">Nouvelle adresse email :
                             <input id="newMail" type="text" name="newMail" tabindex="1" value="">
                         </label>
@@ -27,7 +27,7 @@ include("traitement/user.php");
                 </div>
                 <div class="inline-block">
                     <h4>Modifier mon mot de passe</h4>
-                    <form name="ChangePassword" action="espace-user.php" method="post">
+                    <form name="ChangePassword" action="traitement/user.php" method="post">
                         <label for="oldPass">Ancien mot de passe :</label>
                             <input id="oldPass" type="text" name="password" tabindex="4" value="">
                         <label for="newPass">Nouveau mot de passe :</label>
@@ -40,7 +40,7 @@ include("traitement/user.php");
                 <div class="inline-block">
                     <h4>Supprimer mon compte</h4>
                     <p>Pour supprimer votre compte, veuillez renseigner votre mot de passe. Votre compte sera définitivement supprimé.</p>
-                    <form name="formDeleteUser" action="espace-user.php" method="post">
+                    <form name="formDeleteUser" action="traitement/user.php" method="post">
                         <label for="pass">Mot de passe :</label>
                             <input id="pass" type="text" name="password" required tabindex="6" value="">
                         <label for="confirm">Confirmation du mot de passe :</label>

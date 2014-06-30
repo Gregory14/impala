@@ -3,6 +3,7 @@ $title="Atmosphère - Patelins";
 $description="Atmosphère vous propose de découvrir une liste de lieux exclusifs.";
 
 include("includes/header.php")
+
 ;?>
         <h2>Nos patelins</h2>
         <section id="places-content" class="container">
@@ -15,12 +16,32 @@ include("includes/header.php")
             </div>
             <div class="all-thumbnails">
                 <ul>
+            <!-- Boucle de recupération des données lieu (places) -->
+            <?php 
+                $req=$mysql->prepare('SELECT * FROM places');
+                $req->execute();
+
+                while($donnees=$req->fetch()){?>
                     <li>
-                        <h3><a href="fiche-lieu.php">Lieu 1</a></h3>
-                        <p class="tag">Bar</p>
-                        <a href="fiche-lieu.php"><img src="img/content/evenements/test.jpg" alt="visuel de l'événement" /></a>
-                        <p class="description">On va souvent ici pour se bidonner entre potes, pour tailler une bavette. Y’a une bonne ambiance, avec une équipe de titis pleins d’énergies...</p>
+                        <h3><a href="fiche-lieu.php?id=<?php echo $donnees['id']; ?>"><?php echo $donnees['title']; ?></a></h3>
+                        <p class="tag"><?php echo $donnees['tag']; ?></p>
+                        <a href="fiche-lieu.php?id=<?php echo $donnees['id']; ?>"><img src="<?php echo $donnees['smallimage']; ?>" /></a>
+                        <p class="description">
+                            <?php 
+                            // Limiter le nombre de caracteres visible
+                            if (strlen($donnees['description'])>100) {
+                                $donnees['description']=substr($donnees['description'], 0, 100);
+                                $dernier_mot=strrpos($donnees['description']," ");
+                                $donnees['description']=substr($donnees['description'],0,$dernier_mot);
+                                // AJOUTER UN LIEN VERS LA PAGE ?
+                                // $donnees['description'].="<a href='#' > lire la suite...</a>";
+                                echo $donnees['description'];
+
+                            }
+                            ?>
+                        </p>
                     </li>
+            <?php } ?>
                 </ul>
             </div>
         </section>

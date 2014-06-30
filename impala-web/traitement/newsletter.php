@@ -1,5 +1,4 @@
-<?php session_start(); ?>
-<?php 
+<?php session_start(); 
 
 /** Page waiting ***/
 	if(isset($_POST['inscription'])){
@@ -59,4 +58,46 @@
 			}
 		}
 	}
+
+
+	/* Envoie de mail contact */
+
+if(isset($_POST['send'])){
+	$sujet=htmlspecialchars($_POST['subject']);
+	$nom=htmlspecialchars($_POST['name']);
+	$emetteur=htmlspecialchars($_POST['email']);
+	$message=htmlspecialchars($_POST['message']);
+
+	if(strlen($sujet)<2){
+		header('location:../contact.php?subject');
+	}
+	
+	elseif(strlen($nom)<2){
+		header('location:../contact.php?name');
+	}
+	
+	elseif(strlen($emetteur)<8){
+		header('location:../contact.php?adress');
+	}
+	
+	elseif(empty($message)){
+		header('location:../contact.php?message');
+	}
+	
+	else{
+	
+	$Name = $nom; //senders name 
+	$email = $emetteur; //senders e-mail adress 
+	$recipient = "gregory.joly.14@gmail.com"; //recipient 
+	$mail_body = $message.' De '.$nom.'.'; //mail body 
+	$subject = $sujet; //subject 
+	$header = "From: ". $Name . " <" . $email . ">\r\n"; //optional headerfields 
+	$header .= 'MIME-Version: 1.0' . "\r\n";
+	$header .= "Content-Type : text/html; charset=\'iso-8859-1\'"; 
+	
+	mail($recipient, $subject, $mail_body, $header); //mail command :) 
+	
+	header('location:../contact.php?sended');}
+}
+
 ?>

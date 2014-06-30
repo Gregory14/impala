@@ -3,28 +3,40 @@ $title="Atmosphère - Lieu 1";
 $description="Une petite description du lieu";
 
 include("includes/header.php");
+
+
+    if(isset($_GET['id'])){
+        $id=htmlspecialchars($_GET['id']);
+
+        $req=$mysql->prepare('SELECT * FROM places WHERE id=:id');
+        $req->execute(array(':id'=>$id));
+
+        $donnees=$req->fetch();
+    }
 ?>
         <section class="fiche-content container">
             <p><a href="patelins.php">Retour à tous les patelins</a></p>
             <div class="fiche-title">
-                <h2>Le titre du lieu</h2><p class="tag">Bar</p>
+                <h2><?php echo $donnees['title']; ?></h2>
+                <p class="tag"><?php echo $donnees['tag'] ;?></p>
             </div>
             <div class="informations">
                 <ul>
-                    <li>Adresse</li>
-                    <li>Transport</li>
-                    <li>Prix</li>
+                    <li><?php echo $donnees['address'] ;?></li>
+                    <li><?php echo $donnees['transport'] ;?></li>
+                    <li><?php echo $donnees['price'];?>€</li>
                 </ul>
                 <ul>
                     <li>Horaires</li>
-                    <li>Téléphone</li>
-                    <li>Site web</li>
+                    <li><?php echo $donnees['telephone'] ;?></li>
+                    <li><?php echo $donnees['website'] ;?></li>
                 </ul>
             </div>
             <a href="#" class="button share">Partager sur Facebook</a>
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button"></div>
             <div class="fiche-description">
                 <h3>P'tite description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur mattis tincidunt. Morbi congue nisl in mollis cursus. Nunc rutrum euismod aliquam. Nulla lobortis mauris odio, non iaculis orci porttitor ut. Donec a hendrerit nisl. Nulla quis est id libero vestibulum rutrum.</p>
+                <p><?php echo $donnees['description'] ;?></p>
             </div>
             <div class="pictures">
                 <p>Ici le slider</p>
