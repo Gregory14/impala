@@ -61,19 +61,21 @@ if(isset($_POST['login'])){
 }//fin isset
 ?>
         <h2>Connectez-vous</h2>
-        <section id="connect-content" class="container container">
+        <section id="connect-content" class="container">
             <div class="form-content">
                 <div id="connect-user">
                     <p class="alerts"><?php if(isset($message)){ echo '<p>'.$message.'</p>';} ?></p>
                     <form name="formLogin" action ="./connexion.php" method="post">
-                        <label for="username">Username</label>
+                        <label for="username">Username
                             <input id="username" type="text" name="username" required tabindex="1" value="">
-                        <label for="password">Mot de passe</label>
-                            <input id="password" type="text" name="password" required tabindex="2" value="">
+                        </label>
+                        <label for="password">Mot de passe
+                            <input id="password" type="password" name="password" required tabindex="2" value="">
+                        </label>
                         <input type="submit" name="login" class="button" value="Se connecter">
                     </form>
                 </div>
-                <div id="forgotten-password">
+                <!--<div id="forgotten-password">
                     <p>Mot de passe oublié ?</p>
                     <p>Renseignez votre adresse email ci-dessous pour recevoir un nouveau mot de passe.</p>
                     <form name="formLogin" action ="./connexion.php" method="post">
@@ -81,7 +83,7 @@ if(isset($_POST['login'])){
                             <input id="email" type="email" name="email" tabindex="3" value="">
                         <input type="submit" name="recoverPass" class="button" value="Récupérer son mot de passe">
                     </form>
-                </div>
+                </div>-->
             </div>
         </section>
 <?php include("includes/footer.php"); ?> 

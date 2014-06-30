@@ -69,7 +69,7 @@ include("traitement/deconnexion.php");
                 ?>
                     <ul id="user-connect" class="list-inline">
                         <li>
-                            <a href="user-profil.php">Mon profil</a>
+                            <a href="user-profil.php" class="active">Mon profil</a>
                         </li>
                         <li>
                             <form name="formDeconnect" action="index.php" method="post">
@@ -92,10 +92,14 @@ include("traitement/deconnexion.php");
                 ?>
                 </div>
                 <div id="mytickets" class="inline-block">
-                    <?php if (isset($_SESSION['panier'])) {
-                        //echo "1";
-                    }?>
                     <p><a href="espace-tickets.php" title="Voir mes tickets réservés">Mes tickets</a></p>
+                    <?php 
+                        //Afficher une notification lorsqu'un article est ajouté
+                        if(isset($_SESSION['amount'])){
+                        ?>
+                            <p id="notif"><?php echo $_SESSION['amount']; ?></p>
+                        <?php }
+                    ?></p>
                 </div>
             </header>
         </div>
