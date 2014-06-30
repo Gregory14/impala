@@ -1,8 +1,6 @@
-<?php 
-session_start();
+<?php session_start();
 
 include("includes/config.php");
-// include_once("traitement/analyticstracking.php");
 include("traitement/deconnexion.php");
 
 ?>
@@ -50,6 +48,7 @@ include("traitement/deconnexion.php");
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     </head>
     <body role="document">
+        <?php include_once("traitement/analyticstracking.php");?>
         <!-- API Facebook -->
         <div id="fb-root"></div>
         <script>(function(d, s, id) {

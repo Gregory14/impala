@@ -12,9 +12,8 @@ if(!isset($_SESSION['connect'])){
     //  (création variable pour permettre redirection vers facturation après connexion)
     header('location: connexion.php');
     $_SESSION['currentPurchase'] = true;
-}
-
-;?>
+};
+?>
         <h2>Pour avoir ton ticket brûle pas les étapes</h2>
         <section id="billing-content" class="container">
             <div class="steps-purchase">

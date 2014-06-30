@@ -4,7 +4,7 @@ $description="Tous les événements les plus improbables. Rencontrez de nouvelle
 
 include("includes/header.php"); 
 
-;?>
+?>
         <h2>Validation du paiement</h2>
         <section id="validation-content">
             <div class="steps-purchase">
