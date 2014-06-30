@@ -5,14 +5,14 @@ $description="Une petite description du lieu";
 include("includes/header.php"); 
 include("traitement/user.php");
 ?>
-        <h2>C’est ici qu’tu peux voir tes informations</h2>
+        <h2>C’est ici qu’tu peux voir et modifier tes informations</h2>
         <section id="user-content" class="container">
             <div id="user-infos">
-                <h3>1- Mes informations personnelles</h3>
+                <h3>Mes informations personnelles</h3>
                 <div class="inline-block">
                     <h4>Modifier mon email</h4>
                     <p>Adresse email actuelle : <?php echo $_SESSION['email']; ?></p>
-                    <form name="ChangeMail" action="traitement/user.php" method="post">
+                    <form name="ChangeMail" action="user-profil.php" method="post">
                         <label for="newMail">Nouvelle adresse email :
                             <input id="newMail" type="text" name="newMail" tabindex="1" value="">
                         </label>
@@ -27,7 +27,7 @@ include("traitement/user.php");
                 </div>
                 <div class="inline-block">
                     <h4>Modifier mon mot de passe</h4>
-                    <form name="ChangePassword" action="traitement/user.php" method="post">
+                    <form name="ChangePassword" action="user-profil.php" method="post">
                         <label for="oldPass">Ancien mot de passe :</label>
                             <input id="oldPass" type="text" name="password" tabindex="4" value="">
                         <label for="newPass">Nouveau mot de passe :</label>
@@ -40,7 +40,7 @@ include("traitement/user.php");
                 <div class="inline-block">
                     <h4>Supprimer mon compte</h4>
                     <p>Pour supprimer votre compte, veuillez renseigner votre mot de passe. Votre compte sera définitivement supprimé.</p>
-                    <form name="formDeleteUser" action="traitement/user.php" method="post">
+                    <form name="formDeleteUser" action="user-profil.php" method="post">
                         <label for="pass">Mot de passe :</label>
                             <input id="pass" type="text" name="password" required tabindex="6" value="">
                         <label for="confirm">Confirmation du mot de passe :</label>
@@ -49,10 +49,9 @@ include("traitement/user.php");
                         <input type="submit" name="deleteUser" class="button" value="Supprimer mon compte">    
                     </form>
                 </div>
-                
             </div>
             <div id="user-orders">
-                <h3>2- Toutes mes commandes</h3>
+                <h3>Toutes mes commandes</h3>
                 <p>T’as pas encore passé de commande gamin, grouille toi !</p>
             </div>
         </section>

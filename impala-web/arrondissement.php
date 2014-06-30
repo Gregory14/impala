@@ -4,26 +4,21 @@ $description="Une petite description du lieu";
 
 include("includes/header.php"); 
 
-// Initialisation contenue
-if(isset($_GET['arr'])){
-        $arr=htmlspecialchars($_GET['arr']);
+// Initialisation contenu
+// if(isset($_GET['arr'])){
+//         $arr=htmlspecialchars($_GET['arr']);
 
-/* A Voir si les images change ou pas :) */
-        $req=$mysql->prepare('SELECT * FROM events WHERE id=:id');
-        $req->execute(array(':id'=>$arr));
+//         $req=$mysql->prepare('SELECT * FROM events WHERE id=:id');
+//         $req->execute(array(':id'=>$arr));
 
-        $donnees=$req->fetch();
-    }
-    if(isset($_SESSION['panier'])){
-        echo "votre place a bien été ajoutée au panier";
-        //var_dump($_SESSION['panier']);
-    }
+//         $donnees=$req->fetch();
+//     }
 ?>
 		<div class="container">
 			<section id="district-content">
 				<h2>Où c'est qu'tu veux aller ?</h2>
 				<div id="district-choice">
-					<img src="#<?php echo "?=".$arr;?>" alt="Carte des arrondissements de Paris" />
+					<img src="img/content/arrondissement/map-paris.png" alt="Carte des arrondissements de Paris" />
 					<div id="nineteenth">
 						<p><a href="arrondissement.php?arr=19">19eme</a></p>
 					</div>
@@ -57,7 +52,6 @@ if(isset($_GET['arr'])){
 							<p class="inline-block"><a href="theme.php<?php echo "?=".$arr;?>" class="button">Matte les patelins 2</a></p>
 						</div>
 					</div>
-					
 					<div id="theme-button">
 						<ul>
 							<li title="nature">

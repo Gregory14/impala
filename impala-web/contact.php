@@ -4,7 +4,7 @@ $description="Atmosphère vous propose de partager vos envies à travers la déc
 
 include("includes/header.php");
 ?>
-        <h2>Nous contacter</h2>
+        <h2>Formulaire de contact</h2>
         <section id="contact-content" class="container">
             <div class="form-content">
                 <p>Un détail vous tracasse ? Besoin d'une réponse dans votre tête de pioche tout de suite maintenant ? Alors remplissez le formulaire ci-dessous. On essayera de vous répondre au plus vite.</p>
@@ -28,7 +28,7 @@ include("includes/header.php");
                     <label for="email" class="inline-block">Courriel
                         <input id="email" name="email" type="text" required tabindex="3" value="">
                     </label>
-                    <label for="message">Votre message
+                    <label for="message">Message
                         <textarea id="message" name="message" tabindex="4" required value=""></textarea>
                     </label>
                     <input name="send" type="submit" value="Envoyer le message" class="button" />

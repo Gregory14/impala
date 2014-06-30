@@ -11,10 +11,18 @@ if(isset($_GET['delete'])){
     unset($_SESSION['panier'][$id_article]);
 }
 ?>
-        <h2>Qu’est-ce qu’il y a dedans ?</h2>
+        <h2>J'vérifie tout histoire d'en avoir le coeur net</h2>
         <section id="tickets-content" class="container">
-            <h3>Mes tickets</h3>
-            <form name="ticketNames" action="#" method="post">
+            <div class="steps-purchase">
+                <ul class="list-inline">
+                    <li>1</li>
+                    <li class="current">2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+            <div class="purchase-content">
+                <h3>Mes tickets</h3>
             <?php
                 //Vérifier que le panier existe et est rempli
                 if(isset($_SESSION['panier'])){
@@ -29,8 +37,9 @@ if(isset($_GET['delete'])){
                     <div class="ticket">  
                         <div class="inline-block">
                             <h4><?php echo $tickets['title']; ?></h4>
-                            <p>Quantité : <?php echo $nbeTickets = $_SESSION['panier'][$tickets['id']]; ?> place(s)</p>
+                            <p class="quantity">Quantité : <?php echo $nbeTickets = $_SESSION['panier'][$tickets['id']]; ?> place(s)</p>
                             <p>Veuillez remplir les nom(s) et prénom(s) des bénéficiaires des billets.</p>
+                            <form name="ticketNames" action="#" method="post">
                             <?php
 
                                 //Afficher autant d'inputs que de tickets réservés (invits amis)
@@ -43,10 +52,11 @@ if(isset($_GET['delete'])){
                                             <input id='name' name='name' type='text' required tabindex='2' value='' placeholder='Vincent'>
                                         </label>";
                                 }
-                            ?>  
+                            ?>
+                            </form>
                         </div>
                         <div class="ticketPrice inline-block">
-                            <p><?php echo $price = $tickets['price'] * $nbeTickets; ?> €</p>
+                            <p class="price"><?php echo $price = $tickets['price'] * $nbeTickets; ?> €</p>
                             <p><a href="espace-tickets.php?delete=<?php echo $tickets['id']; ?>">Supprimer</a></p>
                         </div>                          
                     </div>
@@ -66,10 +76,9 @@ if(isset($_GET['delete'])){
                     //Disparition du bouton "Commander" si panier vide après suppression d'un article
                     if(!empty($_SESSION['panier'])){
                 ?>
-                <div>
+                <div id="total-amount">
                     <p>Montant total : <?php echo $totalPrice; ?> €</p>
                 </div>
-                <!-- <input class="button" name="command" type="submit" value="Allez j'commande !" /> -->
                 <a href="facturation.php" class="button" title="Valider mon panier">Allez, j'commande !</a>
                 <?php }//fin empty
 
@@ -80,6 +89,7 @@ if(isset($_GET['delete'])){
                 <?php
                 }
             ?>
-            </form>
+            
+            </div>
         </section>
 <?php include("includes/footer.php"); ?>
