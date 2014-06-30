@@ -856,14 +856,11 @@ footer{
 		a:before{
 			font-size: 30px;
 		}
-
 	}
 }
-#mail-impala{
-	margin-top: 15px;
-	text-align: center;
-	font-size: 1.25em;
-	color: $colorSite;
+#message-validation{
+	width: 45%;
+	margin: 0 auto 70px;
 }
 
  
@@ -1024,14 +1021,6 @@ footer{
 		font-size: 1.3em;
 		margin: 10px 0;
 	}
-}
-
-/* ----------------------
-== PAGE VALIDATION
----------------------- */
-#message-validation{
-	width: 45%;
-	margin: 0 auto 70px;
 }
 
 

@@ -1092,100 +1092,98 @@ height: 60%;
   font-size: 30px;
 }
 
-/* line 862, ../sass/screen.scss */
-#mail-impala {
-  margin-top: 15px;
-  text-align: center;
-  font-size: 1.25em;
-  color: #a769a8;
+/* line 861, ../sass/screen.scss */
+#message-validation {
+  width: 45%;
+  margin: 0 auto 70px;
 }
 
 /* ----------------------
 == PAGE ESPACE TICKET
 ---------------------- */
-/* line 874, ../sass/screen.scss */
+/* line 871, ../sass/screen.scss */
 .purchase-content {
   width: 75%;
   margin: 0 auto;
 }
 
-/* line 878, ../sass/screen.scss */
+/* line 875, ../sass/screen.scss */
 .steps-purchase {
   margin-bottom: 70px;
   text-align: center;
   font-size: 2em;
   color: #fff;
 }
-/* line 883, ../sass/screen.scss */
+/* line 880, ../sass/screen.scss */
 .steps-purchase li {
   margin: 0 1%;
   padding: 1% 2%;
   background-color: #b77ebb;
   border-radius: 50%;
 }
-/* line 889, ../sass/screen.scss */
+/* line 886, ../sass/screen.scss */
 .steps-purchase .current {
   background-color: #a769a8;
 }
 
-/* line 894, ../sass/screen.scss */
+/* line 891, ../sass/screen.scss */
 #tickets-content h3 {
   margin-bottom: 25px;
 }
-/* line 897, ../sass/screen.scss */
+/* line 894, ../sass/screen.scss */
 #tickets-content h4 {
   margin-bottom: 15px;
   font-size: 1.25em;
 }
-/* line 901, ../sass/screen.scss */
+/* line 898, ../sass/screen.scss */
 #tickets-content .button {
   margin: 30px 0 70px 0;
 }
-/* line 904, ../sass/screen.scss */
+/* line 901, ../sass/screen.scss */
 #tickets-content .ticket {
   padding: 2% 0;
   border-top: 3px solid #a769a8;
 }
-/* line 907, ../sass/screen.scss */
+/* line 904, ../sass/screen.scss */
 #tickets-content .ticket .inline-block {
   width: 70%;
 }
-/* line 909, ../sass/screen.scss */
+/* line 906, ../sass/screen.scss */
 #tickets-content .ticket .inline-block label {
   width: 48%;
   margin: 0 1.6% 2% 0;
   font-size: 1em;
 }
-/* line 914, ../sass/screen.scss */
+/* line 911, ../sass/screen.scss */
 #tickets-content .ticket .inline-block input {
   margin: 2% 0;
   font-size: 1em;
 }
-/* line 918, ../sass/screen.scss */
+/* line 915, ../sass/screen.scss */
 #tickets-content .ticket .inline-block p.quantity {
   margin-bottom: 40px;
 }
-/* line 921, ../sass/screen.scss */
+/* line 918, ../sass/screen.scss */
 #tickets-content .ticket .inline-block p {
   margin-bottom: 25px;
 }
-/* line 925, ../sass/screen.scss */
+/* line 922, ../sass/screen.scss */
 #tickets-content .ticket .ticketPrice.inline-block {
   width: 29%;
   text-align: right;
 }
-/* line 928, ../sass/screen.scss */
+/* line 925, ../sass/screen.scss */
 #tickets-content .ticket .ticketPrice.inline-block p.price {
   margin-bottom: 15px;
   font-size: 1.5em;
   font-weight: bold;
 }
-/* line 933, ../sass/screen.scss */
+/* line 930, ../sass/screen.scss */
 #tickets-content .ticket .ticketPrice.inline-block a {
   text-transform: uppercase;
   font-size: 1em;
 }
-/* line 938, ../sass/screen.scss */
+/* line 935, ../sass/screen.scss */
 #tickets-content .ticket input[type="submit"] {
   margin-left: 0;
   width: 40%;
@@ -1194,7 +1192,7 @@ height: 60%;
   padding: 2%;
   cursor: pointer;
 }
-/* line 947, ../sass/screen.scss */
+/* line 944, ../sass/screen.scss */
 #tickets-content #total-amount {
   text-align: right;
   font-size: 1.25em;
@@ -1205,107 +1203,98 @@ height: 60%;
 /* ----------------------
 == PAGE FACTURATION
 ---------------------- */
-/* line 959, ../sass/screen.scss */
+/* line 956, ../sass/screen.scss */
 #billing-content {
   width: 80%;
   margin: 0 auto;
 }
-/* line 962, ../sass/screen.scss */
+/* line 959, ../sass/screen.scss */
 #billing-content h3 {
   margin: 30px 0;
 }
-/* line 965, ../sass/screen.scss */
+/* line 962, ../sass/screen.scss */
 #billing-content h4 {
   margin: 30px 0 15px;
   font-weight: bold;
   font-size: 1em;
 }
-/* line 970, ../sass/screen.scss */
+/* line 967, ../sass/screen.scss */
 #billing-content .button {
   width: 45%;
   margin: 30px 0 70px;
   padding: 3%;
 }
 
-/* line 976, ../sass/screen.scss */
+/* line 973, ../sass/screen.scss */
 #payment {
   width: 60%;
   margin-right: 13%;
 }
-/* line 979, ../sass/screen.scss */
+/* line 976, ../sass/screen.scss */
 #payment form label {
   width: 47%;
   margin: 0 2% 3% 0;
   font-size: 1em;
 }
-/* line 984, ../sass/screen.scss */
+/* line 981, ../sass/screen.scss */
 #payment form label[for="address"] {
   width: 100%;
 }
-/* line 987, ../sass/screen.scss */
+/* line 984, ../sass/screen.scss */
 #payment form label #address, #payment form label #email {
   width: 97%;
   padding: 2% 1%;
 }
-/* line 991, ../sass/screen.scss */
+/* line 988, ../sass/screen.scss */
 #payment form label input {
   margin-top: 2%;
   font-size: 1em;
   padding: 3%;
 }
-/* line 996, ../sass/screen.scss */
+/* line 993, ../sass/screen.scss */
 #payment input[type="radio"] {
   width: 5%;
   cursor: pointer;
 }
-/* line 1001, ../sass/screen.scss */
+/* line 998, ../sass/screen.scss */
 #payment #payment-choice label {
   width: 20%;
 }
 
-/* line 1006, ../sass/screen.scss */
+/* line 1003, ../sass/screen.scss */
 #order-summary {
   width: 25%;
   margin-top: 30px;
   padding: 5px;
   background-color: rgba(249, 196, 171, 0.5);
 }
-/* line 1011, ../sass/screen.scss */
+/* line 1008, ../sass/screen.scss */
 #order-summary h3 {
   margin-top: 0;
 }
-/* line 1014, ../sass/screen.scss */
+/* line 1011, ../sass/screen.scss */
 #order-summary p:last-child {
   margin: 5% 0;
   border-top: 2px solid #63595d;
   padding-top: 3%;
   text-transform: uppercase;
 }
-/* line 1020, ../sass/screen.scss */
+/* line 1017, ../sass/screen.scss */
 #order-summary span {
   font-weight: bold;
 }
-/* line 1023, ../sass/screen.scss */
+/* line 1020, ../sass/screen.scss */
 #order-summary #sum {
   font-size: 1.3em;
   margin: 10px 0;
 }
 
-/* ----------------------
-== PAGE VALIDATION
----------------------- */
-/* line 1032, ../sass/screen.scss */
-#message-validation {
-  width: 45%;
-  margin: 0 auto 70px;
-}
-
-/* line 1038, ../sass/screen.scss */
+/* line 1027, ../sass/screen.scss */
 .place img {
   max-width: 300px;
 }
 
-/* line 1041, ../sass/screen.scss */
+/* line 1030, ../sass/screen.scss */
 #map {
   height: 400px;
   width: 100%;
@@ -1314,24 +1303,24 @@ height: 60%;
 /* ----------------------------------------
 == Helper
 ------------------------------------------- */
-/* line 1051, ../sass/screen.scss */
+/* line 1040, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 1055, ../sass/screen.scss */
+/* line 1044, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 1058, ../sass/screen.scss */
+/* line 1047, ../sass/screen.scss */
 .lt-ie8 .clearfix {
   zoom: 1;
 }
 
-/* line 1061, ../sass/screen.scss */
+/* line 1050, ../sass/screen.scss */
 .list-inline {
   padding-left: 0;
   /*font-size: 1px;*/
@@ -1339,7 +1328,7 @@ height: 60%;
   list-style: none;
 }
 
-/* line 1067, ../sass/screen.scss */
+/* line 1056, ../sass/screen.scss */
 .list-inline > li {
   display: inline-block;
   /*font-size: 14em;*/
@@ -1347,18 +1336,18 @@ height: 60%;
   vertical-align: middle;
 }
 
-/* line 1073, ../sass/screen.scss */
+/* line 1062, ../sass/screen.scss */
 .lt-ie8 .list-inline > li {
   display: inline;
   zoom: 1;
 }
 
-/* line 1077, ../sass/screen.scss */
+/* line 1066, ../sass/screen.scss */
 .list-inline > li {
   margin-right: 5px;
 }
 
-/* line 1080, ../sass/screen.scss */
+/* line 1069, ../sass/screen.scss */
 .list-inline > li:last-child {
   margin-right: 0;
 }
@@ -1366,7 +1355,7 @@ height: 60%;
 /* ----------------------------------------
 == Waiting page
 ------------------------------------------- */
-/* line 1092, ../sass/screen.scss */
+/* line 1081, ../sass/screen.scss */
 #waiting > section {
   max-width: 480px;
   margin: 0 auto;
@@ -1374,7 +1363,7 @@ height: 60%;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 1098, ../sass/screen.scss */
+/* line 1087, ../sass/screen.scss */
 #waiting header {
   margin-bottom: 35px;
   text-align: center;
@@ -1385,12 +1374,12 @@ height: 60%;
 	text-align: center;
 	font-size: 0.9em;	
 }*/
-/* line 1107, ../sass/screen.scss */
+/* line 1096, ../sass/screen.scss */
 #waiting h1 {
   font-size: 0;
 }
 
-/* line 1110, ../sass/screen.scss */
+/* line 1099, ../sass/screen.scss */
 #waiting h2 {
   font-size: 2em;
   font-weight: bold;
@@ -1399,38 +1388,38 @@ height: 60%;
   font-family: 'dinpro';
 }
 
-/* line 1118, ../sass/screen.scss */
+/* line 1107, ../sass/screen.scss */
 #waiting h3 {
   font-size: 1em;
   text-align: center;
   font-family: 'dinpro';
 }
 
-/* line 1124, ../sass/screen.scss */
+/* line 1113, ../sass/screen.scss */
 #waiting p {
   font-size: 1em;
   margin-bottom: 15px;
 }
 
-/* line 1128, ../sass/screen.scss */
+/* line 1117, ../sass/screen.scss */
 #waiting p a {
   color: #dd6b70;
 }
 
-/* line 1131, ../sass/screen.scss */
+/* line 1120, ../sass/screen.scss */
 #waiting p a:hover {
   color: #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 1135, ../sass/screen.scss */
+/* line 1124, ../sass/screen.scss */
 #waiting label {
   display: block;
   margin: 5% 0 1%;
   font-size: 1em;
 }
 
-/* line 1140, ../sass/screen.scss */
+/* line 1129, ../sass/screen.scss */
 #waiting input {
   display: block;
   width: 100%;
@@ -1440,13 +1429,13 @@ height: 60%;
   font-size: 1em;
 }
 
-/* line 1148, ../sass/screen.scss */
+/* line 1137, ../sass/screen.scss */
 #waiting input:focus {
   outline: none;
   border: 1px #dd6b70 solid;
 }
 
-/* line 1152, ../sass/screen.scss */
+/* line 1141, ../sass/screen.scss */
 #waiting input[type="submit"] {
   margin: 8% 0 4%;
   background-color: #dd6b70;
@@ -1457,26 +1446,26 @@ height: 60%;
   cursor: pointer;
 }
 
-/* line 1161, ../sass/screen.scss */
+/* line 1150, ../sass/screen.scss */
 #waiting input[type="submit"]:hover {
   background-color: #dd6b70;
   border: 1px solid #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 1166, ../sass/screen.scss */
+/* line 1155, ../sass/screen.scss */
 #reseaux {
   width: 46%;
   margin: 25px auto;
 }
 
-/* line 1170, ../sass/screen.scss */
+/* line 1159, ../sass/screen.scss */
 #reseaux li {
   display: inline-block;
   margin: 0 5%;
 }
 
-/* line 1174, ../sass/screen.scss */
+/* line 1163, ../sass/screen.scss */
 #reseaux a {
   display: block;
   font-size: 0;
@@ -1484,12 +1473,12 @@ height: 60%;
   text-decoration: none;
 }
 
-/* line 1180, ../sass/screen.scss */
+/* line 1169, ../sass/screen.scss */
 #reseaux a:hover {
   color: #ec6570;
 }
 
-/* line 1183, ../sass/screen.scss */
+/* line 1172, ../sass/screen.scss */
 #reseaux a:before {
   font-family: 'reseaux';
   font-size: 30px;
