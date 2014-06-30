@@ -275,7 +275,7 @@ textarea {
 /* line 178, ../sass/screen.scss */
 #head {
   background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
 }
 
 /* line 184, ../sass/screen.scss */
@@ -386,7 +386,7 @@ footer {
   height: 40px;
   line-height: 40px;
   background-color: #fff;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0);
 }
 /* line 276, ../sass/screen.scss */
 footer small {
@@ -465,7 +465,7 @@ footer small {
 #our-concept p {
   width: 45%;
   font-size: 2em;
-  text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.43);
+  text-shadow: -1px 1px 5px rgba(0, 0, 0, 0);
 }
 /* line 340, ../sass/screen.scss */
 #our-concept .button {
@@ -685,7 +685,7 @@ footer small {
   position: absolute;
   bottom: -180px;
   left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0);
   margin: 0;
   padding: 4% 5% 8%;
 }
@@ -1194,7 +1194,7 @@ height: 60%;
   width: 25%;
   margin-top: 30px;
   padding: 5px;
-  background-color: rgba(249, 196, 171, 0.5);
+  background-color: rgba(249, 196, 171, 0);
 }
 /* line 956, ../sass/screen.scss */
 #order-summary h3 {
@@ -1297,7 +1297,7 @@ height: 60%;
   max-width: 480px;
   margin: 0 auto;
   padding: 5% 1% 1%;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 /* line 1043, ../sass/screen.scss */
