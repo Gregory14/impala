@@ -33,7 +33,7 @@ include("includes/header.php")
                                 $donnees['description']=substr($donnees['description'], 0, 100);
                                 $dernier_mot=strrpos($donnees['description']," ");
                                 $donnees['description']=substr($donnees['description'],0,$dernier_mot);
-                                // AJOUTER UN LIEN VERS LA PAGE ?
+                                // AJOUTER ... a la fin de la description
                                 $donnees['description'].=" ...";
                                 echo $donnees['description'];
 

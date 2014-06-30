@@ -37,7 +37,7 @@ include("includes/header.php");
             <a href="#" class="button share">Partager sur Facebook</a>
             <div class="fiche-description">
                 <h3>P'tite description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur mattis tincidunt. Morbi congue nisl in mollis cursus. Nunc rutrum euismod aliquam. Nulla lobortis mauris odio, non iaculis orci porttitor ut. Donec a hendrerit nisl. Nulla quis est id libero vestibulum rutrum.</p>
+                <p><?php echo $donnees['description']; ?></p>
             </div>
             <div class="pictures">
                 <p>Ici le slider</p>
