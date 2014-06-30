@@ -78,8 +78,4 @@ if(isset($_POST['deleteUser'])){
         $message='Mot de passe et confirmation ne sont pas identiques';
     }
 }
-
-
-
-
 ?>

@@ -28,5 +28,4 @@ include('traitement/register.php');
                 <p>En cliquant sur le bouton "Créer mon compte", l'utilisateur déclare accepter les conditions générales et <a href="mentions.php">mentions légales</a>.</p>
             </div>
         </section>
-<?php include("includes/footer.php"); ?> 
-
+<?php include("includes/footer.php"); ?>

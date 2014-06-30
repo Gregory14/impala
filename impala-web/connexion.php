@@ -1,4 +1,4 @@
-<?php 
+<?php
 $title="Atmosphère - Connectez-vous";
 $description="Une petite description du lieu";
 
@@ -86,10 +86,4 @@ if(isset($_POST['login'])){
                 </div>-->
             </div>
         </section>
-<?php include("includes/footer.php"); ?> 
-
-
-
-
-
-
+<?php include("includes/footer.php"); ?>

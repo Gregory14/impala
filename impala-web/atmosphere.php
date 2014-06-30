@@ -1,4 +1,4 @@
-<?php 
+<?php
 $title="Atmosphère - La clique";
 $description="Une petite description du lieu";
 

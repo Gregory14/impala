@@ -1,4 +1,4 @@
-<?php 
+<?php
 $title="Atmosphère - Mes tickets";
 $description="Une petite description du lieu";
 
