@@ -64,7 +64,7 @@ include("includes/header.php");
                      </ul> 
                     
                 </div>
-                <ul>
+                <ul class="addTicket">
                     <li><a href="traitement/panier.php?id=<?php echo $donnees['id']; ?>" class="button">Ajouter à mes tickets</a></li>
                     <li><a href="#" class="button">Achat rapide</a></li>
                 </ul>

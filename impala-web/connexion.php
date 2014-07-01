@@ -1,8 +1,7 @@
-<?php
+<?php session_start();
 $title="Atmosphère - Connectez-vous";
 $description="Une petite description du lieu";
 
-include("includes/header.php");
 
 
 //---SE CONNECTER A SON ESPACE MEMBRE---//
@@ -22,6 +21,7 @@ if(isset($_POST['login'])){
     }
     else
     {
+        include("includes/config.php");
         //Connexion à la base de données
         $username=htmlspecialchars($_POST['username']);
         $password=htmlspecialchars($_POST['password']);
@@ -42,7 +42,7 @@ if(isset($_POST['login'])){
 
             //Création d'une variable qui prouve que l'utilisateur est connecté
             $_SESSION['connect']= true;
-            echo $_SESSION['connect'];
+            
 
             //Redirection après connexion
             //  Utilisateur est arrivé sur la page de connexion après validation du panier
@@ -59,12 +59,13 @@ if(isset($_POST['login'])){
         }
     }
 }//fin isset
+include('includes/header.php');
 ?>
         <h2>Connectez-vous</h2>
         <section id="connect-content" class="container">
             <div class="form-content">
                 <div id="connect-user">
-                    <p class="alerts"><?php if(isset($message)){ echo '<p>'.$message.'</p>';} ?></p>
+                    <?php if(isset($message)){ echo '<p class="alert-error ">'.$message.'</p>';} ?>
                     <form name="formLogin" action ="./connexion.php" method="post">
                         <label for="username">Username
                             <input id="username" type="text" name="username" required tabindex="1" value="">
@@ -75,6 +76,7 @@ if(isset($_POST['login'])){
                         <input type="submit" name="login" class="button" value="Se connecter">
                     </form>
                 </div>
+                <!-- Pdemande de mot de passe oublié -->
                 <!--<div id="forgotten-password">
                     <p>Mot de passe oublié ?</p>
                     <p>Renseignez votre adresse email ci-dessous pour recevoir un nouveau mot de passe.</p>

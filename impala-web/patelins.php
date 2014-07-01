@@ -5,7 +5,6 @@ $description="Atmosphère vous propose de découvrir une liste de lieux exclusif
 include("includes/header.php")
 
 ;?>
-        <h2>Nos Gourbis</h2>
         <section id="places-content" class="container">
             <div id="filters">
                 <ul class="list-inline">

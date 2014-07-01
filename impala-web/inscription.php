@@ -10,8 +10,8 @@ include('traitement/register.php');
             <div class="form-content">
                 <p>Remplissez les champs suivants pour une inscription rapide en 30 secondes maximum !</p>
                 <p class="alerts">
-                    <?php if(isset($message)){echo '<p>'.$message.'</p>';} ?>
-                    <?php if(isset($success)){echo '<p>'.$success.'</p>';} ?>
+                    <?php if(isset($message)){echo '<p class="alert-error ">'.$message.'</p>';} ?>
+                    <?php if(isset($success)){echo '<p class="alert-success ">'.$success.'</p>';} ?>
                 </p>
                 <form name="formRegistration" action ="./inscription.php" method="post">
                     <label for="username">Blaze d'utilisateur

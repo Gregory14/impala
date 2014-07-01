@@ -665,6 +665,18 @@ footer{
 	padding: 10px 3%
 }
 
+.addTicket > li{
+	display: inline-block;
+	width: 49%;
+	a{
+		width: 90%;
+		display: block;
+	}
+}
+
+.addTicket li:last-child{
+	margin-right: 0;
+}
 
 
 /* ----------------------
@@ -672,9 +684,9 @@ footer{
 ---------------------- */
 #team-content{
 	.team-category{
-		margin-bottom: 50px;
+		margin: 0 10%;
 		.inline-block{
-			width: 20%;
+			width: 28%;
 			margin: 2%;
 			text-align: center;
 			h3{
