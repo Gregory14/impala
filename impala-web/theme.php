@@ -38,4 +38,5 @@ include("includes/header.php");
                 </div>
             </div>
         </section>
+        <script src="js/map.js"></script>
 <?php include("includes/footer.php"); ?>

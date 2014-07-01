@@ -550,7 +550,7 @@ footer{
 
 
 /* ----------------------
-== PAGE FICHE-LIEU
+== PAGE FICHE-LIEU 
 ---------------------- */
 .back{
 	display: block;
@@ -618,6 +618,35 @@ footer{
 		display: block;
 		width: 100%;
 	}
+}
+
+/* ----------------------
+== PAGE FICHE EVENT
+---------------------- */
+#buyTicket ul{
+	margin: 35px auto;
+	li {
+		text-align: center;
+		width: 33%;
+		display: inline-block;
+		p{
+			margin: 20px 2%;
+		}
+		p:first-child {
+			font-weight :bold;
+		}
+	}
+	li:first-child{
+		text-align: left;
+	}
+	li:last-child{
+		text-align: right;
+	}
+}
+
+#buyTicket select{
+	color: $colorSite;
+	padding: 10px 3%
 }
 
 
@@ -727,6 +756,10 @@ footer{
 		display: block;
 		margin: 0 auto;
 	}
+	p{
+		width: 100%;
+		height: 100%;
+	}
 	a{
 		display: block;
 		width: 100%;
@@ -749,21 +782,6 @@ footer{
 		height: 150px;
 	}
 }
-
-
-/*#district-choice:active {
-	width: 100%;
-	height: 60%;
-	-ms-transform: translate(30px); /* IE 9 */
-    /*-webkit-transform: translate(30px); /* Chrome, Safari, Opera */
-    /*transform: translate(30px);
-    /*-ms-transform: rotateY(80deg); /* IE 9 */
-    /*-webkit-transform: rotateY(80deg); /* Chrome, Safari, Opera */
-    /*transform: rotateY(80deg);
-
-    -webkit-transition : transform 5s;
-    transition : transform 5s;
-}*/
 
 
 #theme-choice{

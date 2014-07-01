@@ -1,0 +1,166 @@
+{"features":
+	[{"geometry":
+		{"coordinates":[2.381131399999987,48.8769645],
+			"type":"Point"},
+		"properties":
+			{"description":"Le XIXème arrondissement est surtout connu pour la Butte Chaumont. Dépaysement garantit. Mais dépaysement plutôt familial.\nPeut-être croiserez vous une mariée qui se fait prendre en image devant les magnifiques parterres de fleurs?\nA moins que vous préfériez attraper le soleil allongé paresseusement sur les immenses pelouses. Fermez les yeux. Vous entendez? Oui, on entend rien, en tout cas pas les bruits de la circulation.\nLa nature c'est aussi l'occasion, une fois l'hiver passé, de courir dans les nombreuses allées du parc sans risquer rien de plus que d'être tenté de s'égarer au hasard des grottes et des arbres centenaires.",
+			"id":
+			"marker-hwx6prri0",
+			"marker-color":"#a3e46b",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Parc des Buttes Chaumont"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.384428100000008,48.8866647],
+			"type":"Point"},
+		"properties":
+			{"description":"Peut-être préférez-vous les espaces à la nature apprivoisés, rassurants, mais pas sans distractions.\nLe parc de la Villette est fait pour vous. Ses immenses pelouses sur lesquelles vous pourrez vous étendre au soleil en attendant le festival du cinéma en plein air.",
+			"id":
+			"marker-hwx6s8sw1",
+			"marker-color":"#a3e46b",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Parc de la Villette"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.3754729999999995,48.885818],
+			"type":"Point"},
+		"properties":
+			{"description":"Fin de repas de famille ? Rien de tel qu’une promenade gentille le long du canal de l
+			’Ourcq. Point de repère La Rotonde. Et laissez vous porter d’un pas paisible ou plus sportif en vélo.\nDe nombreuses activités vous sont proposées allant de la pêche au canoë kayac.\nBen alors, vous êtes toujours là ?",
+			"id":
+			"marker-hwx6u8x42",
+			"marker-color":"#a3e46b",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Canal de l’Ourcq"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.369726700000001,48.8835539],
+			"type":"Point"},
+		"properties":
+			{"description":"Paris est une fête! Disait Hemingway. Alors faisons la fête à la Rotonde, il suffit juste d'emmener une bande de potes.\nUne rotonde était jadis un octroi faisant frontière avec la ville est une zone grise que l'on appelait banlieue et où les fêtards se réunissaient la nuit.\nLe lieu a gardé ses bâtiments caractéristique du XVIIème miraculeusement préservé.\nSi l'endroit nous accueille jour et nuit à l'ombre des parasols pendant l'été, c'est la nuit qu'y chauffent les platines dans un lieu magique sur étage avec vue sur le canal de l'Ourcq.",
+			"id":
+			"marker-hwx710nb3",
+			"marker-color":"#9c89cc",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"La Rotonde"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.374028299999992,48.8753751],
+			"type":"Point"},
+		"properties":
+			{"description":"Comme son alter ego à Marseille, le Ventre de l' Architecte prétend nourrir aussi bien le corps que l'esprit. Ici ce n'est pas l'architecture qui est à l'honneur, mais les arts et la musique.\nLaissez vous tenter par ses plats de tapas, cuisine de partage par excellence.\nUn endroit parfais pour une soirée au calme entre amis.",
+			"id":
+			"marker-hwx734ko4",
+			"marker-color":"#9c89cc",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Le Ventre de l’Architecte"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.3772644999999955,48.886536],
+			"type":"Point"},
+		"properties":
+			{"description":"Vous êtes en famille? Ca tombe bien, un peu plus loin le Bar Ourcq sur le canal de la Villette. Laissez vous tenter par ses plats de tapas, cuisine de partage par excellence.\nBières fraîches à prix imbattable, livres, guitare, jeux de société, chaises longue et pétanque. Et dire que certains vont à St-Tropez!",
+			"id":
+			"marker-hwx74tb75",
+			"marker-color":"#9c89cc",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Bar Ourcq"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.3922648999999865,48.868187],
+			"type":"Point"},
+		"properties":
+			{"description":"Posez-vous à une table, le dimanche matin, à l’heure des curetons, pour bruncher sur du jazz, Django va vous balader chez les manouches ! \nIci, on vient quand y fait beau, on s’envoie quelques godets, les papilles s’éclatent, l’extase. On peut en faire une deuxième baraque sans ‘blème ! ",
+			"id":
+			"marker-hwx7g6mk6",
+			"marker-color":"#9c89cc",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"La Bellevilloise"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.385653899999994,48.8667321],
+			"type":"Point"},
+		"properties":
+			{"description":"La bibine est parfaite pour rafraîchir des gosiers, on peut tailler des bavettes au comptoir, on peut jacasser entre marlous, entre veau-muscadins, entre potes.\nOn se refait la journée, le volume est bon, la musique ne déjante pas les tympas. Entre loufs dans le 20ème, pour déguster des bonnes boutanches, avec modération, c’est la bonne adresse. ",
+			"id":
+			"marker-hwx7hkpv7",
+			"marker-color":"#9c89cc",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Les Trois 8"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.3895464000000004,48.8686317],
+			"type":"Point"},
+		"properties":
+			{"description":"C’était une une ancienne laverie, d’où l’nom du bar..\nDevenu un bistro mélange pop vintage à la Mandellia. \nEt là, à l’intérieur reste toujours des machines à laver, en clair tu lave ton linge sale en publique façon de parler.",
+			"id":
+			"marker-hwx7jow28",
+			"marker-color":"#9c89cc",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Café La Laverie"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.3848223999999902,48.8702558],
+			"type":"Point"},
+		"properties":
+			{"description":"D’jà, trouve le courage d’grimper jusqu’en haut.. c’est une toile qui t’attends.. un peut d’vert devant et le tout paname en arrière plan.\nPour continuer dans l’paysage de premiere, bien tapé, un peu romantique même.. prends la tengente, n’importe laquelle, perds-toi dans l’secteur..\nEh ! si ton délire c’est d’sortir ta maramaille, l’parc de Belleville c’est l’patelin qu’il te faut. \nPar dessus l’marché, je peux checker mes mails, c’est la magie du «wifi paris» et c’est complètement gratuit. ",
+			"id":
+			"marker-hwx7lnqu9",
+			"marker-color":"#a3e46b",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Parc de Belleville"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.391092299999997,48.8637822],
+			"type":"Point"},
+		"properties":
+			{"description":"Bon ici c’est l’square Samuel Champelain, t’peux taffer au calme, faire des mots croisé si t’as envie.. \nOu v’nir pour mater le monument aux victimes des révolutions. \nLes pierres, c’est les vraies du mur des fédérés, ouai on voit même les impacts de balle. \nEn bas à gauche y’a l’inscription de Victor Hugo,\n«Ce que nous demandons à l’avenir, ce que nous voulons de lui, c’est la justice, pas la vengeance !»",
+			"id":
+			"marker-hwx7njy9a",
+			"marker-color":"#a3e46b",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Square Samuel Champlain"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[2.3917146000000002,48.8665669],
+			"type":"Point"},
+		"properties":
+			{"description":"Envie de branler toute l’aprem au soleil, à l’air pur ?\nAlors l’square jacques-joseph Grancher, c’est la place qu’il te faut ! \nC’est un pédiatre et ici c’est pour lui rendre hommage. \nC’est simple, là tu t’crois juste en vacances à la cambrousse.",
+			"id":
+			"marker-hwx7p9k8b",
+			"marker-color":"#a3e46b",
+			"marker-size":"large",
+			"marker-symbol":"",
+			"title":"Square Docteur Jacques Joseph Grancher"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[[[2.3672103881835938,48.86883637582843],[2.38128662109375,48.853703306301384],[2.408580780029297,48.86431952070295],[2.406435012817383,48.87724793170059],[2.3672103881835938,48.86883637582843]]],
+			"type":"Polygon"},
+		"properties":
+			{"description":"20e arrondissement","fill":"#f86767","fill-opacity":0.1,
+			"id":
+			"marker-hwxjcnm51","stroke":"#f86767","stroke-opacity":1,"stroke-width":1,
+			"title":"20e"},
+			"type":"Feature"}
+	,{"geometry":
+		{"coordinates":[[[2.4062633514404292,48.877304380318094],[2.367124557495117,48.8690622078825],[2.361202239990234,48.875667344547715],[2.370471954345703,48.900781480285],[2.393045425415039,48.90128927649513],[2.4062633514404292,48.877304380318094]]],
+			"type":"Polygon"},
+		"properties":
+			{"description":"","fill":"#3ca0d3","fill-opacity":0.1,
+			"id":
+			"marker-hwxjnyj73","stroke":"#3ca0d3","stroke-opacity":1,"stroke-width":1,
+			"title":""},
+			"type":"Feature"}],
+			"id":"mbouras.ige8aolg",
+			"type":"FeatureCollection"}
