@@ -1,18 +1,18 @@
-<?php 
+<?php error_reporting(0); session_start();
 $title="Atmosphère - Facturation";
 $description="Tous les événements les plus improbables. Rencontrez de nouvelles personnes, partagez vos connaissances et expériences et découvrez de nouveaux lieux.";
-
-include("includes/header.php");
-include('traitement/billing.php');
 
 //Vérifier que l'utilisateur est bien connecté
 if(!isset($_SESSION['connect'])){
 
     //Si utilisateur pas connecté, redirigé vers page connexion
     //  (création variable pour permettre redirection vers facturation après connexion)
-    header('location: connexion.php');
     $_SESSION['currentPurchase'] = true;
+    header('location: connexion.php');
 };
+include("includes/config.php");
+include('traitement/billing.php');
+include("includes/header.php");
 ?>
         <h2>Pour avoir ton ticket brûle pas les étapes</h2>
         <section id="billing-content" class="container">

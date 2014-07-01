@@ -12,9 +12,9 @@ include("includes/header.php");
 
         $donnees=$req->fetch();
     }
-    if(isset($_SESSION['panier'])){
-        echo '<strong style="color:red;">VOTRE TICKET A BIEN ETE AJOUTE A VOTRE PANIER</strong>';
-    }
+    // if(isset($_SESSION['panier'])){
+    //     echo '<strong style="color:red;">VOTRE TICKET A BIEN ETE AJOUTE A VOTRE PANIER</strong>';
+    // }
 ?>
         <section class="container">
             <p><a href="evenements.php" class="back" title="retour à tous les évènements"><</a></p>
@@ -36,12 +36,35 @@ include("includes/header.php");
                 <a href="#" class="button share">Partager sur Facebook</a>
                 <div class="fiche-description">
                     <h3>P'tite description</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur mattis tincidunt. Morbi congue nisl in mollis cursus. Nunc rutrum euismod aliquam. Nulla lobortis mauris odio, non iaculis orci porttitor ut. Donec a hendrerit nisl. Nulla quis est id libero vestibulum rutrum.</p>
+                    <p><?php echo $donnees['description'] ;?></p>
                 </div>
                 <div class="pictures">
                     <img src="<?php echo $donnees['bigimage']; ?>" alt="visuel du lieu <?php echo $donnees['title']; ?>">
                 </div>
-                <ul>
+                <div id="buyTicket">
+                    <h3>C'est simple comme bonjour : réserver en 4 étapes !</h3>
+                    <ul>
+                         <li>
+                            <p>Évènement</p>
+                            <p><?php echo $donnees['title']; ?></p>
+                         </li>
+                         <li>
+                            <p>Tarif</p>
+                            <p><?php echo $donnees['price']; ?></p>
+                         </li>
+                         <li>
+                            <p>Nombre de place</p>
+                            <select name="nbrTicket" id="nbrTicket">
+                                <?php for($i=1; $i < 11; $i++){ ?>
+                                    <option value="<?php echo $i; ?>"><?php echo $i ;?></option>
+                                <?php
+                                };?>
+                            </select>
+                         </li>
+                     </ul> 
+                    
+                </div>
+                <ul class="addTicket">
                     <li><a href="traitement/panier.php?id=<?php echo $donnees['id']; ?>" class="button">Ajouter à mes tickets</a></li>
                     <li><a href="#" class="button">Achat rapide</a></li>
                 </ul>

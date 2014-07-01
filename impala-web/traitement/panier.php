@@ -1,4 +1,4 @@
-<?php session_start();
+<?php error_reporting(0); session_start();
 
 
 //Ajout d'un ticket (article) dans le panier

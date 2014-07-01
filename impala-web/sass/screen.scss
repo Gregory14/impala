@@ -565,7 +565,7 @@ footer{
 
 
 /* ----------------------
-== PAGE FICHE-LIEU
+== PAGE FICHE-LIEU 
 ---------------------- */
 .back{
 	display: block;
@@ -636,6 +636,47 @@ footer{
 	}
 }
 
+/* ----------------------
+== PAGE FICHE EVENT
+---------------------- */
+#buyTicket ul{
+	margin: 35px auto;
+	li {
+		text-align: center;
+		width: 33%;
+		display: inline-block;
+		p{
+			margin: 20px 2%;
+		}
+		p:first-child {
+			font-weight :bold;
+		}
+	}
+	li:first-child{
+		text-align: left;
+	}
+	li:last-child{
+		text-align: right;
+	}
+}
+
+#buyTicket select{
+	color: $colorSite;
+	padding: 10px 3%
+}
+
+.addTicket > li{
+	display: inline-block;
+	width: 49%;
+	a{
+		width: 90%;
+		display: block;
+	}
+}
+
+.addTicket li:last-child{
+	margin-right: 0;
+}
 
 
 /* ----------------------
@@ -643,9 +684,9 @@ footer{
 ---------------------- */
 #team-content{
 	.team-category{
-		margin-bottom: 50px;
+		margin: 0 10%;
 		.inline-block{
-			width: 20%;
+			width: 28%;
 			margin: 2%;
 			text-align: center;
 			h3{
@@ -735,13 +776,20 @@ footer{
 == PAGE ARRONDISSEMENT
 ------------------------------------------- */
 
-/* A REGARDER pour l'animation de la page en CSS3 */
-
 #district-choice{
 	position: relative;
+	max-height: 746px;
+	max-width: 1024px;
+	margin: auto;
 	img{
 		display: block;
 		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+	}
+	p{
+		width: 100%;
+		height: 100%;
 	}
 	a{
 		display: block;
@@ -753,38 +801,17 @@ footer{
 		position: absolute;
 	}
 	#nineteenth{
-		top: 95px;
-		right: 30%;
+		top: 13%;
+		right: 28%;
 		width: 15%;
-		height: 170px;
+		height: 23%;
 	}
 	#twentieth{
-		top: 36%;
-		right: 27%;
+		top: 37%;
+		right: 25%;
 		width: 12%;
-		height: 150px;
+		height: 20%;
 	}
-}
-
-
-/*#district-choice:active {
-	width: 100%;
-	height: 60%;
-	-ms-transform: translate(30px); /* IE 9 */
-    /*-webkit-transform: translate(30px); /* Chrome, Safari, Opera */
-    /*transform: translate(30px);
-    /*-ms-transform: rotateY(80deg); /* IE 9 */
-    /*-webkit-transform: rotateY(80deg); /* Chrome, Safari, Opera */
-    /*transform: rotateY(80deg);
-
-    -webkit-transition : transform 5s;
-    transition : transform 5s;
-}*/
-
-
-#theme-choice{
-	width: 60%;
-	margin: 0 20%;
 }
 
 #theme-choice .video-js {
@@ -799,21 +826,30 @@ footer{
 }
 
 #theme-button ul > li {
+	opacity: 0.5;
 	display: block;
 	float: left;
-	width: 40%;
-	margin-right: 20%;
+	width: 50%;
 	cursor: pointer;
+	position: relative;
 		h3{
+			position: absolute;
+			top: 2%;
+			left: 10%;
+			width: 70%;
 			text-align: center;
 			padding: 5%;
 			background-color: $colorSite;
 			color: #FFF;
 		}
+		img {
+			width: 100%;
+		}
 }
 
-#theme-button ul > li:last-child {
-	margin-right: 0;
+#theme-button ul > li:hover{
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
 }
 
 #video-nature, #video-partage{

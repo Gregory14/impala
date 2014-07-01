@@ -1,6 +1,4 @@
-<?php session_start(); 
-include_once("traitement/analyticstracking.php");
-?>
+<?php session_start();?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
@@ -32,15 +30,14 @@ include_once("traitement/analyticstracking.php");
         <meta name="twitter:domain" content="atmosphere-parigot.fr">
         <!-- END META TWITTER -->
         <meta name="p:domain_verify" content="03ba9916ed1916299d8707ed7b2f964a"/>
-        <link rel="stylesheet" href="stylesheets/screen.css">
+        <link rel="stylesheet" href="stylesheets/screenwaiting.css">
         <link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.css' rel='stylesheet' />
         <script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.3/mapbox.js'></script>
         <link rel="icon" type="image/png" href="img/favicon.png"> 
         <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-        <link href="//vjs.zencdn.net/4.6/video-js.css" rel="stylesheet">
-        <script src="//vjs.zencdn.net/4.6/video.js"></script>
     </head>
     <body role="document">
+        <?php include_once("traitement/analyticstracking.php"); ?>
         <div id="waiting">    
         	<section id="content">
                 <header>
