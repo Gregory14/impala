@@ -439,13 +439,15 @@ footer{
 		position: absolute;
 		top: 15px;
 		left: 0;
+		width: 40%;
 		background-color: #fff;
 		h4{
+			font-weight: bold;
 			font-size: 2em;
 			span{
 				background-color: #ccc;
-				margin-right: 5%;
-				padding: 0 6%;
+				margin-right: 3%;
+				padding: 0 4%;
 			}
 		}
 	}
@@ -455,30 +457,38 @@ footer{
 		right: 5%;
 		width: 25%;
 		padding: 1%;
-		background: #fff;
-		border: 1px solid $textColor;
+		background: rgba(255,255,255,0.8);
 		text-align: center;
 		time, h4{
 			font-size: 1.4em;
 		}
+		time{
+			font-weight: bold;
+		}
 		.button{
-			width: 80%;
+			width: 55%;
 			margin-top: 10px;
 			padding: 5% 1%;
 		}
 	}
 	.inline-block{
-		width: 65%;
+		width: 47%;
 	}
 	.inline-block.informations{
-		width: 28%;
+		width: 46%;
 		margin: 10px 0 0 2.8%;
+		li{
+			padding: 3% 10%;
+		}
 	}
 }
 .description-place{
-	margin-top: 10px;
+	margin: 10px 0 75px;
+	p{
+		margin-bottom: 20px;
+	}
 	.button{
-		width: 25%;
+		width: 35%;
 		margin-right: 0;
 	}
 }
@@ -586,7 +596,7 @@ footer{
 }
 .informations{
 	padding:0 2%;
-	border: 1px solid $textColor;
+	border: 1px solid $colorSite;
 	ul{
 		width: 100%;
 		li{
@@ -602,6 +612,7 @@ footer{
 		.time{ background-image: url('../img/content/icons/horaire.png'); }
 		.telephone{ background-image: url('../img/content/icons/telephone.png'); }
 		.website{ background-image: url('../img/content/icons/website.png'); }
+		.price{ background-image: url('../img/content/icons/price.png'); }
 	}
 }
 .fiche-description{

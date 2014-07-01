@@ -25,7 +25,7 @@ include("includes/header.php");
                     <ul>
                         <li class="address"><?php echo $donnees['address'] ;?></li>
                         <li class="transport"><?php echo $donnees['transport'] ;?></li>
-                        <li><?php echo $donnees['price'];?>€</li>
+                        <li class="price"><?php echo $donnees['price'];?>€</li>
                         <li class="time">Horaires</li>
                         <li class="telephone"><?php echo $donnees['telephone'] ;?></li>
                         <li class="website"><?php echo $donnees['website'] ;?></li>
