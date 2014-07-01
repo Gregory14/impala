@@ -4,11 +4,11 @@
             <div id="follow-us" class="inline-block">
                 <p class="inline-block">Suis-nous gamin !</p>
                 <ul class="social-networks list-inline inline-block">
-                    <li><a class="facebook" href="#" title="Facebook" rel="external">Facebook</a></li>
-                    <li><a class="twitter" href="#" title="Twitter" rel="external">Twitter</a></li>
-                    <li><a class="googleplus" href="#" title="Google +" rel="external">Google+</a></li>
-                    <li><a class="pinterest" href="#" title="Pinterest" rel="external">Pinterest</a></li>
-                    <li><a class="youtube" href="#" title="Youtube" rel="external">Youtube</a></li>
+                    <li><a class="facebook" href="https://www.facebook.com/pages/Atmosph%C3%A8re-Parigot/582962811819213" title="Notre page Facebook" rel="external" target="_blank">Facebook</a></li>
+                    <li><a class="twitter" href="https://twitter.com/atmosphere_p" title="Notre page Twitter" rel="external" target="_blank">Twitter</a></li>
+                    <li><a class="googleplus" href="https://plus.google.com/108575041726592154267" title="Notre compte Google +" rel="external" target="_blank">Google+</a></li>
+                    <li><a class="pinterest" href="http://fr.pinterest.com/atmospherep/" title="Notre compte Pinterest" rel="external" target="_blank">Pinterest</a></li>
+                    <li><a class="youtube" href="https://www.youtube.com/channel/UCA8WegVpd_zDld5kJna-HNA" title="Notre chaîne Youtube" rel="external" target="_blank">Youtube</a></li>
                 </ul>
             </div>
             <div id="contact-us" class="inline-block">
