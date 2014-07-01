@@ -257,6 +257,11 @@ header nav, header ul{
 			transition: all 0.2s ease-in-out;
 		}
 	}
+	input[type="submit"]{
+		background: none;
+		font-size: 0.875em;
+		cursor: pointer;
+	}
 }
 #mytickets{
 	position: relative;
