@@ -28,16 +28,16 @@ include("includes/header.php")
                         <a href="fiche-lieu.php?id=<?php echo $donnees['id']; ?>"><img src="<?php echo $donnees['smallimage']; ?>" /></a>
                         <p class="description">
                             <?php 
-                                // Limiter le nombre de caracteres visible
-                                if(strlen($donnees['description'])>100){
-                                    
-                                    $donnees['description']=substr($donnees['description'], 0, 100);
-                                    $dernier_mot=strrpos($donnees['description']," ");
-                                    $donnees['description']=substr($donnees['description'],0,$dernier_mot);
-                                    
-                                    $donnees['description'].=" ...";
-                                    echo $donnees['description'];
-                                }
+                            // Limiter le nombre de caracteres visible
+                            if (strlen($donnees['description'])>100) {
+                                $donnees['description']=substr($donnees['description'], 0, 100);
+                                $dernier_mot=strrpos($donnees['description']," ");
+                                $donnees['description']=substr($donnees['description'],0,$dernier_mot);
+                                // AJOUTER ... a la fin de la description
+                                $donnees['description'].=" ...";
+                                echo $donnees['description'];
+
+                            }
                             ?>
                         </p>
                     </li>

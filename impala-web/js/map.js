@@ -16,7 +16,7 @@ $.ajax({
 		// Design Marker Partage 
 		var partageIcon = L.icon({
 			iconUrl: 'img/content/map/parcours-partage.png',
-			iconRetinaUrl: 'my-icon@2x.png',
+			//iconRetinaUrl: 'my-icon@2x.png',
 			iconSize: [50, 50],
 			iconAnchor: [25, 50],
 			popupAnchor: [-3, -76],
@@ -29,7 +29,7 @@ $.ajax({
 		// Design Marker Nature
 		var natureIcon = L.icon({
 			iconUrl: 'img/content/map/parcours-nature.png',
-			iconRetinaUrl: 'my-icon@2x.png',
+			//iconRetinaUrl: 'my-icon@2x.png',
 			iconSize: [50, 50],
 			iconAnchor: [25, 50],
 			popupAnchor: [-3, -76],

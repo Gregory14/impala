@@ -26,7 +26,20 @@ include("includes/header.php")
                             <a href="fiche-event.php?id=<?php echo $donnees['id']; ?>">
                                 <img src="img/content/evenements/test.jpg" alt="visuel de l'événement" />
                             </a>
-                            <p class="description"><?php echo $donnees['description']; ?></p>
+                            <p class="description">
+                                <?php 
+                            // Limiter le nombre de caracteres visible
+                            if (strlen($donnees['description'])>100) {
+                                $donnees['description']=substr($donnees['description'], 0, 100);
+                                $dernier_mot=strrpos($donnees['description']," ");
+                                $donnees['description']=substr($donnees['description'],0,$dernier_mot);
+                                // AJOUTER ... a la fin de la description
+                                $donnees['description'].=" ...";
+                                echo $donnees['description'];
+
+                            }
+                            ?>
+                            </p>
                         </li>
                     <?php } ?>
                 </ul>
