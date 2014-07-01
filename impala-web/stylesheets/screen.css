@@ -291,7 +291,7 @@ textarea {
 /* line 195, ../sass/screen.scss */
 #head {
   background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* line 201, ../sass/screen.scss */
@@ -408,7 +408,7 @@ footer {
   height: 40px;
   line-height: 40px;
   background-color: #fff;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 /* line 298, ../sass/screen.scss */
 footer small {
@@ -487,7 +487,7 @@ footer small {
 #our-concept p {
   width: 45%;
   font-size: 2em;
-  text-shadow: -1px 1px 5px rgba(0, 0, 0, 0);
+  text-shadow: -1px 1px 5px rgba(0, 0, 0, 0.43);
 }
 /* line 362, ../sass/screen.scss */
 #our-concept .button {
@@ -634,7 +634,7 @@ footer small {
   right: 5%;
   width: 25%;
   padding: 1%;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.8);
   text-align: center;
 }
 /* line 467, ../sass/screen.scss */
@@ -734,7 +734,7 @@ footer small {
   position: absolute;
   bottom: -180px;
   left: 0;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.8);
   margin: 0;
   padding: 4% 5% 8%;
 }
@@ -991,100 +991,108 @@ footer small {
 /* ----------------------------------------
 == PAGE ARRONDISSEMENT
 ------------------------------------------- */
-/* A REGARDER pour l'animation de la page en CSS3 */
-/* line 769, ../sass/screen.scss */
+/* line 767, ../sass/screen.scss */
 #district-choice {
   position: relative;
+  max-height: 746px;
+  max-width: 1024px;
+  margin: auto;
 }
-/* line 771, ../sass/screen.scss */
+/* line 772, ../sass/screen.scss */
 #district-choice img {
   display: block;
   margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
-/* line 775, ../sass/screen.scss */
+/* line 778, ../sass/screen.scss */
 #district-choice p {
   width: 100%;
   height: 100%;
 }
-/* line 779, ../sass/screen.scss */
+/* line 782, ../sass/screen.scss */
 #district-choice a {
   display: block;
   width: 100%;
   height: 100%;
   font-size: 0;
 }
-/* line 785, ../sass/screen.scss */
+/* line 788, ../sass/screen.scss */
 #district-choice #nineteenth, #district-choice #twentieth {
   position: absolute;
 }
-/* line 788, ../sass/screen.scss */
+/* line 791, ../sass/screen.scss */
 #district-choice #nineteenth {
-  top: 95px;
-  right: 30%;
+  top: 13%;
+  right: 28%;
   width: 15%;
-  height: 170px;
+  height: 23%;
 }
-/* line 794, ../sass/screen.scss */
+/* line 797, ../sass/screen.scss */
 #district-choice #twentieth {
-  top: 36%;
-  right: 27%;
+  top: 37%;
+  right: 25%;
   width: 12%;
-  height: 150px;
+  height: 20%;
 }
 
-/* line 803, ../sass/screen.scss */
-#theme-choice {
-  width: 60%;
-  margin: 0 20%;
-}
-
-/* line 808, ../sass/screen.scss */
+/* line 805, ../sass/screen.scss */
 #theme-choice .video-js {
   padding-top: 56.25%;
 }
 
-/* line 812, ../sass/screen.scss */
+/* line 809, ../sass/screen.scss */
 #theme-choice .vjs-fullscreen-control {
   display: none;
 }
 
-/* line 813, ../sass/screen.scss */
+/* line 810, ../sass/screen.scss */
 #theme-choice .vjs-volume-control {
   margin-right: 2%;
 }
 
-/* line 815, ../sass/screen.scss */
+/* line 812, ../sass/screen.scss */
 #theme-choice .vjsfullscreen {
   padding-top: 0px;
 }
 
-/* line 819, ../sass/screen.scss */
+/* line 816, ../sass/screen.scss */
 #theme-button ul > li {
+  opacity: 0.5;
   display: block;
   float: left;
-  width: 40%;
-  margin-right: 20%;
+  width: 50%;
   cursor: pointer;
+  position: relative;
 }
-/* line 825, ../sass/screen.scss */
+/* line 823, ../sass/screen.scss */
 #theme-button ul > li h3 {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+  width: 70%;
   text-align: center;
   padding: 5%;
   background-color: #a769a8;
   color: #FFF;
 }
-
 /* line 833, ../sass/screen.scss */
-#theme-button ul > li:last-child {
-  margin-right: 0;
+#theme-button ul > li img {
+  width: 100%;
 }
 
-/* line 837, ../sass/screen.scss */
+/* line 838, ../sass/screen.scss */
+#theme-button ul > li:hover {
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 843, ../sass/screen.scss */
 #video-nature, #video-partage {
   position: relative;
 }
 
-/* line 841, ../sass/screen.scss */
+/* line 847, ../sass/screen.scss */
 .popup {
   position: absolute;
   width: 100%;
@@ -1094,24 +1102,24 @@ footer small {
   padding: 15% 0;
 }
 
-/* line 850, ../sass/screen.scss */
+/* line 856, ../sass/screen.scss */
 .popup p {
   width: 39%;
   margin: 0 5%;
 }
 
-/* line 855, ../sass/screen.scss */
+/* line 861, ../sass/screen.scss */
 .popup p a {
   width: 80%;
   padding: 5%;
 }
 
-/* line 860, ../sass/screen.scss */
+/* line 866, ../sass/screen.scss */
 .hidden {
   display: none;
 }
 
-/* line 864, ../sass/screen.scss */
+/* line 870, ../sass/screen.scss */
 .show {
   display: block;
 }
@@ -1119,21 +1127,21 @@ footer small {
 /* ----------------------
 == PAGE USER PROFIL
 ---------------------- */
-/* line 874, ../sass/screen.scss */
+/* line 880, ../sass/screen.scss */
 #user-content .inline-block {
   width: 29%;
   margin: 2% 1.6%;
 }
-/* line 877, ../sass/screen.scss */
+/* line 883, ../sass/screen.scss */
 #user-content .inline-block h4 {
   margin-bottom: 15px;
   font-size: 1.25em;
 }
-/* line 881, ../sass/screen.scss */
+/* line 887, ../sass/screen.scss */
 #user-content .inline-block input {
   padding: 2%;
 }
-/* line 884, ../sass/screen.scss */
+/* line 890, ../sass/screen.scss */
 #user-content .inline-block .button {
   width: 65%;
   margin: 3% auto;
@@ -1142,27 +1150,27 @@ footer small {
 /* ----------------------
 == PAGE VALIDATION
 ---------------------- */
-/* line 896, ../sass/screen.scss */
+/* line 902, ../sass/screen.scss */
 #validation-content {
   width: 60%;
   margin: 0 auto;
 }
-/* line 899, ../sass/screen.scss */
+/* line 905, ../sass/screen.scss */
 #validation-content h3, #validation-content h4 {
   margin: 30px 0;
   text-align: center;
 }
-/* line 903, ../sass/screen.scss */
+/* line 909, ../sass/screen.scss */
 #validation-content .social-networks {
   margin: 0 auto 45px;
   text-align: center;
 }
-/* line 906, ../sass/screen.scss */
+/* line 912, ../sass/screen.scss */
 #validation-content .social-networks a:before {
   font-size: 30px;
 }
 
-/* line 911, ../sass/screen.scss */
+/* line 917, ../sass/screen.scss */
 #message-validation {
   width: 45%;
   margin: 0 auto 70px;
@@ -1171,89 +1179,89 @@ footer small {
 /* ----------------------
 == PAGE ESPACE TICKET
 ---------------------- */
-/* line 921, ../sass/screen.scss */
+/* line 927, ../sass/screen.scss */
 .purchase-content {
   width: 75%;
   margin: 0 auto;
 }
 
-/* line 925, ../sass/screen.scss */
+/* line 931, ../sass/screen.scss */
 .steps-purchase {
   margin-bottom: 70px;
   text-align: center;
   font-size: 2em;
   color: #fff;
 }
-/* line 930, ../sass/screen.scss */
+/* line 936, ../sass/screen.scss */
 .steps-purchase li {
   margin: 0 1%;
   padding: 1% 2%;
   background-color: #b77ebb;
   border-radius: 50%;
 }
-/* line 936, ../sass/screen.scss */
+/* line 942, ../sass/screen.scss */
 .steps-purchase .current {
   background-color: #a769a8;
 }
 
-/* line 941, ../sass/screen.scss */
+/* line 947, ../sass/screen.scss */
 #tickets-content h3 {
   margin-bottom: 25px;
 }
-/* line 944, ../sass/screen.scss */
+/* line 950, ../sass/screen.scss */
 #tickets-content h4 {
   margin-bottom: 15px;
   font-size: 1.25em;
 }
-/* line 948, ../sass/screen.scss */
+/* line 954, ../sass/screen.scss */
 #tickets-content .button {
   margin: 30px 0 70px 0;
 }
-/* line 951, ../sass/screen.scss */
+/* line 957, ../sass/screen.scss */
 #tickets-content .ticket {
   padding: 2% 0;
   border-top: 3px solid #a769a8;
 }
-/* line 954, ../sass/screen.scss */
+/* line 960, ../sass/screen.scss */
 #tickets-content .ticket .inline-block {
   width: 70%;
 }
-/* line 956, ../sass/screen.scss */
+/* line 962, ../sass/screen.scss */
 #tickets-content .ticket .inline-block label {
   width: 48%;
   margin: 0 1.6% 2% 0;
   font-size: 1em;
 }
-/* line 961, ../sass/screen.scss */
+/* line 967, ../sass/screen.scss */
 #tickets-content .ticket .inline-block input {
   margin: 2% 0;
   font-size: 1em;
 }
-/* line 965, ../sass/screen.scss */
+/* line 971, ../sass/screen.scss */
 #tickets-content .ticket .inline-block p.quantity {
   margin-bottom: 40px;
 }
-/* line 968, ../sass/screen.scss */
+/* line 974, ../sass/screen.scss */
 #tickets-content .ticket .inline-block p {
   margin-bottom: 25px;
 }
-/* line 972, ../sass/screen.scss */
+/* line 978, ../sass/screen.scss */
 #tickets-content .ticket .ticketPrice.inline-block {
   width: 29%;
   text-align: right;
 }
-/* line 975, ../sass/screen.scss */
+/* line 981, ../sass/screen.scss */
 #tickets-content .ticket .ticketPrice.inline-block p.price {
   margin-bottom: 15px;
   font-size: 1.5em;
   font-weight: bold;
 }
-/* line 980, ../sass/screen.scss */
+/* line 986, ../sass/screen.scss */
 #tickets-content .ticket .ticketPrice.inline-block a {
   text-transform: uppercase;
   font-size: 1em;
 }
-/* line 985, ../sass/screen.scss */
+/* line 991, ../sass/screen.scss */
 #tickets-content .ticket input[type="submit"] {
   margin-left: 0;
   width: 40%;
@@ -1262,7 +1270,7 @@ footer small {
   padding: 2%;
   cursor: pointer;
 }
-/* line 994, ../sass/screen.scss */
+/* line 1000, ../sass/screen.scss */
 #tickets-content #total-amount {
   text-align: right;
   font-size: 1.25em;
@@ -1273,98 +1281,98 @@ footer small {
 /* ----------------------
 == PAGE FACTURATION
 ---------------------- */
-/* line 1006, ../sass/screen.scss */
+/* line 1012, ../sass/screen.scss */
 #billing-content {
   width: 80%;
   margin: 0 auto;
 }
-/* line 1009, ../sass/screen.scss */
+/* line 1015, ../sass/screen.scss */
 #billing-content h3 {
   margin: 30px 0;
 }
-/* line 1012, ../sass/screen.scss */
+/* line 1018, ../sass/screen.scss */
 #billing-content h4 {
   margin: 30px 0 15px;
   font-weight: bold;
   font-size: 1em;
 }
-/* line 1017, ../sass/screen.scss */
+/* line 1023, ../sass/screen.scss */
 #billing-content .button {
   width: 45%;
   margin: 30px 0 70px;
   padding: 3%;
 }
 
-/* line 1023, ../sass/screen.scss */
+/* line 1029, ../sass/screen.scss */
 #payment {
   width: 60%;
   margin-right: 13%;
 }
-/* line 1026, ../sass/screen.scss */
+/* line 1032, ../sass/screen.scss */
 #payment form label {
   width: 47%;
   margin: 0 2% 3% 0;
   font-size: 1em;
 }
-/* line 1031, ../sass/screen.scss */
+/* line 1037, ../sass/screen.scss */
 #payment form label[for="address"] {
   width: 100%;
 }
-/* line 1034, ../sass/screen.scss */
+/* line 1040, ../sass/screen.scss */
 #payment form label #address, #payment form label #email {
   width: 97%;
   padding: 2% 1%;
 }
-/* line 1038, ../sass/screen.scss */
+/* line 1044, ../sass/screen.scss */
 #payment form label input {
   margin-top: 2%;
   font-size: 1em;
   padding: 3%;
 }
-/* line 1043, ../sass/screen.scss */
+/* line 1049, ../sass/screen.scss */
 #payment input[type="radio"] {
   width: 5%;
   cursor: pointer;
 }
-/* line 1048, ../sass/screen.scss */
+/* line 1054, ../sass/screen.scss */
 #payment #payment-choice label {
   width: 20%;
 }
 
-/* line 1053, ../sass/screen.scss */
+/* line 1059, ../sass/screen.scss */
 #order-summary {
   width: 25%;
   margin-top: 30px;
   padding: 5px;
-  background-color: rgba(249, 196, 171, 0);
+  background-color: rgba(249, 196, 171, 0.5);
 }
-/* line 1058, ../sass/screen.scss */
+/* line 1064, ../sass/screen.scss */
 #order-summary h3 {
   margin-top: 0;
 }
-/* line 1061, ../sass/screen.scss */
+/* line 1067, ../sass/screen.scss */
 #order-summary p:last-child {
   margin: 5% 0;
   border-top: 2px solid #63595d;
   padding-top: 3%;
   text-transform: uppercase;
 }
-/* line 1067, ../sass/screen.scss */
+/* line 1073, ../sass/screen.scss */
 #order-summary span {
   font-weight: bold;
 }
-/* line 1070, ../sass/screen.scss */
+/* line 1076, ../sass/screen.scss */
 #order-summary #sum {
   font-size: 1.3em;
   margin: 10px 0;
 }
 
-/* line 1077, ../sass/screen.scss */
+/* line 1083, ../sass/screen.scss */
 .place img {
   max-width: 300px;
 }
 
-/* line 1080, ../sass/screen.scss */
+/* line 1086, ../sass/screen.scss */
 #map {
   height: 400px;
   width: 100%;
@@ -1373,24 +1381,24 @@ footer small {
 /* ----------------------------------------
 == Helper
 ------------------------------------------- */
-/* line 1090, ../sass/screen.scss */
+/* line 1096, ../sass/screen.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table;
 }
 
-/* line 1094, ../sass/screen.scss */
+/* line 1100, ../sass/screen.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 1097, ../sass/screen.scss */
+/* line 1103, ../sass/screen.scss */
 .lt-ie8 .clearfix {
   zoom: 1;
 }
 
-/* line 1100, ../sass/screen.scss */
+/* line 1106, ../sass/screen.scss */
 .list-inline {
   padding-left: 0;
   /*font-size: 1px;*/
@@ -1398,7 +1406,7 @@ footer small {
   list-style: none;
 }
 
-/* line 1106, ../sass/screen.scss */
+/* line 1112, ../sass/screen.scss */
 .list-inline > li {
   display: inline-block;
   /*font-size: 14em;*/
@@ -1406,18 +1414,18 @@ footer small {
   vertical-align: middle;
 }
 
-/* line 1112, ../sass/screen.scss */
+/* line 1118, ../sass/screen.scss */
 .lt-ie8 .list-inline > li {
   display: inline;
   zoom: 1;
 }
 
-/* line 1116, ../sass/screen.scss */
+/* line 1122, ../sass/screen.scss */
 .list-inline > li {
   margin-right: 5px;
 }
 
-/* line 1119, ../sass/screen.scss */
+/* line 1125, ../sass/screen.scss */
 .list-inline > li:last-child {
   margin-right: 0;
 }
@@ -1425,15 +1433,15 @@ footer small {
 /* ----------------------------------------
 == Waiting page
 ------------------------------------------- */
-/* line 1131, ../sass/screen.scss */
+/* line 1137, ../sass/screen.scss */
 #waiting > section {
   max-width: 480px;
   margin: 0 auto;
   padding: 5% 1% 1%;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* line 1137, ../sass/screen.scss */
+/* line 1143, ../sass/screen.scss */
 #waiting header {
   margin-bottom: 35px;
   text-align: center;
@@ -1444,12 +1452,12 @@ footer small {
 	text-align: center;
 	font-size: 0.9em;	
 }*/
-/* line 1146, ../sass/screen.scss */
+/* line 1152, ../sass/screen.scss */
 #waiting h1 {
   font-size: 0;
 }
 
-/* line 1149, ../sass/screen.scss */
+/* line 1155, ../sass/screen.scss */
 #waiting h2 {
   font-size: 2em;
   font-weight: bold;
@@ -1458,38 +1466,38 @@ footer small {
   font-family: 'dinpro';
 }
 
-/* line 1157, ../sass/screen.scss */
+/* line 1163, ../sass/screen.scss */
 #waiting h3 {
   font-size: 1em;
   text-align: center;
   font-family: 'dinpro';
 }
 
-/* line 1163, ../sass/screen.scss */
+/* line 1169, ../sass/screen.scss */
 #waiting p {
   font-size: 1em;
   margin-bottom: 15px;
 }
 
-/* line 1167, ../sass/screen.scss */
+/* line 1173, ../sass/screen.scss */
 #waiting p a {
   color: #dd6b70;
 }
 
-/* line 1170, ../sass/screen.scss */
+/* line 1176, ../sass/screen.scss */
 #waiting p a:hover {
   color: #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 1174, ../sass/screen.scss */
+/* line 1180, ../sass/screen.scss */
 #waiting label {
   display: block;
   margin: 5% 0 1%;
   font-size: 1em;
 }
 
-/* line 1179, ../sass/screen.scss */
+/* line 1185, ../sass/screen.scss */
 #waiting input {
   display: block;
   width: 100%;
@@ -1499,13 +1507,13 @@ footer small {
   font-size: 1em;
 }
 
-/* line 1187, ../sass/screen.scss */
+/* line 1193, ../sass/screen.scss */
 #waiting input:focus {
   outline: none;
   border: 1px #dd6b70 solid;
 }
 
-/* line 1191, ../sass/screen.scss */
+/* line 1197, ../sass/screen.scss */
 #waiting input[type="submit"] {
   margin: 8% 0 4%;
   background-color: #dd6b70;
@@ -1516,26 +1524,26 @@ footer small {
   cursor: pointer;
 }
 
-/* line 1200, ../sass/screen.scss */
+/* line 1206, ../sass/screen.scss */
 #waiting input[type="submit"]:hover {
   background-color: #dd6b70;
   border: 1px solid #dd6b70;
   transition: all 0.2s ease-in-out;
 }
 
-/* line 1205, ../sass/screen.scss */
+/* line 1211, ../sass/screen.scss */
 #reseaux {
   width: 46%;
   margin: 25px auto;
 }
 
-/* line 1209, ../sass/screen.scss */
+/* line 1215, ../sass/screen.scss */
 #reseaux li {
   display: inline-block;
   margin: 0 5%;
 }
 
-/* line 1213, ../sass/screen.scss */
+/* line 1219, ../sass/screen.scss */
 #reseaux a {
   display: block;
   font-size: 0;
@@ -1543,12 +1551,12 @@ footer small {
   text-decoration: none;
 }
 
-/* line 1219, ../sass/screen.scss */
+/* line 1225, ../sass/screen.scss */
 #reseaux a:hover {
   color: #ec6570;
 }
 
-/* line 1222, ../sass/screen.scss */
+/* line 1228, ../sass/screen.scss */
 #reseaux a:before {
   font-family: 'reseaux';
   font-size: 30px;

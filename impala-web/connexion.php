@@ -42,7 +42,7 @@ if(isset($_POST['login'])){
 
             //Création d'une variable qui prouve que l'utilisateur est connecté
             $_SESSION['connect']= true;
-            
+            echo $_SESSION['connect'];
 
             //Redirection après connexion
             //  Utilisateur est arrivé sur la page de connexion après validation du panier
