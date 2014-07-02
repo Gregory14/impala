@@ -49,7 +49,7 @@ include("includes/header.php");
                         <input name="id" type="hidden" value="<?php echo $_SESSION['id']; ?>">
                         <h3>2- Courriel de livraison</h3>
                         <label for="email">Email
-                            <input id="email" name="email" type="email" required tabindex="7" value="" placeholder="47, rue du Four">
+                            <input id="email" name="email" type="email" required tabindex="7" value="" placeholder="marc.morin@gmail.com">
                         </label>
                         <div id="payment-choice">
                             <h3>3- Choix du mode de paiement</h3>

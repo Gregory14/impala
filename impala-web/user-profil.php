@@ -50,9 +50,9 @@ include("traitement/user.php");
                     </form>
                 </div>
             </div>
-            <div id="user-orders">
+            <!--<div id="user-orders">
                 <h3>Toutes mes commandes</h3>
                 <p>T’as pas encore passé de commande gamin, grouille toi !</p>
-            </div>
+            </div>-->
         </section>
 <?php include("includes/footer.php"); ?>

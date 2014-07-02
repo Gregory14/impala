@@ -53,7 +53,6 @@ include("includes/header.php");
 						</ul>
 						<div class="clear"></div>
 					</div>
-					<a href="lieux.php<?php echo "?=".$_GET['arr'];?>">Page Thème</a>
 				</div><!--#theme-choice-->
 			</section>
 		</div>

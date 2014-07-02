@@ -1260,8 +1260,8 @@ footer small {
 }
 /* line 989, ../sass/screen.scss */
 #tickets-content .ticket .inline-block label {
-  width: 48%;
-  margin: 0 1.6% 2% 0;
+  width: 46%;
+  margin: 0 3% 2% 0;
   font-size: 1em;
 }
 /* line 994, ../sass/screen.scss */
@@ -1342,8 +1342,8 @@ footer small {
 }
 /* line 1059, ../sass/screen.scss */
 #payment form label {
-  width: 47%;
-  margin: 0 2% 3% 0;
+  width: 45%;
+  margin: 0 4% 3% 0;
   font-size: 1em;
 }
 /* line 1064, ../sass/screen.scss */
@@ -1352,7 +1352,7 @@ footer small {
 }
 /* line 1067, ../sass/screen.scss */
 #payment form label #address, #payment form label #email {
-  width: 97%;
+  width: 96%;
   padding: 2% 1%;
 }
 /* line 1071, ../sass/screen.scss */
