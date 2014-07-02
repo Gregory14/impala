@@ -16,16 +16,17 @@ include("includes/header.php");
 ?>
 		<div class="container">
 			<section id="theme-content">
+                <p><a href="patelins.php" class="back" title="retour à tous les lieux"><</a></p>
 				<div id="theme-choice">	
 					<div id="video-nature" class="video">
 						<video class="video-js vjs-default-skin vjs-big-play-centered" id="nature"  preload  controls="controls"  data-setup='' width="auto" height="auto">
-							<source src="video/mih.mp4" type="video/mp4" />
+							<source src="video/mih<?php echo $_GET['arr']?>.mp4" type="video/mp4" />
 							<source src="video.webm" type="video/webm" />
 							<source src="video.ogv" type="video/ogg" />
 						</video>
 						<div class="popup hidden">
 							<p class="inline-block"><a href="#" class="button">Partager la vidéo</a></p>
-							<p class="inline-block"><a href="lieux.php<?php echo "?=".$_GET['arr'];?>" class="button">Matte les patelins</a></p>
+							<p class="inline-block"><a href="lieux.php<?php echo "?arr=".$_GET['arr']."&theme=nature";?>" class="button">Choisir un lieu</a></p>
 						</div>
 					</div>
 					<div id="video-partage" class="video">
@@ -36,7 +37,7 @@ include("includes/header.php");
 						</video>
 						<div class="popup hidden">
 							<p class="inline-block"><a href="#" class="button">Partager la vidéo 2</a></p>
-							<p class="inline-block"><a href="lieux.php<?php echo "?=".$_GET['arr'];?>" class="button">Matte les patelins 2</a></p>
+							<p class="inline-block"><a href="lieux.php<?php echo "?arr=".$_GET['arr']."&theme=partage";?>" class="button">Choisir un lieu</a></p>
 						</div>
 					</div>
 					<div id="theme-button">

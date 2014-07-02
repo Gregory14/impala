@@ -31,8 +31,7 @@ include("includes/header.php");
                         <li class="website"><?php echo $donnees['website'] ;?></li>
                     </ul>
                 </div>
-                <a href="#" class="button share">Partager sur Facebook</a>
-                <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button"></div>
+                <div class="fb-share-button" data-href="http://www.atmosphere-parigot.fr/fiche-lieu.php?id=<?php $_GET['id']?>" data-type="button"></div>
                 <div class="fiche-description">
                     <h3>P'tite description</h3>
                     <p><?php echo $donnees['description'] ;?></p>

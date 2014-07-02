@@ -24,7 +24,7 @@ include("includes/header.php")
                             <h3><a href="fiche-event.php?id=<?php echo $donnees['id']; ?>"><?php echo $donnees['title']; ?></a></h3>
                             <p class="tag"><?php echo $donnees['tag']; ?></p>
                             <a href="fiche-event.php?id=<?php echo $donnees['id']; ?>">
-                                <img src="img/content/evenements/test.jpg" alt="visuel de l'événement" />
+                                <img src="<?php echo $donnees['smallimage']; ?>" alt="visuel de l'événement" />
                             </a>
                             <p class="description">
                                 <?php 
