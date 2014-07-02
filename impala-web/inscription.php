@@ -21,7 +21,7 @@ include('traitement/register.php');
                         <input id="email" type="email" name="email" required tabindex="2" value="">
                     </label>
                     <label for="password">Mot de passe
-                        <input id="password" type="text" name="password" required tabindex="3" value="">
+                        <input id="password" type="password" name="password" required tabindex="3" value="">
                     </label>
                     <input type="submit" name="register" class="button" value="S'inscrire">
                 </form>

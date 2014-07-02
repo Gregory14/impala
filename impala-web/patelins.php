@@ -6,14 +6,14 @@ include("includes/header.php")
 
 ;?>
         <section id="places-content" class="container">
-            <div id="filters">
-                <ul class="list-inline">
-                    <li class="filter" data-filter="all">TOUS</li>
-                    <li class="filter" data-filter=".nineteenth">19ème</li>
-                    <li class="filter" data-filter=".twentieth">20ème</li>
-                </ul>
-            </div>
             <div id="Container" class="all-thumbnails">
+                <div id="filters">
+                    <ul class="list-inline">
+                        <li class="filter" data-filter="all">TOUS</li>
+                        <li class="filter" data-filter=".nineteenth">19ème</li>
+                        <li class="filter" data-filter=".twentieth">20ème</li>
+                    </ul>
+                </div>
                 <ul>
             <!-- Boucle de recupération des données lieu (places) -->
             <?php 

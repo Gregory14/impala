@@ -62,7 +62,6 @@ include("includes/header.php");
                             </select>
                          </li>
                      </ul> 
-                    
                 </div>
                 <ul class="addTicket">
                     <li><a href="traitement/panier.php?id=<?php echo $donnees['id']; ?>" class="button">Ajouter à mes tickets</a></li>
