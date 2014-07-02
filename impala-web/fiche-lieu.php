@@ -1,6 +1,6 @@
 <?php
 $title="Atmosphère - Lieu 1";
-$description="Une petite description du lieu";
+$description="Découvrez des lieux sous un autre angle, dans une atmosphère particulière.";
 
 include("includes/header.php");
 
@@ -26,7 +26,7 @@ include("includes/header.php");
                         <li class="address"><?php echo $donnees['address'] ;?></li>
                         <li class="transport"><?php echo $donnees['transport'] ;?></li>
                         <li class="price"><?php echo $donnees['price'];?>€</li>
-                        <li class="time">Horaires</li>
+                        <li class="time"><?php echo $donnees['time'];?></li>
                         <li class="telephone"><?php echo $donnees['telephone'] ;?></li>
                         <li class="website"><?php echo $donnees['website'] ;?></li>
                     </ul>
@@ -39,7 +39,9 @@ include("includes/header.php");
                 <div class="pictures">
                     <img src="<?php echo $donnees['bigimage']; ?>" alt="visuel du lieu <?php echo $donnees['title']; ?>">
                 </div>
-                <a href="fiche-event.php?id=1" class="button">Voir l'événement</a>
+                <?php if(!empty($donnees['event'])) { ?>
+                <a href="fiche-event.php?id=<?php echo $donnees['idevent']; ?>" class="button">Voir l'événement</a>
+                <?php }?>
             </div>
         </section>
 <?php include("includes/footer.php"); ?>

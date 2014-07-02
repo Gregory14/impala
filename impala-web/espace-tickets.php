@@ -1,6 +1,6 @@
 <?php
 $title="Atmosphère - Mes tickets";
-$description="Une petite description du lieu";
+$description="Réservez de nombreux événements grâce à Atmosphère-Parigot. Culture, loisirs, éducation… tant de thèmes à découvrir dans des lieux de prestige.";
 
 include("includes/header.php");
 

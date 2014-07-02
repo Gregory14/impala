@@ -1,6 +1,6 @@
 <?php 
 $title="Atmosphère - Validation du paiement et de la commande";
-$description="Tous les événements les plus improbables. Rencontrez de nouvelles personnes, partagez vos connaissances et expériences et découvrez de nouveaux lieux.";
+$description="Atmosphère-Parigot a été réalisé dans le cadre d’un projet étudiant. Merci d’y avoir participé.";
 
 include("includes/header.php"); 
 

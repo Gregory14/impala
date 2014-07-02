@@ -1,6 +1,6 @@
 <?php 
-$title="Atmosphère - Patelins";
-$description="Atmosphère vous propose de découvrir une liste de lieux exclusifs.";
+$title="Atmosphère - Gourbi";
+$description="Redécouvrez de nombreux lieux de Paris à travers différentes ambiances et atmosphères. Bars, parcs, espace culturel, restaurant… le choix est large.";
 
 include("includes/header.php")
 

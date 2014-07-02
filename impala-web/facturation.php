@@ -1,6 +1,6 @@
 <?php error_reporting(0); session_start();
 $title="Atmosphère - Facturation";
-$description="Tous les événements les plus improbables. Rencontrez de nouvelles personnes, partagez vos connaissances et expériences et découvrez de nouveaux lieux.";
+$description="Finaliser votre commande afin de profiter de vos événements le plus vite possible.";
 
 //Vérifier que l'utilisateur est bien connecté
 if(!isset($_SESSION['connect'])){

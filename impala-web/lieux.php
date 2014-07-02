@@ -1,13 +1,12 @@
 <?php
-$title="Atmosphère - Theme";
-$description="Une petite description du lieu";
+$title="Atmosphère - Tes lieux";
+$description="Découvre les lieux associés à tes choix précédents et n’hésite pas à réserver les événements qui t’intéressent.";
 
 include("includes/header.php");
 ?>
         <h2>Là ou ça s'trouve</h2>
         <section id="theme-content" class="container">
             <div id="map">
-                <p>Code GREG ici</p>
             </div>
             <h3>P'tite description de tes futurs patelins</h3>
             
@@ -31,9 +30,9 @@ include("includes/header.php");
 
                     while ($donnees=$req->fetch()){ ?>
                         <div class="place-thumbnail">
-                            <img src="" alt="visuel du lieu">
+                            <img src="<?php echo $donnees['bigimage'];?>" alt="visuel du lieu">
                             <div class="title-place">
-                                <h4><span>1</span><?php echo $donnees['title']; ?></h4>
+                                <h4><?php echo $donnees['title']; ?></h4>
                             </div>
                             <?php if(!empty($donnees['event'])){ ?>
                             <div class="event-place">
@@ -45,11 +44,11 @@ include("includes/header.php");
                             <div class="description-place">
                                 <div class="inline-block">
                                     <p><?php echo $donnees['description']; ?></p>
-                                    <a href="#" class="button">Partager sur Facebook</a>
+                                    <!-- <a href="#" class="button">Partager sur Facebook</a> -->
+                                    <div class="fb-share-button" data-href="http://www.atmosphere-parigot.fr/fiche-lieu.php?id=<?php $_GET['id']?>" data-type="button"></div>
                                 </div><div class="inline-block informations">
                                     <ul>
                                         <li class="address"><?php echo $donnees['address']; ?></li>
-                                        <li class="address">Horaires</li>
                                         <li class="website"><?php echo $donnees['website']; ?></li>
                                         <li class="telephone"><?php echo $donnees['telephone']; ?></li>
                                     </ul>

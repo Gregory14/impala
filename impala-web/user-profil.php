@@ -1,6 +1,6 @@
 <?php
 $title="Atmosphère - Mon profil";
-$description="Une petite description du lieu";
+$description="Un espace personnalisé vous est dédié afin de profiter un maximum de notre service.";
 
 include("includes/header.php"); 
 include("traitement/user.php");

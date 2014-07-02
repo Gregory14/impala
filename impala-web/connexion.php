@@ -1,6 +1,6 @@
 <?php session_start();
 $title="Atmosphère - Connectez-vous";
-$description="Une petite description du lieu";
+$description="Connectez-vous à votre profil Atmosphère-Parigot.";
 
 
 

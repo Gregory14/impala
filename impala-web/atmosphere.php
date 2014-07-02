@@ -1,6 +1,6 @@
 <?php
 $title="Atmosphère - La clique";
-$description="Une petite description du lieu";
+$description="Tout le p’tite clique d’Atmosphère-Parigot. Graphiste, développeur, motion-designer, uxdesigner… afin de vous offrir un service de qualité.";
 
 include("includes/header.php"); 
 ?>

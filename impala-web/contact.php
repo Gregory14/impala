@@ -1,6 +1,6 @@
 <?php 
 $title="Atmosphère - Contact";
-$description="Atmosphère vous propose de partager vos envies à travers la découverte de nouveaux lieux dans Paris. Architecture, bar, restaurant, visites culturelles… Atmosphère vous propose de regarder votre environnement d'un nouvel oeil.";
+$description="Atmosphère Parigot est une organisation permettant de repérer des lieux dans son arrondissement et participer à des événements exclusifs autour de l'architecture.";
 
 include("includes/header.php");
 ?>

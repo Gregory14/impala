@@ -1,6 +1,6 @@
 <?php
 $title="Atmosphère - Inscription";
-$description="Une petite description du lieu";
+$description="Inscrivez-vous sur le site d’Atmosphère-Parigot afin de profiter pleinement de nos services. Réservez vos places directement en ligne et soyez au courant des derniers événements.";
 
 include("includes/header.php");
 include('traitement/register.php');

@@ -1,6 +1,6 @@
 <?php 
 $title="Atmosphère - Accueil";
-$description="Atmosphère-parigot, le site référent pour sortir avec ses potes sur Paris. Découvrez des lieux exclusifs, aux ambiances insolites ou à l'architecture improbable";
+$description="Atmosphère Parigot est une organisation permettant de repérer des lieux dans son arrondissement et participer à des événements exclusifs autour de l'architecture.";
 
 include("includes/header.php");
 ?>

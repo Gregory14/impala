@@ -1,18 +1,9 @@
 <?php
-$title="Atmosphère - Choix de l'arrondissement et du thème";
-$description="Une petite description du lieu";
+$title="Atmosphère - Choix de l'arrondissement";
+$description="Démarre l’expérience Atmosphère-Parigot : choisis ton bled dans Paname !";
 
 include("includes/header.php"); 
 
-// Initialisation contenu
-// if(isset($_GET['arr'])){
-//         $arr=htmlspecialchars($_GET['arr']);
-
-//         $req=$mysql->prepare('SELECT * FROM events WHERE id=:id');
-//         $req->execute(array(':id'=>$arr));
-
-//         $donnees=$req->fetch();
-//     }
 ?>
 		<div class="container">
 			<section id="district-content">
@@ -20,10 +11,10 @@ include("includes/header.php");
 				<div id="district-choice">
 					<img src="img/content/arrondissement/map-paris.png" alt="Carte des arrondissements de Paris" />
 					<div id="nineteenth">
-						<p><a href="theme.php?arr=19">19eme</a></p>
+						<p><a href="theme.php?arr=nineteenth">19eme</a></p>
 					</div>
 					<div id="twentieth">
-						<p><a href="theme.php?arr=20">20eme</a></p>
+						<p><a href="theme.php?arr=twentieth">20eme</a></p>
 					</div>
 				</div>
 			</section>

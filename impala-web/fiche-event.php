@@ -1,6 +1,6 @@
 <?php 
 $title="Atmosphère - Fiche événement";
-$description="Une petite description du lieu";
+$description="Découvrez des lieux sous un autre angle, dans une atmosphère particulière par le biais d’événements organisés tout spécialement pour vous.";
 
 include("includes/header.php");
 
@@ -28,7 +28,7 @@ include("includes/header.php");
                         <li class="address"><?php echo $donnees['address'] ;?></li>
                         <li class="transport"><?php echo $donnees['transport'] ;?></li>
                         <li class="price"><?php echo $donnees['price'];?>€</li>
-                        <li class="time">Horaires</li>
+                        <li class="time"><?php echo $donnees['date'];?></li>
                         <li class="telephone"><?php echo $donnees['telephone'] ;?></li>
                         <li class="website"><?php echo $donnees['website'] ;?></li>
                     </ul>
@@ -55,7 +55,7 @@ include("includes/header.php");
                          <li>
                             <p>Nombre de place</p>
                             <select name="nbrTicket" id="nbrTicket">
-                                <?php for($i=1; $i < 11; $i++){ ?>
+                                <?php for($i=1; $i < 2; $i++){ ?>
                                     <option value="<?php echo $i; ?>"><?php echo $i ;?></option>
                                 <?php
                                 };?>
@@ -65,7 +65,7 @@ include("includes/header.php");
                 </div>
                 <ul class="addTicket">
                     <li><a href="traitement/panier.php?id=<?php echo $donnees['id']; ?>" class="button">Ajouter à mes tickets</a></li>
-                    <li><a href="#" class="button">Achat rapide</a></li>
+                    <!-- <li><a href="#" class="button">Achat rapide</a></li> -->
                 </ul>
             </div>
         </section>
